@@ -8,6 +8,11 @@
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src="js/app.js"></script>
+    <style>
+    #app #navpanel.ui-panel {
+    width: 20em;
+    </style>
+}
 </head>
 
 <body class="body">
@@ -22,7 +27,7 @@
                     <img class="logo_youtter" src="./js/images/logo_youtter.png" alt="logo"></img>
                 </div>
                 <div theme="a">
-                    <input class="txt_textfield_in" type="text" id="inputLoginUsername" placeholder="Email">
+                    <input class="txt_textfield_in" type="text" id="inputLoginUsername" placeholder="Usuario">
                     </input>
                 </div>
                 <div theme="a">
@@ -32,7 +37,7 @@
                 <center>
                     <form style="width:37%">
                         <label style="color:#000; font-size: 13px!important" id="lbmainLoginRecordar">
-                            <input type="checkbox" name="checkbox-0" id="mainLoginRecordar">Recordar
+                            <input type="checkbox" name="checkbox-0" id="mainLoginRecordar">Recordar Usuario
                         </label>
                     </form>
                 </center>
@@ -118,90 +123,162 @@
     </div>
 
     <!-- DENTRO DE APP UNA VEZ LOGADO  -->
-    <div data-role="page" id="app" data-title="YOUTTER - APP" style="overflow-y:hidden; background-color:#f1eff7; layer-background-color:#f1eff7;">
+    <div data-role="page" id="app" data-title="APP" style="overflow-y:hidden; background-color:#f1eff7; layer-background-color:#f1eff7;">
 
         <!-- Menu lateral desplazable -->
         <div data-role="panel" id="navpanel" data-theme="a" data-display="overlay" data-position="left">
             <div data-role="controlgroup" data-theme="a" data-corners="false">
                 <ul data-role="listview">
-                    <li data-role="list-divider" id="btnMenuPrincipal">Opciones Youtter</li>
-                    <li class="listasMenu">
-                        <div class="ui-grid-a" id="btnMenuCuenta">
-                            <div class="ui-block-a" style="width:20%">
-                                <img class="icn_menu" src="js/images/icno_micuenta.png" alt="logo cuenta">
-                            </div>
-                            <div class="ui-block-b" style="width:80%" id="menuCuenta">
-                                <label class="txt_menu">Mi cuenta</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li id="btnMenuCreditos" class="listasMenu">
+                    <li data-role="list-divider" id="">VEHÍCULOS NUEVOS</li>
+                    <li class="listasMenu" id="btnMenuNuevosConsultivo">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:20%">
-                                <img class="icn_menu" src="js/images/icno_miscreditos.png" alt="creditos">
+                              <!--  <img class="icn_menu" src="js/images/icno_micuenta.png" alt="logo cuenta"> -->
                             </div>
-                            <div class="ui-block-b" style="width:80%" id="menuCreditos">
-                                <label class="txt_menu">Créditos</label>
+                            <div class="ui-block-b" style="width:80%" id="">
+                                <label class="txt_menu">Consultivo</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="listasMenu" id="btnMenuNuevosEjecutivo">
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a" style="width:20%">
+                             
+                            </div>
+                            <div class="ui-block-b" style="width:80%">
+                                <label class="txt_menu">Ejecutivo</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="listasMenu" id="btnMenuNuevosAnalitico">
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a" style="width:20%">
+                            
+                            </div>
+                            <div class="ui-block-b" style="width:80%">
+                                <label class="txt_menu">Analítico</label>
                             </div>
                         </div>
                     </li>
                     <li class="listasMenu">
-                        <div class="ui-grid-a" id="btnMenuAnuncios">
+                        <div class="ui-grid-a" id="btnMenuNuevosComparativa">
                             <div class="ui-block-a" style="width:20%">
-                                <img class="icn_menu" src="js/images/icno_misanuncios.png" alt="Mis anuncios">
+                       
                             </div>
-                            <div class="ui-block-b" style="width:80%" id="menuAnuncios">
-                                <label class="txt_menu">Mis anuncios</label>
+                            <div class="ui-block-b" style="width:80%">
+                                <label class="txt_menu">Comparativa</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="listasMenu" id="btnMenuNuevosAlertas">
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a" style="width:20%">
+                          
+                            </div>
+                            <div class="ui-block-b" style="width:80%">
+                                <label class="txt_menu">Alertas</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-role="list-divider" id="">VEHÍCULOS USADOS</li>
+                    <li class="listasMenu" id="btnMenuUsadosConsultivo">
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a" style="width:20%">
+                       
+                            </div>
+                            <div class="ui-block-b" style="width:80%" id="">
+                                <label class="txt_menu">Consultivo</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="listasMenu" id="btnMenuUsadosEjecutivo">
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a" style="width:20%">
+                    
+                            </div>
+                            <div class="ui-block-b" style="width:80%">
+                                <label class="txt_menu">Ejecutivo</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="listasMenu" id="btnMenuUsadosAnalitico">
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a" style="width:20%">
+                             
+                            </div>
+                            <div class="ui-block-b" style="width:80%">
+                                <label class="txt_menu">Analítico</label>
                             </div>
                         </div>
                     </li>
                     <li class="listasMenu">
-                        <div class="ui-grid-a" id="btnMenuCrearAnuncio">
+                        <div class="ui-grid-a" id="btnMenuUsadosComparativa">
                             <div class="ui-block-a" style="width:20%">
-                                <img class="icn_menu" src="js/images/icno_crearanuncio.png" alt="Crear Anuncio">
+                           
                             </div>
-                            <div class="ui-block-b" style="width:80%" id="menuCrearAnuncio">
-                                <label class="txt_menu">Crear anuncio</label>
+                            <div class="ui-block-b" style="width:80%">
+                                <label class="txt_menu">Comparativa</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="listasMenu" id="btnMenUsadosAlertas">
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a" style="width:20%">
+                           
+                            </div>
+                            <div class="ui-block-b" style="width:80%">
+                                <label class="txt_menu">Alertas</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-role="list-divider" id="">VEHÍCULOS POSTVENTA</li>
+                    <li class="listasMenu" id="btnMenuPostventaConsultivo">
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a" style="width:20%">
+                    
+                            </div>
+                            <div class="ui-block-b" style="width:80%" id="">
+                                <label class="txt_menu">Consultivo</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="listasMenu" id="btnMenuPostventaEjecutivo">
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a" style="width:20%">
+                                
+                            </div>
+                            <div class="ui-block-b" style="width:80%">
+                                <label class="txt_menu">Ejecutivo</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="listasMenu" id="btnMenuPostventaAnalitico">
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a" style="width:20%">
+                       
+                            </div>
+                            <div class="ui-block-b" style="width:80%">
+                                <label class="txt_menu">Analítico</label>
                             </div>
                         </div>
                     </li>
                     <li class="listasMenu">
-                        <div class="ui-grid-a" id="btnMenuSalir">
+                        <div class="ui-grid-a" id="btnMenuPostventaComparativa">
                             <div class="ui-block-a" style="width:20%">
-                                <img class="icn_menu" src="js/images/icno_logout.png" alt="Salir">
+                              
                             </div>
-                            <div class="ui-block-b" style="width:80%" id="menuSalir">
-                                <label class="txt_menu">Salir</label>
+                            <div class="ui-block-b" style="width:80%">
+                                <label class="txt_menu">Comparativa</label>
                             </div>
                         </div>
                     </li>
-                    <li class="listasMenu">
-                        <div class="ui-grid-a" id="btnMenuCondiciones">
+                    <li class="listasMenu" id="btnMenuPostventaAlertas">
+                        <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:20%">
-                                <img class="icn_menu" src="js/images/icno_legal.png" alt="politicas">
+                            
                             </div>
-                            <div class="ui-block-b" style="width:80%" id="menuCondiciones">
-                                <label class="txt_menu">Condiciones y políticas</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="listasMenu">
-                        <div class="ui-grid-a" id="btnMenuProblema">
-                            <div class="ui-block-a" style="width:20%">
-                                <img class="icn_menu" src="js/images/icno_incidencia.png" alt="Problema">
-                            </div>
-                            <div class="ui-block-b" style="width:80%" id="menuProblema">
-                                <label class="txt_menu">Informe de un problema</label>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="listasMenu">
-                        <div class="ui-grid-a" id="btnMenuInicio">
-                            <div class="ui-block-a" style="width:20%">
-                                <img class="icn_menu" src="js/images/btn_mini_cambiarfechas.png" alt="Menú">
-                            </div>
-                            <div class="ui-block-b" style="width:80%" id="menuInicio">
-                                <label class="txt_menu">Ir al Menú</label>
+                            <div class="ui-block-b" style="width:80%">
+                                <label class="txt_menu">Alertas</label>
                             </div>
                         </div>
                     </li>
@@ -235,25 +312,11 @@
         <div data-role="content" style="overflow-y:hidden; overflow-x:hidden">
 
             <!-- Menu principal  -->
-            <!--
-            <div id="creditosMain" class="k-content">
-                <div class="txt_centrals_sin_bottom" id="textCreditosMain">Actualmente tienes:
-                    <br/>
-                    <img class="img_creditos" src="js/images/img_creditos.png" width="180" height="133">
-                </div>
-                <div class="num_creditos" id="numCreditosMain" back-ground="">45:30</div>
-                <div class="creditos">créditos</div>
-                <div>
-                    <button type="button" id="btnCreditosMainComprar" class="btn_gradient">Comprar más creditos</button>
-                </div>
-                <div>
-                    <button type="button" id="btnCreditosMainHistorico" class="btn_blue">Histórico</button>
-                </div>
-                <div>
-                    <button type="button" id="btnCreditosMainCancel" class="btn_blue">Volver</button>
-                </div>
+            
+            <div id="mainMenu" class="k-content">
+                PAGINA PRINCIPAL
             </div>
-            -->
+            
 
             <div data-role="popup" id="PopUpNotificacion" data-transition="pop" data-position-to="window">
                 <p id="PopUpNotificacionTexto"></p>
@@ -287,57 +350,15 @@
         </div>
 
         <div id="footer_comun" class="footer_comun">
-            <div id="footernuevoAnuncio1" class="footer">
-                <button class="btn_blue" id="btnnuevoAnuncio1Cancelar" data-icon="back" data-iconpos="right">Volver</button>
-                <button class="btn_blue" id="btnnuevoAnuncio1Aceptar" data-icon="check" data-iconpos="right">Continuar</button>
-            </div>
-            <div id="footernuevoAnuncio2" class="footer">
-                <button class="btn_blue" id="btnnuevoAnuncio2Disponibilidad" data-icon="search" data-iconpos="right">Continuar</button>
-            </div>
-            <div id="footernuevoAnuncio3" class="footer">
-                <!--<button class="btn_blue" id="btnnnuevoAnuncio3Seguir" data-icon="check" data-iconpos="right">YA tengo mis pantallas, seguir</button> -->
-            </div>
-            <div id="footernuevoAnuncio4" class="footer">
-                <button class="btn_blue" id="btnnnuevoAnuncio4Guardar" data-icon="check" data-iconpos="right">Continuar</button>
-            </div>
-            <div id="footernuevoAnuncio5" class="footer">
-                <button class="btn_blue" id="btnnnuevoAnuncio5Volver" data-icon="back" data-iconpos="right">Volver</button>
-            </div>
-            <div id="footernuevoAnuncio5-1" class="footer">
-                <button class="btn_blue" id="btnnnuevoAnuncio5-1Volver" data-icon="back" data-iconpos="right">Volver</button>
-            </div>
-            <div id="footerdetallePantalla" class="footer">
-                <button class="btn_blue" id="btndetallePantallaVolver" data-icon="back" data-iconpos="right">Volver</button>
-            </div>
-            <div id="footernuevoAnuncio6" class="footer">
-                <button class="btn_gradient" id="btnnuevoAnuncio6Subir" data-icon="camera" data-iconpos="right">Subir imagen
-                </button>
-                <button class="btn_blue" id="selectPicture" data-icon="camera" data-iconpos="right">Subir la misma imagen en todos
-                </button>
-            </div>
-            <div id="footernuevoAnuncio7" class="footer">
-                <button class="btn_blue" id="btnnuevoAnuncio7Subir" data-icon="action" data-iconpos="right">Continuar</button>
-            </div>
-            <div id="footernuevoAnuncio8" class="footer">
-                <button class="btn_blue" id="btnnuevoAnuncio8Previa" data-icon="eye" data-iconpos="right">Vista Previa</button>
-            </div>
-            <div id="footernuevoAnuncio9" class="footer">
-                <input type="text" class="txt_textfield_in" id="textImagen" placeholder="Escriba el texto que quiere que aparezca con su imagen" style="display:none;">
-                <!-- Campo para rellenar el texto que se publicara-->
-                <button class="btn_blue" style="padding:10px" id="btnnuevoAnuncio9Cambiar" data-icon="recycle" data-iconpos="right">Cambiar mi imagen
-                </button>
-                <button class="btn_blue" id="btnnuevoAnuncio9Proceder" data-icon="shop" data-iconpos="right">Youttea ahora!
-                </button>
-            </div>
+            <!--
+
             <div id="footernuevoAnuncio10" class="footer">
                 <button class="btn_blue" id="btnnuevoAnuncio10Comprar" data-icon="shop" data-iconpos="right">Comprar más Creditos
                 </button>
                 <button class="btn_blue" id="btnnuevoAnuncio10Cancelar" data-icon="back" data-iconpos="right">Volver</button>
             </div>
-            <div id="footerCancelar" class="footer">
-                <button class="btn_blue" id="btnFooterCancelar" data-icon="cancel" data-iconpos="right">Cancelar
-                </button>
-            </div>
+        
+        -->
         </div>
 
     </div>

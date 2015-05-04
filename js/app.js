@@ -75,14 +75,25 @@ $(document).on('pageinit', '#loginModule', function () {
     }
 
     $('#btnLogIn').unbind('click').bind('click', function () {
-
-        alert("entra");
+        $.mobile.changePage("#app");
     });
     
     $("#resetPassword").hide();
     $("#resetPasswordFinish").hide();
     
 
+});
+
+$(document).on('pageinit', '#app', function () {
+    
+    $("#resetPassword").hide();
+    $("#resetPasswordFinish").hide();
+    
+    $("#app").on("swiperight",function(){
+      $("#navpanel").panel("open");
+    });
+    
+    //$("#navpanel").panel("close");
 });
 
 function isAndroidDevice() {
