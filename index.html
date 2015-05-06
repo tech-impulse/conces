@@ -4,10 +4,12 @@
 <head>
     <title>CONCESIONARIOS</title>
     <meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=0.5, width=device-width, height=device-height" charset="utf-8" />
-    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/demo.css" />
-    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/estilus.css">
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="lib/jquery.mobile-1.4.5.min.js"></script>
     <script src="css/demo.js"></script>
@@ -25,35 +27,29 @@
         <!-- Pagina de login -->
         <div data-role="content">
             <div id="mainLogin" class="k-content">
+                <div theme="a" style="text-align: center">
+                    <!--<span class="icon-icno_tipo_analisis" style="width:100px;"></span> -->
+                    <img class="Logo, img_logo_toyota" src="css/imagenes/logo_toyota.png" alt="logo">
+                </div>
+                <div theme="a" class="txt_field_login">
+                    <input class="txt_textfield_in" id="inputLoginUsername" placeholder="Usuario" type="text">
+                </div>
+                <div theme="a" class="txt_field_password">
+                    <input class="txt_textfield_in" id="inputLoginPassword" placeholder="Contraseña" type="password">
+                </div>
                 <center>
-                    <div theme="a" style="text-align: center">
-                        <!--<span class="icon-icno_tipo_analisis" style="width:100px;"></span> -->
-                        <img class="Logo" src="css/imagenes/logo_toyota.png" alt="logo" width="15%"></img>
-                    </div>
-                    <div theme="a" style="width:19em">
-                        <input class="txt_textfield_in" type="text" id="inputLoginUsername" placeholder="Usuario">
-                        </input>
-                    </div>
-                    <div theme="a" style="width:19em">
-                        <input class="txt_textfield_in" type="password" id="inputLoginPassword" placeholder="Contraseña">
-                        </input>
-                    </div>
-                    <center>
-                        <div style="width:14em">
-                            <label class="border-r">
-                                <input type="checkbox" data-theme="b" id="mainLoginRecordar"> Recordar Usuario</label>
-                        </div>
-                    </center>
-                    <div theme="a">
-                        <br>
-                        <a data-role="button" data-theme="a" id="btnLogIn" style="width:13em">Entrar</a>
+                    <form class="recordar_us">
+                        <label style="background-color:#fff; border:0px; color:#333; font-size: 13px!important" id="lbmainLoginRecordar">
+                            <input name="checkbox-0" id="mainLoginRecordar" type="checkbox">Recordar Usuario </label>
+                    </form>
                 </center>
+                <div theme="a" class="btn_login"> <a data-role="button" data-theme="a" id="btnLogIn">Entrar</a>
                 </div>
-                <div theme="a" style="text-align: center" class="olvidarcontrasena"><a id="loginForgotPassword">Recuperar Contraseña</a>
-                </div>
+                <div theme="a" style="text-align: center; font-size: 13px;" class="olvidarcontrasena"><a data-theme="a" id="loginForgotPassword">Recuperar
+              Contraseña</a> </div>
                 <div theme="a" style="text-align: center">
                     <br>
-                    <img class="Logo" src="css/imagenes/logo_management.png" alt="logo" width="15%"></img>
+                    <img class="Logo, img_management" src="css/imagenes/logo_management.png" alt="logo">
                 </div>
             </div>
             <!-- Pagina de reestablecer contraseña -->
@@ -251,7 +247,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="listasMenu"> 
+                    <li class="listasMenu">
                         <div class="ui-grid-a" id="btnMenuPostventaComparativa" onclick="graficasPostventa();">
                             <div class="ui-block-a" style="width:20%">
                                 <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
@@ -280,19 +276,22 @@
                 <center>
                     <div class="ui-block-a btn_menu_izq" style="width: 25%; text-align: left">
                         <div class="ui-grid-a" id="btnMenuUsadosComparativa">
-                            <div class="ui-block-a">
-                                <a data-role="button" data-theme="c" href="#navpanel"><span class="icon-icnomenu"> MENÚ</span> </a>
-                            </div>
+                            <div class="ui-block-a"> <a data-role="button" data-theme="c" href="#navpanel"><span
+                      class="icon-icnomenu"
+                      style="font-size:22px; margin:0px; float:left;"></span>
+                    <span class="txt_menu_superior">MENÚ</span> </a> </div>
                             <div class="ui-block-b">
-                                <a data-role="button" data-theme="c" id="btnHeaderInicio"> <span class="icon-icnoinicio"> INICIO</span> </a>
+                                <a data-role="button" data-theme="c" id="btnHeaderInicio">
+                                    <span class="icon-icnoinicio" style="font-size:22px; margin:0px; float:left;"></span>
+                                    <span class="txt_menu_superior"> INICIO</span> </a>
                             </div>
                         </div>
                     </div>
-                    <div class="ui-block-b" id="tituloSeccion" style="width: 50%; text-align: center">
+                    <div class="ui-block-b" id="tituloSeccion" style="width: 50%; text-align: center; font-family:black; padding-top:20px;">
                     </div>
                     <div class="ui-block-c btn_menu_dere" style="width: 25%; text-align: right">
-                        <a data-role="button" data-theme="c" id="btnHeaderParametros"> <span class="icon-icnoparametros"> PARÁMETROS</span>
-                        </a>
+                        <a data-role="button" data-theme="c" id="btnHeaderParametros"> <span class="icon-icnoparametros" style="font-size:22px; margin:0px; float:left;"></span>
+                            <span class="txt_menu_superior">PARÁMETROS</span> </a>
                     </div>
                 </center>
             </div>
@@ -309,8 +308,10 @@
                     <div class="ui-block-a">
                         <div data-role="controlgroup" data-theme="a" data-corners="false">
                             <ul data-role="listview" style="margin:5px">
-                                <center><img src="css/maqueta/veh_nuevos.png">
-                                </center>
+                                <li style="text-align:center; background-color:#fff; border:none; text-shadow:none; color:#66CC00; line-height:1.2em; padding-top:20px;" data-role="list-divider" id=""><span style="font-family:light;">VEHÍCULOS</span>
+                                    <br>
+                                    <span style="font-family:black;"> NUEVOS</span>
+                                </li>
                                 <li class="listasMenu" id="btnMainNuevosConsultivo" onclick="graficasNuevos();">
                                     <div class="ui-grid-a">
                                         <div class="ui-block-a" style="width:20%">
@@ -357,8 +358,10 @@
                     <div class="ui-block-b">
                         <div data-role="controlgroup" data-theme="a" data-corners="false">
                             <ul data-role="listview" style="margin:5px">
-                                <center><img src="css/maqueta/veh_usados.png">
-                                </center>
+                                <li style="text-align:center; background-color:#fff; border:none; text-shadow:none; color:#66CC00; line-height:1.2em; padding-top:20px;" data-role="list-divider" id=""><span style="font-family:light;">VEHÍCULOS</span>
+                                    <br>
+                                    <span style="font-family:black;"> USADOS</span>
+                                </li>
                                 <li class="listasMenu" id="btnMainUsadosConsultivo" onclick="graficasUsados();">
                                     <div class="ui-grid-a">
                                         <div class="ui-block-a" style="width:20%">
@@ -405,8 +408,10 @@
                     <div class="ui-block-c">
                         <div data-role="controlgroup" data-theme="a" data-corners="false">
                             <ul data-role="listview" style="margin:5px">
-                                <center><img src="css/maqueta/serv_posventa.png">
-                                </center>
+                                <li style="text-align:center; background-color:#fff; border:none; text-shadow:none; color:#66CC00; line-height:1.2em; padding-top:20px;" data-role="list-divider" id=""><span style="font-family:light;">SERVICIO</span>
+                                    <br>
+                                    <span style="font-family:black;"> POSTVENTA</span>
+                                </li>
                                 <li class="listasMenu" id="btnMainPostventaConsultivo" onclick="graficasPostventa();">
                                     <div class="ui-grid-a">
                                         <div class="ui-block-a" style="width:20%">
@@ -452,16 +457,21 @@
                     </div>
                 </div>
                 <div class="ui-grid-b" style="margin-right:15px;margin-left:15px">
-                    <div class="ui-block-a">
-                        <a data-role="button" data-theme="c" id="btnMenuAlertasNuevos"><span class="icon-icnoalerta" style="width:100px;">ALERTAS</span>
-                     </a>
-                    </div>
-                    <div class="ui-block-b">
-                        <a data-role="button" data-theme="c" id="btnMenuAlertasUsados"><span class="icon-icnoalerta" style="width:100px;">ALERTAS</span></a>
-                    </div>
-                    <div class="ui-block-c">
-                        <a data-role="button" data-theme="c" id="btnMenuAlertasPostventa"><span class="icon-icnoalerta" style="width:100px;">ALERTAS</span> </a>
-                    </div>
+                    <div class="ui-block-a"> <a data-role="button" data-theme="b" id="btnMenuAlertasNuevos"><span
+                  class="icon-icnoalerta"
+                  style="font-size:25px; margin:0px; float:left; color:#ff0000;"></span><span
+                  class="txt_alertas_inicio">
+                  ALERTAS</span> </a> </div>
+                    <div style="background-color: #f1eff7;" class="ui-block-b"> <a data-role="button" data-theme="b" id="btnMenuAlertasUsados"><span
+                  class="icon-icnoalerta"
+                  style="font-size:25px; margin:0px; float:left; color:#ff0000;"></span><span
+                  class="txt_alertas_inicio">
+                  ALERTAS</span></a> </div>
+                    <div class="ui-block-c"> <a data-role="button" data-theme="b" id="btnMenuAlertasPostventa"><span
+                  class="icon-icnoalerta"
+                  style="font-size:25px; margin:0px; float:left; color:#ff0000;"></span><span
+                  class="txt_alertas_inicio">
+                  ALERTAS</span> </a> </div>
                 </div>
             </div>
         </div>
