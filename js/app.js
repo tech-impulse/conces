@@ -102,6 +102,7 @@ $(document).on('pageinit', '#app', function () {
     $("#consultivoPostventa").hide();
 
     $("#tituloSeccion").html("TÍTULO");
+    $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ Informe");
 
 
     $("#app").on("swiperight", function () {
@@ -118,6 +119,7 @@ $(document).on('pageinit', '#app', function () {
         $("#consultivoUsados").hide();
         $("#consultivoPostventa").hide();
         $("#tituloSeccion").html('<span class=""> PARÁMETROS DE BÚSQUEDA</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ Informe");
     });
 
     $("#btnHeaderInicio").unbind('click').bind('click', function () {
@@ -130,6 +132,7 @@ $(document).on('pageinit', '#app', function () {
         $("#consultivoUsados").hide();
         $("#consultivoPostventa").hide();
         $("#tituloSeccion").html('<span class=""> INICIO </span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ Informe");
     });
 
     $("#btnMenuAlertasNuevos").unbind('click').bind('click', function () {
@@ -142,6 +145,7 @@ $(document).on('pageinit', '#app', function () {
         $("#consultivoUsados").hide();
         $("#consultivoPostventa").hide();
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ Informe");
     });
 
     $("#btnMenuAlertasUsados").unbind('click').bind('click', function () {
@@ -154,6 +158,7 @@ $(document).on('pageinit', '#app', function () {
         $("#consultivoUsados").hide();
         $("#consultivoPostventa").hide();
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ Informe");
     });
 
     $("#btnMenuAlertasPostventa").unbind('click').bind('click', function () {
@@ -166,6 +171,7 @@ $(document).on('pageinit', '#app', function () {
         $("#consultivoUsados").hide();
         $("#consultivoPostventa").hide();
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ Informe");
     });
 
     $("#btnMenuNuevosConsultivo").unbind('click').bind('click', function () {
@@ -178,6 +184,7 @@ $(document).on('pageinit', '#app', function () {
         $("#consultivoUsados").hide();
         $("#consultivoPostventa").hide();
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
     });
 
     $("#btnMenuUsadosConsultivo").unbind('click').bind('click', function () {
@@ -190,6 +197,7 @@ $(document).on('pageinit', '#app', function () {
         $("#consultivoUsados").hide();
         $("#consultivoPostventa").hide();
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
     });
 
     $("#btnMenuPostventaConsultivo").unbind('click').bind('click', function () {
@@ -202,6 +210,7 @@ $(document).on('pageinit', '#app', function () {
         $("#consultivoUsados").show();
         $("#consultivoPostventa").show();
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
     });
 
     $("#btnMainNuevosConsultivo").unbind('click').bind('click', function () {
@@ -214,6 +223,7 @@ $(document).on('pageinit', '#app', function () {
         $("#consultivoUsados").hide();
         $("#consultivoPostventa").hide();
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
     });
 
     $("#btnMainUsadosConsultivo").unbind('click').bind('click', function () {
@@ -226,6 +236,7 @@ $(document).on('pageinit', '#app', function () {
         $("#consultivoUsados").hide();
         $("#consultivoPostventa").hide();
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
     });
 
     $("#btnMainPostventaConsultivo").unbind('click').bind('click', function () {
@@ -238,6 +249,7 @@ $(document).on('pageinit', '#app', function () {
         $("#consultivoUsados").show();
         $("#consultivoPostventa").show();
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
     });
 
 
