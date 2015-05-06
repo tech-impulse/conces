@@ -246,7 +246,7 @@ $(document).on('pageinit', '#app', function () {
         $("#mainMenu").hide();
         $("#parametros").hide();
         $("#consultivoNuevos").hide();
-        $("#consultivoUsados").show();
+        $("#consultivoUsados").hide();
         $("#consultivoPostventa").show();
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
@@ -254,8 +254,48 @@ $(document).on('pageinit', '#app', function () {
 
 
 
+
     //$("#navpanel").panel("close");
 });
+
+function graficasNuevos() {
+    $("#alertasNuevos").hide();
+    $("#alertasUsados").hide();
+    $("#alertasPostventa").hide();
+    $("#mainMenu").hide();
+    $("#parametros").hide();
+    $("#consultivoNuevos").show();
+    $("#consultivoUsados").hide();
+    $("#consultivoPostventa").hide();
+    $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+    $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
+}
+
+function graficasUsados() {
+    $("#alertasNuevos").hide();
+    $("#alertasUsados").hide();
+    $("#alertasPostventa").hide();
+    $("#mainMenu").hide();
+    $("#parametros").hide();
+    $("#consultivoNuevos").hide();
+    $("#consultivoUsados").show();
+    $("#consultivoPostventa").hide();
+    $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+    $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
+}
+
+function graficasPostventa() {
+    $("#alertasNuevos").hide();
+    $("#alertasUsados").hide();
+    $("#alertasPostventa").hide();
+    $("#mainMenu").hide();
+    $("#parametros").hide();
+    $("#consultivoNuevos").hide();
+    $("#consultivoUsados").hide();
+    $("#consultivoPostventa").show();
+    $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+    $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
+}
 
 function isAndroidDevice() {
     var ua = navigator.userAgent.toLowerCase();
