@@ -4,27 +4,30 @@
 <head>
     <title>CONCESIONARIOS</title>
     <meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=0.5, width=device-width, height=device-height" charset="utf-8" />
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/demo.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="css/demo.js"></script>
     <script src="js/app.js"></script>
     <style>
-    #app #navpanel.ui-panel {
-    width: 20em;
+        #app #navpanel.ui-panel {
+            width: 20em;
     </style>
-}
+    }
 </head>
 
 <body class="body">
-
     <!-- seccion de login  -->
     <div data-role="page" id="loginModule" data-title="Login">
-
         <!-- Pagina de login -->
         <div data-role="content">
             <div id="mainLogin" class="k-content">
                 <div theme="a" style="text-align: center">
-                    <img class="logo_youtter" src="./js/images/logo_youtter.png" alt="logo"></img>
+                    <!--<span class="icon-icno_tipo_analisis" style="width:100px;"></span> -->
+                    <img class="Logo" src="css/imagenes/logo_toyota.png" alt="logo"></img>
                 </div>
                 <div theme="a">
                     <input class="txt_textfield_in" type="text" id="inputLoginUsername" placeholder="Usuario">
@@ -42,21 +45,15 @@
                     </form>
                 </center>
                 <div theme="a">
-                    <button type="button" data-role="button" id="btnLogIn" data-theme="a" class="btn_gradient">Entrar
-                    </button>
+                    <a data-role="button" data-theme="a" id="btnLogIn">Entrar</a>
                 </div>
-                <div theme="a" style="text-align: center" class="olvidarcontrasena"><a data-theme="a" id="loginForgotPassword">¿Has
-                olvidado tu contraseña?</a>
-                </div>
-                <div class="ui-grid-b" theme="a">
-                    <button type="button" data-role="button" id="btnLogInNewAccount" data-theme="a" class="btn_blue">Crear nueva cuenta
-                    </button>
+                <div theme="a" style="text-align: center" class="olvidarcontrasena"><a data-theme="a" id="loginForgotPassword">Recuperar Contraseña</a>
                 </div>
                 <div theme="a" style="text-align: center">
-                    <img class="btn_web_youtter" src="./js/images/btn_web_youtter.png" alt="logo mini YOUTTER"></img>
+                    <br>
+                    <img class="Logo" src="css/imagenes/logo_management.png" alt="logo"></img>
                 </div>
             </div>
-
             <!-- Pagina de reestablecer contraseña -->
             <div id="resetPassword" class="k-content">
                 <div data-role="header" class="cabecera">
@@ -65,44 +62,35 @@
                 <div class="txt_centrals" theme="a" id="textResetPassword">Introduce tu nombre de usuario y te enviaremos las instrucciones para reestablecer tu contraseña al correo que nos facilitaste al crear tu cuenta.
                 </div>
                 <div theme="a">
-                    <input class="txt_textfield_in" type="text" id="inputUserResetPassword" onclick="this.value='';" value="Usuario">
+                    <input class="txt_textfield_in" type="text" id="inputUserResetPassword" onclick="this.value='';" value="Correo electrónico">
                     </input>
                 </div>
                 <div theme="a">
-                    <button type="button" data-role="button" id="btnOkResetPassword" data-theme="a" class="btn_gradient">
-                        Reestablecer contraseña
-                    </button>
+                    <a data-role="button" data-theme="a" id="btnOkResetPassword">Enviar</a>
                 </div>
                 <div theme="a">
-                    <button type="button" data-role="button" id="btnCancelResetPassword" data-theme="a" class="btn_blue">
-                        Cancelar
-                    </button>
+                    <a data-role="button" data-theme="a" id="btnCancelResetPassword" data-theme="a">Cancelar</a>
                 </div>
                 <div theme="a" style="text-align: center">
-                    <img class="btn_web_youtter" src="./js/images/btn_web_youtter.png" alt="logo mini YOUTTER"></img>
+                    <img class="Logo" src="css/imagenes/logo_management.png" alt="logo"></img>
                 </div>
             </div>
-
             <!-- Finalizar reset contraseña -->
             <div id="resetPasswordFinish" class="k-content">
                 <div theme="a" style="text-align: center">
-                    <img class="logo_youtter" src="./js/images/logo_youtter.png" alt="logo YOUTTER"></img>
                 </div>
                 <div theme="a" id="textResetPasswordFinish" class="txt_centrals">¡Enlace de restablecimiento de contraseña enviado!
-                    <br>Youtter te ha enviado a tu correo electronico un enlace para reestablecer tu contraseña.
+                    <br>Se te ha enviado a tu correo electronico un enlace para reestablecer tu contraseña.
                     <br>Revisa tu correo y sigue las instrucciones.
                 </div>
                 <div theme="a">
-                    <button type="button" data-role="button" id="btnResetPasswordFinish" data-theme="a" class="btn_blue">
-                        Volver a la pagina de login
-                    </button>
+                    <a data-role="button" data-theme="a" id="btnResetPasswordFinish">
+                  Volver a la pagina de login
+                  </a>
                 </div>
                 <div theme="a" style="text-align: center">
-                    <img class="btn_web_youtter" src="./js/images/btn_web_youtter.png" alt="logo mini YOUTTER"></img>
                 </div>
             </div>
-
-            
             <!-- Pop up de comunicación BOTON ACEPTAR -->
             <div data-role="popup" id="loginPopUp" class="" style="width:21em;" data-overlay-theme="a" data-transition="slidefade" data-theme="a">
                 <div data-role="header" style="text-align: center" class="cabecera">
@@ -116,15 +104,13 @@
                     </div>
                 </div>
                 <div>
-                    <button type="button" class="btn_blue" id="btnPopUpLogin" data-theme="a">Aceptar</button>
+                    <a data-role="button" data-theme="a" id="btnPopUpLogin">Aceptar</a>
                 </div>
             </div>
         </div>
     </div>
-
     <!-- DENTRO DE APP UNA VEZ LOGADO  -->
     <div data-role="page" id="app" data-title="APP" style="overflow-y:hidden; background-color:#f1eff7; layer-background-color:#f1eff7;">
-
         <!-- Menu lateral desplazable -->
         <div data-role="panel" id="navpanel" data-theme="a" data-display="overlay" data-position="left">
             <div data-role="controlgroup" data-theme="a" data-corners="false">
@@ -133,7 +119,8 @@
                     <li class="listasMenu" id="btnMenuNuevosConsultivo">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:20%">
-                              <!--  <img class="icn_menu" src="js/images/icno_micuenta.png" alt="logo cuenta"> -->
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
+                                <!--  <img class="icn_menu" src="js/images/icno_micuenta.png" alt="logo cuenta"> -->
                             </div>
                             <div class="ui-block-b" style="width:80%" id="">
                                 <label class="txt_menu">Consultivo</label>
@@ -143,7 +130,7 @@
                     <li class="listasMenu" id="btnMenuNuevosEjecutivo">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:20%">
-                             
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
                             <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Ejecutivo</label>
@@ -153,7 +140,7 @@
                     <li class="listasMenu" id="btnMenuNuevosAnalitico">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:20%">
-                            
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
                             <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Analítico</label>
@@ -163,7 +150,7 @@
                     <li class="listasMenu">
                         <div class="ui-grid-a" id="btnMenuNuevosComparativa">
                             <div class="ui-block-a" style="width:20%">
-                       
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
                             <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Comparativa</label>
@@ -173,7 +160,7 @@
                     <li class="listasMenu" id="btnMenuNuevosAlertas">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:20%">
-                          
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
                             <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Alertas</label>
@@ -184,7 +171,7 @@
                     <li class="listasMenu" id="btnMenuUsadosConsultivo">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:20%">
-                       
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
                             <div class="ui-block-b" style="width:80%" id="">
                                 <label class="txt_menu">Consultivo</label>
@@ -194,7 +181,7 @@
                     <li class="listasMenu" id="btnMenuUsadosEjecutivo">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:20%">
-                    
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
                             <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Ejecutivo</label>
@@ -204,7 +191,7 @@
                     <li class="listasMenu" id="btnMenuUsadosAnalitico">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:20%">
-                             
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
                             <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Analítico</label>
@@ -214,7 +201,7 @@
                     <li class="listasMenu">
                         <div class="ui-grid-a" id="btnMenuUsadosComparativa">
                             <div class="ui-block-a" style="width:20%">
-                           
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
                             <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Comparativa</label>
@@ -224,7 +211,7 @@
                     <li class="listasMenu" id="btnMenUsadosAlertas">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:20%">
-                           
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
                             <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Alertas</label>
@@ -235,7 +222,7 @@
                     <li class="listasMenu" id="btnMenuPostventaConsultivo">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:20%">
-                    
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
                             <div class="ui-block-b" style="width:80%" id="">
                                 <label class="txt_menu">Consultivo</label>
@@ -245,7 +232,7 @@
                     <li class="listasMenu" id="btnMenuPostventaEjecutivo">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:20%">
-                                
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
                             <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Ejecutivo</label>
@@ -255,7 +242,7 @@
                     <li class="listasMenu" id="btnMenuPostventaAnalitico">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:20%">
-                       
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
                             <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Analítico</label>
@@ -265,7 +252,7 @@
                     <li class="listasMenu">
                         <div class="ui-grid-a" id="btnMenuPostventaComparativa">
                             <div class="ui-block-a" style="width:20%">
-                              
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
                             <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Comparativa</label>
@@ -275,7 +262,7 @@
                     <li class="listasMenu" id="btnMenuPostventaAlertas">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:20%">
-                            
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
                             <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Alertas</label>
@@ -285,83 +272,381 @@
                 </ul>
             </div>
         </div>
-
         <!-- HEADER DE TODA LA SECCION --->
-
         <div class="cabecera" id="header_app" data-position="fixed" data-tap-toggle="false">
             <div class="ui-grid-b" style="margin-right:15px;margin-left:15px">
                 <center>
                     <div class="ui-block-a btn_menu_izq" style="width: 25%; text-align: left">
-                        <a id="bars-button" class="ui-btn-center" href="#navpanel">
-                            <img src="./js/images/icno_menu.png" alt="header Izquierda" style="width:25px; height:24px;">
-                        </a>
+                        <div class="ui-grid-a" id="btnMenuUsadosComparativa">
+                            <div class="ui-block-a">
+                                <a data-role="button" data-theme="c" href="#navpanel"><span class="icon-icnomenu"> MENÚ</span> </a>
+                            </div>
+                            <div class="ui-block-b">
+                                <a data-role="button" data-theme="c" id="btnHeaderInicio"> <span class="icon-icnoinicio"> INICIO</span> </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="ui-block-b" style="width: 50%; text-align: center">
-                        <label id="tituloSeccion" class="HEADER">TITULO</label>
+                    <div class="ui-block-b" id="tituloSeccion" style="width: 50%; text-align: center">
                     </div>
                     <div class="ui-block-c btn_menu_dere" style="width: 25%; text-align: right">
-                        <a id="bars-button" class="ui-btn-center" href="#navpanel">
-                            <img src="./js/images/btn_web_youtter_semi.png" alt="header Derecha" style="width:30px; height:29px;">
+                        <a data-role="button" data-theme="c" id="btnHeaderParametros"> <span class="icon-icnoparametros"> PARÁMETROS</span>
                         </a>
                     </div>
                 </center>
             </div>
         </div>
-
         <!-- Menu inicial -->
         <div data-role="content" style="overflow-y:hidden; overflow-x:hidden">
-
             <!-- Menu principal  -->
-            
             <div id="mainMenu" class="k-content">
-                PAGINA PRINCIPAL
+                <div class="ui-grid-b" style="margin-right:15px;margin-left:15px">
+                    <div class="ui-block-a">
+                        <div data-role="controlgroup" data-theme="a" data-corners="false">
+                            <ul data-role="listview" style="margin:5px">
+                                <center><img src="css/maqueta/veh_nuevos.png"></center>                                
+                                <li class="listasMenu" id="btnMainNuevosConsultivo">
+                                    <div class="ui-grid-a">
+                                        <div class="ui-block-a" style="width:20%">
+                                            <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
+                                        </div>
+                                        <div class="ui-block-b" style="width:80%" id="">
+                                            <label class="txt_menu">Consultivo</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listasMenu" id="btnMenuNuevosEjecutivo">
+                                    <div class="ui-grid-a">
+                                        <div class="ui-block-a" style="width:20%">
+                                            <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
+                                        </div>
+                                        <div class="ui-block-b" style="width:80%">
+                                            <label class="txt_menu">Ejecutivo</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listasMenu" id="btnMenuNuevosAnalitico">
+                                    <div class="ui-grid-a">
+                                        <div class="ui-block-a" style="width:20%">
+                                            <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
+                                        </div>
+                                        <div class="ui-block-b" style="width:80%">
+                                            <label class="txt_menu">Analítico</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listasMenu">
+                                    <div class="ui-grid-a" id="btnMenuNuevosComparativa">
+                                        <div class="ui-block-a" style="width:20%">
+                                            <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
+                                        </div>
+                                        <div class="ui-block-b" style="width:80%">
+                                            <label class="txt_menu">Comparativa</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listasMenu" id="btnMenuNuevosAlertas">
+                                    <div class="ui-grid-a">
+                                        <div class="ui-block-a" style="width:20%">
+                                            <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
+                                        </div>
+                                        <div class="ui-block-b" style="width:80%">
+                                            <label class="txt_menu">Alertas</label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+                        <div data-role="controlgroup" data-theme="a" data-corners="false">
+                            <ul data-role="listview" style="margin:5px">
+                                <center><img src="css/maqueta/veh_usados.png"></center>
+                                <li class="listasMenu" id="btnMainUsadosConsultivo">
+                                    <div class="ui-grid-a">
+                                        <div class="ui-block-a" style="width:20%">
+                                            <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
+                                        </div>
+                                        <div class="ui-block-b" style="width:80%" id="">
+                                            <label class="txt_menu">Consultivo</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listasMenu" id="btnMenuNuevosEjecutivo">
+                                    <div class="ui-grid-a">
+                                        <div class="ui-block-a" style="width:20%">
+                                            <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
+                                        </div>
+                                        <div class="ui-block-b" style="width:80%">
+                                            <label class="txt_menu">Ejecutivo</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listasMenu" id="btnMenuNuevosAnalitico">
+                                    <div class="ui-grid-a">
+                                        <div class="ui-block-a" style="width:20%">
+                                            <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
+                                        </div>
+                                        <div class="ui-block-b" style="width:80%">
+                                            <label class="txt_menu">Analítico</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listasMenu">
+                                    <div class="ui-grid-a" id="btnMenuNuevosComparativa">
+                                        <div class="ui-block-a" style="width:20%">
+                                            <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
+                                        </div>
+                                        <div class="ui-block-b" style="width:80%">
+                                            <label class="txt_menu">Comparativa</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listasMenu" id="btnMenuNuevosAlertas">
+                                    <div class="ui-grid-a">
+                                        <div class="ui-block-a" style="width:20%">
+                                            <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
+                                        </div>
+                                        <div class="ui-block-b" style="width:80%">
+                                            <label class="txt_menu">Alertas</label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ui-block-c">
+                        <div data-role="controlgroup" data-theme="a" data-corners="false">
+                            <ul data-role="listview" style="margin:5px">
+                                <center><img src="css/maqueta/serv_posventa.png"></center>
+                                <li class="listasMenu" id="btnMainPostventaConsultivo">
+                                    <div class="ui-grid-a">
+                                        <div class="ui-block-a" style="width:20%">
+                                            <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
+                                        </div>
+                                        <div class="ui-block-b" style="width:80%" id="">
+                                            <label class="txt_menu">Consultivo</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listasMenu" id="btnMenuNuevosEjecutivo">
+                                    <div class="ui-grid-a">
+                                        <div class="ui-block-a" style="width:20%">
+                                            <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
+                                        </div>
+                                        <div class="ui-block-b" style="width:80%">
+                                            <label class="txt_menu">Ejecutivo</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listasMenu" id="btnMenuNuevosAnalitico">
+                                    <div class="ui-grid-a">
+                                        <div class="ui-block-a" style="width:20%">
+                                            <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
+                                        </div>
+                                        <div class="ui-block-b" style="width:80%">
+                                            <label class="txt_menu">Analítico</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listasMenu">
+                                    <div class="ui-grid-a" id="btnMenuNuevosComparativa">
+                                        <div class="ui-block-a" style="width:20%">
+                                            <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
+                                        </div>
+                                        <div class="ui-block-b" style="width:80%">
+                                            <label class="txt_menu">Comparativa</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="listasMenu" id="btnMenuNuevosAlertas">
+                                    <div class="ui-grid-a">
+                                        <div class="ui-block-a" style="width:20%">
+                                            <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
+                                        </div>
+                                        <div class="ui-block-b" style="width:80%">
+                                            <label class="txt_menu">Alertas</label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-grid-b" style="margin-right:15px;margin-left:15px">
+                    <div class="ui-block-a">
+                        <a data-role="button" data-theme="c" id="btnMenuAlertasNuevos"><span class="icon-icnoalerta" style="width:100px;">ALERTAS</span>
+                     </a>
+                    </div>
+                    <div class="ui-block-b">
+                        <a data-role="button" data-theme="c" id="btnMenuAlertasUsados"><span class="icon-icnoalerta" style="width:100px;">ALERTAS</span></a>
+                    </div>
+                    <div class="ui-block-c">
+                        <a data-role="button" data-theme="c" id="btnMenuAlertasPostventa"><span class="icon-icnoalerta" style="width:100px;">ALERTAS</span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="parametros" class="k-content">
+            <div class="ui-grid-b" style="margin-right:15px;margin-left:15px">
+                <ul data-role="listview" style="margin:5px">
+                    <li data-role="fieldcontain" class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-btn-up-c">
+                        <label for="select-choice-1" class="select ui-select">Marca:</label>
+                        <div class="ui-select">
+                            <div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-d" data-iconpos="right" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
+                                <span class="ui-btn-inner ui-btn-corner-all">
+                           <select name="select-choice-1" id="select-choice-1">
+                              <option value="standard">Opcion 1</option>
+                              <option value="rush">Opcion 2</option>
+                              <option value="express">Opcion 3</option>
+                              <option value="overnight">Opcion 4</option>
+                           </select>
+                        </div>
+                     </div>
+                  </li>
+                  <li data-role="fieldcontain" class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-btn-up-c">
+                     <label for="select-choice-1" class="select ui-select">País:</label>
+                     <div class="ui-select">
+                        <div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-d" data-iconpos="right" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
+                           <span class="ui-btn-inner ui-btn-corner-all">
+                           <select name="select-choice-1" id="select-choice-1">
+                              <option value="standard">Opcion 1</option>
+                              <option value="rush">Opcion 2</option>
+                              <option value="express">Opcion 3</option>
+                              <option value="overnight">Opcion 4</option>
+                           </select>
+                        </div>
+                     </div>
+                  </li>
+                  <li data-role="fieldcontain" class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-btn-up-c">
+                     <label for="select-choice-1" class="select ui-select">Zona:</label>
+                     <div class="ui-select">
+                        <div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-d" data-iconpos="right" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
+                           <span class="ui-btn-inner ui-btn-corner-all">
+                           <select name="select-choice-1" id="select-choice-1">
+                              <option value="standard">Opcion 1</option>
+                              <option value="rush">Opcion 2</option>
+                              <option value="express">Opcion 3</option>
+                              <option value="overnight">Opcion 4</option>
+                           </select>
+                        </div>
+                     </div>
+                  </li>
+                  <li data-role="fieldcontain" class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-btn-up-c">
+                     <label for="select-choice-1" class="select ui-select">Concesión:</label>
+                     <div class="ui-select">
+                        <div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-d" data-iconpos="right" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
+                           <span class="ui-btn-inner ui-btn-corner-all">
+                           <select name="select-choice-1" id="select-choice-1">
+                              <option value="standard">Opcion 1</option>
+                              <option value="rush">Opcion 2</option>
+                              <option value="express">Opcion 3</option>
+                              <option value="overnight">Opcion 4</option>
+                           </select>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <center>
+               <br>
+               <a style="width:12em" data-role="button" data-theme="a" id=""> Buscar </a>
+            </center>
+         </div>
+         <div id="alertasNuevos" class="k-content">
+            <div class="ui-grid-b" style="margin-right:15px;margin-left:15px">
+               <ul data-role="listview" style="margin:5px">
+                  <li data-role="list-divider"><span class="icon-icno_tipo_analisis">VEHÍCULOS NUEVOS</span>
+                    </li>
+                    <li class="ui-field-contain">
+                        <label for="">Objetivo mensual V.N. No alcanzable por falta stock</label>
+                        <a data-role="button" data-theme="a" style="width:100px; float: right;"><span >Drivers</span></a>
+                    </li>
+                    <li class="ui-field-contain">
+                        <label for="">Entregas acumuladas al 90% del objetivo</label>
+                        <a data-role="button" data-theme="a" style="width:100px; float: right;"><span >Drivers</span></a>
+                    </li>
+                    <li class="ui-field-contain">
+                        <label for="">Objetivo mensual V.N No alcanzable.</label>
+                        <a data-role="button" data-theme="a" style="width:100px; float: right;"><span >Drivers</span></a>
+                    </li>
+                </ul>
+                </div>
+                </div>
+                <div id="alertasUsados" class="k-content">
+                    <div class="ui-grid-b" style="margin-right:15px;margin-left:15px">
+                        <ul data-role="listview" style="margin:5px">
+                            <li data-role="list-divider"><span class="icon-icno_tipo_analisis">VEHÍCULOS USADOS</span>
+                            </li>
+                            <li class="ui-field-contain">
+                                <label for="">Stock V.O. mayor de 120 días.</label>
+                                <a data-role="button" data-theme="a" style="width:100px; float: right;"><span >Drivers</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="alertasPostventa" class="k-content">
+                    <div class="ui-grid-b" style="margin-right:15px;margin-left:15px">
+                        <ul data-role="listview" style="margin:5px">
+                            <li data-role="list-divider"><span class="icon-icno_tipo_analisis">VEHÍCULOS POSTVENTA</span>
+                            </li>
+                            <li class="ui-field-contain">
+                                <label for="">Facturación al 80% obj.</label>
+                                <a data-role="button" data-theme="a" style="width:100px; float: right;"><span >Drivers</span></a>
+                            </li>
+                            <li class="ui-field-contain">
+                                <label for="">Pasos de taller por debajo de objetivo en carrocería</label>
+                                <a data-role="button" data-theme="a" style="width:100px; float: right;"><span >Drivers</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="consultivoNuevos" class="k-content">
+                    <img src="css/maqueta/NUEVOS_consultivo.png" width="100%">
+                </div>
+                <div id="consultivoUsados" class="k-content">
+                    <img src="css/maqueta/USADOS_consultivo.png" width="100%">
+                </div>
+                <div id="consultivoPostventa" class="k-content">
+                    <img src="css/maqueta/POSVENTA_consultivo.png" width="100%">
+                </div>
+
+                <div data-role="popup" id="PopUpNotificacion" data-transition="pop" data-position-to="window">
+                    <p id="PopUpNotificacionTexto"></p>
+                </div>
+                <div data-role="popup" id="PopUpAccion" class="" style="width:21em;" data-dismissible="false" data-overlay-theme="a" data-transition="slidefade" data-theme="a">
+                    <div data-role="header" style="text-align: center" class="cabecera">
+                        <div id="tituloPopUpAccion">
+                            <label id="lbPopUpAccionTitulo">
+                                <h2>Información</h2>
+                            </label>
+                        </div>
+                    </div>
+                    <div data-role="content">
+                        <br>
+                        <div>
+                            <label id="lbPopUpAccion" class="txt_centrals_popup">Aqui puedes configurar la programación de tu pantalla
+                                <br>
+                                <br>¿Cuando deseas reproducirlo?</label>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <button class="btn_blue" id="btnPopUpAccionA" data-icon="clock" data-iconpos="right">Seleccionar un horario
+                        </button>
+                        <button class="btn_blue" id="btnPopUpAccionB" data-icon="star" data-iconpos="right">Ahora!</button>
+                    </div>
+                </div>
+            </div>
+            <div id="footer_comun" class="footer_comun">
+                <!--
+            <div id="footernuevoAnuncio10" class="footer">
+            <button class="btn_blue" id="btnnuevoAnuncio10Comprar" data-icon="shop" data-iconpos="right">Comprar más Creditos
+            </button>
+            <button class="btn_blue" id="btnnuevoAnuncio10Cancelar" data-icon="back" data-iconpos="right">Volver</button>
             </div>
             
-
-            <div data-role="popup" id="PopUpNotificacion" data-transition="pop" data-position-to="window">
-                <p id="PopUpNotificacionTexto"></p>
-            </div>
-
-            <div data-role="popup" id="PopUpAccion" class="" style="width:21em;" data-dismissible="false" data-overlay-theme="a" data-transition="slidefade" data-theme="a">
-                <div data-role="header" style="text-align: center" class="cabecera">
-                    <div id="tituloPopUpAccion">
-                        <label id="lbPopUpAccionTitulo">
-                            <h2>Información</h2>
-                        </label>
-                    </div>
-                </div>
-                <div data-role="content">
-                    <br>
-
-                    <div>
-                        <label id="lbPopUpAccion" class="txt_centrals_popup">Aqui puedes configurar la programación de tu pantalla
-                            <br>
-                            <br>¿Cuando deseas reproducirlo?</label>
-                    </div>
-
-                </div>
-                <div class="footer">
-                    <button class="btn_blue" id="btnPopUpAccionA" data-icon="clock" data-iconpos="right">Seleccionar un horario
-                    </button>
-                    <button class="btn_blue" id="btnPopUpAccionB" data-icon="star" data-iconpos="right">Ahora!</button>
-
-                </div>
+            -->
             </div>
         </div>
-
-        <div id="footer_comun" class="footer_comun">
-            <!--
-
-            <div id="footernuevoAnuncio10" class="footer">
-                <button class="btn_blue" id="btnnuevoAnuncio10Comprar" data-icon="shop" data-iconpos="right">Comprar más Creditos
-                </button>
-                <button class="btn_blue" id="btnnuevoAnuncio10Cancelar" data-icon="back" data-iconpos="right">Volver</button>
-            </div>
-        
-        -->
-        </div>
-
-    </div>
 </body>
 
 </html>

@@ -16,36 +16,36 @@ $(document).bind("mobileinit", function () {
 });
 
 $(document).ajaxStart(function () {
-/*
-    if (pantallaApp == "creditosPaquetes") {
-        $.mobile.loading('show', {
-            text: 'Espere por favor...',
-            textVisible: true,
-            theme: 'a',
-            html: "<span class='ui-bar ui-overlay-c ui-corner-all'><img src='lib/jquerymobile/images/ajax-loader.gif' />Procesando...</span>"
+    /*
+        if (pantallaApp == "creditosPaquetes") {
+            $.mobile.loading('show', {
+                text: 'Espere por favor...',
+                textVisible: true,
+                theme: 'a',
+                html: "<span class='ui-bar ui-overlay-c ui-corner-all'><img src='lib/jquerymobile/images/ajax-loader.gif' />Procesando...</span>"
 
-        });
+            });
 
-    } else if (pantallaApp == "nuevoAnuncio9") {
-        $.mobile.loading('show', {
-            text: 'Espere por favor...',
-            textVisible: true,
-            theme: 'a',
-            html: "<span class='ui-bar ui-overlay-c ui-corner-all'><img src='lib/jquerymobile/images/ajax-loader.gif' /><h2><br>Youtteando...</h2></span>"
+        } else if (pantallaApp == "nuevoAnuncio9") {
+            $.mobile.loading('show', {
+                text: 'Espere por favor...',
+                textVisible: true,
+                theme: 'a',
+                html: "<span class='ui-bar ui-overlay-c ui-corner-all'><img src='lib/jquerymobile/images/ajax-loader.gif' /><h2><br>Youtteando...</h2></span>"
 
-        });
-        $("#footer_comun").show();
+            });
+            $("#footer_comun").show();
 
-    } else if (pantallaApp == "mainMenu") {
+        } else if (pantallaApp == "mainMenu") {
 
-    } else {
-        $.mobile.loading('show', {
-            textVisible: false,
-            theme: 'a',
-            html: "<span class='ui-bar ui-overlay-c ui-corner-all'><img src='lib/jquerymobile/images/ajax-loader.gif' /></span>"
-        });
-    }
-    */
+        } else {
+            $.mobile.loading('show', {
+                textVisible: false,
+                theme: 'a',
+                html: "<span class='ui-bar ui-overlay-c ui-corner-all'><img src='lib/jquerymobile/images/ajax-loader.gif' /></span>"
+            });
+        }
+        */
 
 });
 
@@ -54,7 +54,7 @@ $(document).ajaxStop(function () {
 });
 
 $(document).on('pageshow', '#app', function () {
-    
+
 });
 
 
@@ -77,22 +77,171 @@ $(document).on('pageinit', '#loginModule', function () {
     $('#btnLogIn').unbind('click').bind('click', function () {
         $.mobile.changePage("#app");
     });
-    
+    $('#loginForgotPassword').unbind('click').bind('click', function () {
+        $("#resetPassword").show();
+        $("#mainLogin").hide();
+    });
+
+
     $("#resetPassword").hide();
     $("#resetPasswordFinish").hide();
-    
+
 
 });
 
 $(document).on('pageinit', '#app', function () {
-    
+
     $("#resetPassword").hide();
     $("#resetPasswordFinish").hide();
-    
-    $("#app").on("swiperight",function(){
-      $("#navpanel").panel("open");
+    $("#parametros").hide();
+    $("#alertasNuevos").hide();
+    $("#alertasUsados").hide();
+    $("#alertasPostventa").hide();
+    $("#consultivoNuevos").hide();
+    $("#consultivoUsados").hide();
+    $("#consultivoPostventa").hide();
+
+    $("#tituloSeccion").html("TÍTULO");
+
+
+    $("#app").on("swiperight", function () {
+        $("#navpanel").panel("open");
     });
-    
+
+    $("#btnHeaderParametros").unbind('click').bind('click', function () {
+        $("#parametros").show();
+        $("#mainMenu").hide();
+        $("#alertasNuevos").hide();
+        $("#alertasUsados").hide();
+        $("#alertasPostventa").hide();
+        $("#consultivoNuevos").hide();
+        $("#consultivoUsados").hide();
+        $("#consultivoPostventa").hide();
+        $("#tituloSeccion").html('<span class=""> PARÁMETROS DE BÚSQUEDA</span>');
+    });
+
+    $("#btnHeaderInicio").unbind('click').bind('click', function () {
+        $("#parametros").hide();
+        $("#mainMenu").show();
+        $("#alertasNuevos").hide();
+        $("#alertasUsados").hide();
+        $("#alertasPostventa").hide();
+        $("#consultivoNuevos").hide();
+        $("#consultivoUsados").hide();
+        $("#consultivoPostventa").hide();
+        $("#tituloSeccion").html('<span class=""> INICIO </span>');
+    });
+
+    $("#btnMenuAlertasNuevos").unbind('click').bind('click', function () {
+        $("#alertasNuevos").show();
+        $("#alertasUsados").hide();
+        $("#alertasPostventa").hide();
+        $("#mainMenu").hide();
+        $("#parametros").hide();
+        $("#consultivoNuevos").hide();
+        $("#consultivoUsados").hide();
+        $("#consultivoPostventa").hide();
+        $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+    });
+
+    $("#btnMenuAlertasUsados").unbind('click').bind('click', function () {
+        $("#alertasNuevos").hide();
+        $("#alertasUsados").show();
+        $("#alertasPostventa").hide();
+        $("#mainMenu").hide();
+        $("#parametros").hide();
+        $("#consultivoNuevos").hide();
+        $("#consultivoUsados").hide();
+        $("#consultivoPostventa").hide();
+        $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+    });
+
+    $("#btnMenuAlertasPostventa").unbind('click').bind('click', function () {
+        $("#alertasNuevos").hide();
+        $("#alertasUsados").hide();
+        $("#alertasPostventa").show();
+        $("#mainMenu").hide();
+        $("#parametros").hide();
+        $("#consultivoNuevos").hide();
+        $("#consultivoUsados").hide();
+        $("#consultivoPostventa").hide();
+        $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+    });
+
+    $("#btnMenuNuevosConsultivo").unbind('click').bind('click', function () {
+        $("#alertasNuevos").hide();
+        $("#alertasUsados").hide();
+        $("#alertasPostventa").hide();
+        $("#mainMenu").hide();
+        $("#parametros").hide();
+        $("#consultivoNuevos").show();
+        $("#consultivoUsados").hide();
+        $("#consultivoPostventa").hide();
+        $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+    });
+
+    $("#btnMenuUsadosConsultivo").unbind('click').bind('click', function () {
+        $("#alertasNuevos").hide();
+        $("#alertasUsados").hide();
+        $("#alertasPostventa").hide();
+        $("#mainMenu").hide();
+        $("#parametros").hide();
+        $("#consultivoNuevos").show();
+        $("#consultivoUsados").hide();
+        $("#consultivoPostventa").hide();
+        $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+    });
+
+    $("#btnMenuPostventaConsultivo").unbind('click').bind('click', function () {
+        $("#alertasNuevos").hide();
+        $("#alertasUsados").hide();
+        $("#alertasPostventa").hide();
+        $("#mainMenu").hide();
+        $("#parametros").hide();
+        $("#consultivoNuevos").hide();
+        $("#consultivoUsados").show();
+        $("#consultivoPostventa").show();
+        $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+    });
+
+    $("#btnMainNuevosConsultivo").unbind('click').bind('click', function () {
+        $("#alertasNuevos").hide();
+        $("#alertasUsados").hide();
+        $("#alertasPostventa").hide();
+        $("#mainMenu").hide();
+        $("#parametros").hide();
+        $("#consultivoNuevos").show();
+        $("#consultivoUsados").hide();
+        $("#consultivoPostventa").hide();
+        $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+    });
+
+    $("#btnMainUsadosConsultivo").unbind('click').bind('click', function () {
+        $("#alertasNuevos").hide();
+        $("#alertasUsados").hide();
+        $("#alertasPostventa").hide();
+        $("#mainMenu").hide();
+        $("#parametros").hide();
+        $("#consultivoNuevos").show();
+        $("#consultivoUsados").hide();
+        $("#consultivoPostventa").hide();
+        $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+    });
+
+    $("#btnMainPostventaConsultivo").unbind('click').bind('click', function () {
+        $("#alertasNuevos").hide();
+        $("#alertasUsados").hide();
+        $("#alertasPostventa").hide();
+        $("#mainMenu").hide();
+        $("#parametros").hide();
+        $("#consultivoNuevos").hide();
+        $("#consultivoUsados").show();
+        $("#consultivoPostventa").show();
+        $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+    });
+
+
+
     //$("#navpanel").panel("close");
 });
 
