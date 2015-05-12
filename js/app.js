@@ -2,6 +2,7 @@
 PROGRAMACION DE LOS EVENTOS DE BOTONES DE LA APLICACIÓN
 */
 
+var paginas = ["mainLogin", "resetPassword", "resetPasswordFinish", "main", "parametros", "nuevosEjecutivo", "alertasNuevos", "alertasUsados", "alertasposventa", "consultivoNuevos", "consultivoUsados", "consultivoposventa", "nuevosEjecutivo", "nuevosAnalitico", "posventaEjecutivo", "usadosEjecutivo", "usadosAnalitico"];
 
 $(document).bind("mobileinit", function () {
 
@@ -91,211 +92,161 @@ $(document).on('pageinit', '#loginModule', function () {
 
 $(document).on('pageinit', '#app', function () {
 
-    $("#resetPassword").hide();
-    $("#resetPasswordFinish").hide();
-    $("#parametros").hide();
-    $("#alertasNuevos").hide();
-    $("#alertasUsados").hide();
-    $("#alertasPostventa").hide();
-    $("#consultivoNuevos").hide();
-    $("#consultivoUsados").hide();
-    $("#consultivoPostventa").hide();
+    showPage('main');
 
     $("#tituloSeccion").html("TÍTULO");
     $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ Informe");
 
-
-    $("#app").on("swiperight", function () {
-        $("#navpanel").panel("open");
-    });
+    /*
+        $("#app").on("swiperight", function () {
+            $("#navpanel").panel("open");
+        });
+        */
 
     $("#btnHeaderParametros").unbind('click').bind('click', function () {
-        $("#parametros").show();
-        $("#mainMenu").hide();
-        $("#alertasNuevos").hide();
-        $("#alertasUsados").hide();
-        $("#alertasPostventa").hide();
-        $("#consultivoNuevos").hide();
-        $("#consultivoUsados").hide();
-        $("#consultivoPostventa").hide();
+        showPage('parametros');
         $("#tituloSeccion").html('<span class=""> PARÁMETROS DE BÚSQUEDA</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ Informe");
     });
 
+    $("#btnHeaderMenu").unbind('click').bind('click', function () {
+        $("#navpanel").panel("open");
+    });
+
     $("#btnHeaderInicio").unbind('click').bind('click', function () {
-        $("#parametros").hide();
-        $("#mainMenu").show();
-        $("#alertasNuevos").hide();
-        $("#alertasUsados").hide();
-        $("#alertasPostventa").hide();
-        $("#consultivoNuevos").hide();
-        $("#consultivoUsados").hide();
-        $("#consultivoPostventa").hide();
+        showPage('main');
         $("#tituloSeccion").html('<span class=""> INICIO </span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ Informe");
     });
 
     $("#btnMenuAlertasNuevos").unbind('click').bind('click', function () {
-        $("#alertasNuevos").show();
-        $("#alertasUsados").hide();
-        $("#alertasPostventa").hide();
-        $("#mainMenu").hide();
-        $("#parametros").hide();
-        $("#consultivoNuevos").hide();
-        $("#consultivoUsados").hide();
-        $("#consultivoPostventa").hide();
+        showPage('alertasNuevos');
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ Informe");
     });
 
     $("#btnMenuAlertasUsados").unbind('click').bind('click', function () {
-        $("#alertasNuevos").hide();
-        $("#alertasUsados").show();
-        $("#alertasPostventa").hide();
-        $("#mainMenu").hide();
-        $("#parametros").hide();
-        $("#consultivoNuevos").hide();
-        $("#consultivoUsados").hide();
-        $("#consultivoPostventa").hide();
+        showPage('alertasUsados');
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ Informe");
     });
 
-    $("#btnMenuAlertasPostventa").unbind('click').bind('click', function () {
-        $("#alertasNuevos").hide();
-        $("#alertasUsados").hide();
-        $("#alertasPostventa").show();
-        $("#mainMenu").hide();
-        $("#parametros").hide();
-        $("#consultivoNuevos").hide();
-        $("#consultivoUsados").hide();
-        $("#consultivoPostventa").hide();
+    $("#btnMenuAlertasposventa").unbind('click').bind('click', function () {
+        showPage('alertasposventa');
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ Informe");
     });
 
     $("#btnMenuNuevosConsultivo").unbind('click').bind('click', function () {
-        $("#alertasNuevos").hide();
-        $("#alertasUsados").hide();
-        $("#alertasPostventa").hide();
-        $("#mainMenu").hide();
-        $("#parametros").hide();
-        $("#consultivoNuevos").show();
-        $("#consultivoUsados").hide();
-        $("#consultivoPostventa").hide();
+        showPage('consultivoNuevos');
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
     });
 
     $("#btnMenuUsadosConsultivo").unbind('click').bind('click', function () {
-        $("#alertasNuevos").hide();
-        $("#alertasUsados").hide();
-        $("#alertasPostventa").hide();
-        $("#mainMenu").hide();
-        $("#parametros").hide();
-        $("#consultivoNuevos").show();
-        $("#consultivoUsados").hide();
-        $("#consultivoPostventa").hide();
+        showPage('consultivoUsados');
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
     });
 
-    $("#btnMenuPostventaConsultivo").unbind('click').bind('click', function () {
-        $("#alertasNuevos").hide();
-        $("#alertasUsados").hide();
-        $("#alertasPostventa").hide();
-        $("#mainMenu").hide();
-        $("#parametros").hide();
-        $("#consultivoNuevos").hide();
-        $("#consultivoUsados").show();
-        $("#consultivoPostventa").show();
+    $("#btnMenuposventaConsultivo").unbind('click').bind('click', function () {
+        showPage('consultivoposventa');
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
     });
 
+    /* VEHICULOS NUEVOS */
     $("#btnMainNuevosConsultivo").unbind('click').bind('click', function () {
-        $("#alertasNuevos").hide();
-        $("#alertasUsados").hide();
-        $("#alertasPostventa").hide();
-        $("#mainMenu").hide();
-        $("#parametros").hide();
-        $("#consultivoNuevos").show();
-        $("#consultivoUsados").hide();
-        $("#consultivoPostventa").hide();
+        showPage('consultivoNuevos');
+        $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
+    });
+    
+    $("#btnMainNuevosEjecutivo").unbind('click').bind('click', function () {
+        showPage('nuevosEjecutivo');
+        $("#tituloSeccion").html('<span class=""> VEHÍCULOS NUEVOS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Ejecutivo");
+    });
+    
+    $("#btnMainNuevosAnalitico").unbind('click').bind('click', function () {
+        showPage('nuevosAnalitico');
+        $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Analítico");
+    });
+    
+    $("#btnMainNuevosComparativa").unbind('click').bind('click', function () {
+        showPage('consultivoNuevos');
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
     });
 
+    /* VEHICULOS USADOS */
     $("#btnMainUsadosConsultivo").unbind('click').bind('click', function () {
-        $("#alertasNuevos").hide();
-        $("#alertasUsados").hide();
-        $("#alertasPostventa").hide();
-        $("#mainMenu").hide();
-        $("#parametros").hide();
-        $("#consultivoNuevos").show();
-        $("#consultivoUsados").hide();
-        $("#consultivoPostventa").hide();
+        showPage('consultivoUsados');
+        $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
+    });
+    
+    $("#btnMainUsadosEjecutivo").unbind('click').bind('click', function () {
+        showPage('usadosEjecutivo');
+        $("#tituloSeccion").html('<span class=""> VEHÍCULOS NUEVOS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Ejecutivo");
+    });
+    
+    $("#btnMainUsadosAnalitico").unbind('click').bind('click', function () {
+        showPage('usadosAnalitico');
+        $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
+    });
+    
+    $("#btnMainUsadosComparativa").unbind('click').bind('click', function () {
+        showPage('consultivoNuevos');
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
     });
 
-    $("#btnMainPostventaConsultivo").unbind('click').bind('click', function () {
-        $("#alertasNuevos").hide();
-        $("#alertasUsados").hide();
-        $("#alertasPostventa").hide();
-        $("#mainMenu").hide();
-        $("#parametros").hide();
-        $("#consultivoNuevos").hide();
-        $("#consultivoUsados").hide();
-        $("#consultivoPostventa").show();
+    /* VEHICULOS posventa */
+    $("#btnMainposventaConsultivo").unbind('click').bind('click', function () {
+        showPage('consultivoposventa');
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
     });
 
-
-
-
+    $("#btnMainposventaEjecutivo").unbind('click').bind('click', function () {
+        showPage('posventaEjecutivo');
+        $("#tituloSeccion").html('<span class=""> SERVICIO POSVENTA</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Ejecutivo");
+    });
+    
+    $("#btnMainposventaAnalitico").unbind('click').bind('click', function () {
+        showPage('consultivoNuevos');
+        $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
+    });
+    
+    $("#btnMainposventaComparativa").unbind('click').bind('click', function () {
+        showPage('consultivoNuevos');
+        $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
+    });
     //$("#navpanel").panel("close");
 });
 
-function graficasNuevos() {
-    $("#alertasNuevos").hide();
-    $("#alertasUsados").hide();
-    $("#alertasPostventa").hide();
-    $("#mainMenu").hide();
-    $("#parametros").hide();
-    $("#consultivoNuevos").show();
-    $("#consultivoUsados").hide();
-    $("#consultivoPostventa").hide();
-    $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
-    $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
+
+function showPage(pagina) {
+    for (var i = 0; i < paginas.length; i++) {
+        if (paginas[i] != pagina) {
+            $("#page_" + paginas[i]).hide();
+        }
+    }
+    if (pagina == 'main') {
+        $("#divHeaderButtons").hide();
+    } else {
+        $("#divHeaderButtons").show();
+    }
+    $("#page_" + pagina).show();
 }
 
-function graficasUsados() {
-    $("#alertasNuevos").hide();
-    $("#alertasUsados").hide();
-    $("#alertasPostventa").hide();
-    $("#mainMenu").hide();
-    $("#parametros").hide();
-    $("#consultivoNuevos").hide();
-    $("#consultivoUsados").show();
-    $("#consultivoPostventa").hide();
-    $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
-    $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
-}
-
-function graficasPostventa() {
-    $("#alertasNuevos").hide();
-    $("#alertasUsados").hide();
-    $("#alertasPostventa").hide();
-    $("#mainMenu").hide();
-    $("#parametros").hide();
-    $("#consultivoNuevos").hide();
-    $("#consultivoUsados").hide();
-    $("#consultivoPostventa").show();
-    $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
-    $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
-}
 
 function isAndroidDevice() {
     var ua = navigator.userAgent.toLowerCase();

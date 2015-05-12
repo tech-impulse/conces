@@ -1,10 +1,19 @@
 @charset "utf-8";
 
 
+/* COLORS */
+/* 
+
+verde: #66cc00;
+azul: #45abc9;
+ocre: #c28c00;
+
+*/
+
 /* FONTS */
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-/*h1 {
+h1 {
 	font-family: sans-serif;
 	font-size: 17px;
 }
@@ -19,8 +28,8 @@ h3 {
 	font-size: 16px;
 }
 
-h4 {font-family: sans-serif;
-	font-size: 16px;
+h4 {font-family: black;
+	font-size: 14px;
 }
 
 /* LOGOS */
@@ -58,13 +67,57 @@ h4 {font-family: sans-serif;
 	padding-bottom: 2em;
 }
 
-/*.recordar_us_estilo {
-	background-color:transparent;
-}*/
-
 .btn_login {
 	width:15%;
 	margin: 0 auto;
 	padding-bottom: 1em;
 }
 
+/* RESABLECER CONTRASEÑA */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.txt_restablecer_titulo {
+	margin: 0 auto;
+	font-family: black;
+	font-size: 14px;
+	text-align:center;
+	padding-top: 2em;
+	background-color: #ffffff;
+	color: #333;
+}
+
+.btn_restablecer {
+	width:15%;
+	margin: 0 auto;
+	padding-bottom: 1em;
+	margin-top:10px;
+}
+
+.txt_field_restablecer {
+	width:30%;
+	margin: 0 auto;
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+.img_management_restablece {
+	width:200px;
+	padding-top: 10em;
+	margin: 0 auto;
+}
+
+.div_txt_centrado {
+	width:35%;
+	margin: 0 auto;
+	font-family: light;
+	text-align: center;
+	padding-top: 1em;
+}
+
+/* PANTALLA INICIAL MENU PRINCIPAL */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.img_departamentos {
+	width:100px;
+	margin: 0 auto;
+}
