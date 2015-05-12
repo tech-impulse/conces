@@ -35,6 +35,10 @@ h4 {font-family: black;
 /* LOGOS */
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+body {
+	background-color:#fff;
+}
+
 .img_logo_toyota {
 	width:400px;
 	padding-bottom: 1em;
@@ -120,4 +124,244 @@ h4 {font-family: black;
 .img_departamentos {
 	width:100px;
 	margin: 0 auto;
+}
+
+.btn_ancho {
+	width:40%;
+	margin: 0 auto;
+	padding-bottom: 1em;
+	margin-top:10px;
+}
+
+.btn_alertas {
+	width:40%;
+	margin: 0 auto;
+	padding-bottom: 1em;
+	margin-top:25px;
+}
+
+.txt_btnes {
+	font-size:14px; 
+	margin:0px; 
+	float:left;
+	line-height:1.8em;
+}
+
+.txt_alertas {
+	font-size:14px; 
+	margin:0px; 
+	float:left;
+	line-height:2.7em;
+}
+
+.ruta {
+	font-family: light;
+}
+
+@charset "utf-8";
+
+
+/* COLORS */
+/* 
+
+verde: #66cc00;
+azul: #45abc9;
+ocre: #c28c00;
+
+*/
+
+/* FONTS */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+h1 {
+	font-family: sans-serif;
+	font-size: 17px;
+}
+
+h2 {
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+h3 {
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+h4 {font-family: black;
+	font-size: 14px;
+}
+
+/* GENERAL */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+body {
+	background-color:#fff;
+}
+
+.ui-content {
+	background:#FFF;
+}
+
+/* LOGOS */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.img_logo_toyota {
+	width:400px;
+	padding-bottom: 1em;
+	margin: 0 auto;
+}
+
+.img_management {
+	width:200px;
+	padding-top: 1em;
+	margin: 0 auto;
+}
+
+/* LOGIN */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.txt_field_login {
+	width:30%;
+	margin: 0 auto;
+}
+
+.txt_field_password {
+	width:30%;
+	margin: 0 auto;
+	padding-bottom: 0em;
+}
+
+.recordar_us {
+	width:30%;
+	margin: 0 auto;
+	padding-bottom: 2em;
+}
+
+.btn_login {
+	width:15%;
+	margin: 0 auto;
+	padding-bottom: 1em;
+}
+
+/* RESABLECER CONTRASEÑA */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.txt_restablecer_titulo {
+	margin: 0 auto;
+	font-family: black;
+	font-size: 14px;
+	text-align:center;
+	padding-top: 2em;
+	background-color: #ffffff;
+	color: #333;
+}
+
+.btn_restablecer {
+	width:15%;
+	margin: 0 auto;
+	padding-bottom: 1em;
+	margin-top:10px;
+}
+
+.txt_field_restablecer {
+	width:30%;
+	margin: 0 auto;
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+.img_management_restablece {
+	width:200px;
+	padding-top: 10em;
+	margin: 0 auto;
+}
+
+.div_txt_centrado {
+	width:35%;
+	margin: 0 auto;
+	font-family: light;
+	text-align: center;
+	padding-top: 1em;
+}
+
+/* PANTALLA INICIAL MENU PRINCIPAL */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.img_departamentos {
+	width:100px;
+	margin: 0 auto;
+}
+
+.btn_ancho {
+	width:40%;
+	margin: 0 auto;
+	padding-bottom: 1em;
+	margin-top:10px;
+}
+
+.btn_alertas {
+	width:40%;
+	margin: 0 auto;
+	padding-bottom: 1em;
+	margin-top:25px;
+}
+
+.txt_btnes {
+	font-size:14px; 
+	margin:0px; 
+	float:left;
+	line-height:1.8em;
+}
+
+.txt_alertas {
+	font-size:14px; 
+	margin:0px; 
+	float:left;
+	line-height:2.7em;
+}
+
+.ruta {
+	font-family: light;
+}
+
+/* CABECERA */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.cabecera_estilo {
+	background-color: #333;
+}
+
+.txt_menu_btnes {
+	font-size:15px; 
+	margin-left: 7px; 
+	float:left;
+	line-height:1.8em;
+	font-family: light;
+}
+
+.txt_menu_btnes_derecha {
+	font-size:15px; 
+	margin-right: 7px; 
+	float:left;
+	line-height:1.8em;
+	font-family: light;
+}
+
+/* MENU LATERAL */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.pastilla {
+	background-color: #CCC;
+}
+
+.lista_menu {
+	font-family: light;
+	line-height:1.8em;
+}
+
+.txt_menu {
+	line-height:1.2em;
+	font-family: light;
+	padding-left: 5px;
 }

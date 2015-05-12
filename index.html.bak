@@ -25,13 +25,13 @@
 
 </head>
 
-<body bgcolor="#FFFFFF" class="body">
+<body class="body">
     <!-- seccion de login  -->
     <div data-role="page" id="loginModule" data-title="Login">
         <!-- Pagina de login -->
         <div data-role="content">
             <div class="ui-grid-a">
-                <div class="ui-block-a" style="width:35%; background-image: url(css/imagenes/fondoTest.png);">
+                <div class="ui-block-a" style="width:35%; background-color: url(css/imagenes/fondoTest.png);">
 
                 </div>
                 <div class="ui-block-b" style="width:65%">
@@ -113,157 +113,157 @@
         <!-- Menu lateral desplazable -->
         <div data-role="panel" id="navpanel" data-theme="a" data-display="overlay" data-position="left">
             <div data-role="controlgroup" data-theme="a" data-corners="false">
-                <ul data-role="listview" class="lista_menu">
-                    <li data-role="list-divider" id=""><span class="icon-icnoseccion" style="font-size:25px; margin:0px; float:left; color: #66cc00; margin-right:7px;"></span> VEHÍCULOS <span style="font-family:black; text-shadow:none;">NUEVOS</span></li>
+                <ul data-role="listview">
+                    <li data-role="list-divider" id="">VEHÍCULOS NUEVOS</li>
                     <li class="listasMenu" id="btnMenuNuevosConsultivo">
                         <div class="ui-grid-a">
-                            <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #66cc00; margin-right:0px;"></span>
+                            <div class="ui-block-a" style="width:20%">
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                                 <!--  <img class="icn_menu" src="js/images/icno_micuenta.png" alt="logo cuenta"> -->
                             </div>
-                            <div class="ui-block-b" style="width:90%" id="">
+                            <div class="ui-block-b" style="width:80%" id="">
                                 <label class="txt_menu">Consultivo</label>
                             </div>
                         </div>
                     </li>
                     <li class="listasMenu" id="btnMenuNuevosEjecutivo">
                         <div class="ui-grid-a">
-                            <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #66cc00; margin-right:0px;"></span>
+                            <div class="ui-block-a" style="width:20%">
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
-                            <div class="ui-block-b" style="width:90%">
+                            <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Ejecutivo</label>
                             </div>
                         </div>
                     </li>
                     <li class="listasMenu" id="btnMenuNuevosAnalitico">
                         <div class="ui-grid-a">
-                            <div class="ui-block-a" style="width:10%">
-                               <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #66cc00; margin-right:0px;"></span>
+                            <div class="ui-block-a" style="width:20%">
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
-                            <div class="ui-block-b" style="width:90%">
+                            <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Analítico</label>
                             </div>
                         </div>
                     </li>
                     <li class="listasMenu">
                         <div class="ui-grid-a" id="btnMenuNuevosComparativa">
-                            <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #66cc00; margin-right:0px;"></span>
+                            <div class="ui-block-a" style="width:20%">
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
-                            <div class="ui-block-b" style="width:90%">
+                            <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Comparativa</label>
                             </div>
                         </div>
                     </li>
                     <li class="listasMenu" id="btnMenuNuevosAlertas">
                         <div class="ui-grid-a">
-                            <div class="ui-block-a" style="width:10%">
-                               <span class="icon-icnoalerta" style="font-size:17px; margin:0px; float:left; color: #ff0000; margin-right:0px;"></span>
+                            <div class="ui-block-a" style="width:20%">
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
-                            <div class="ui-block-b" style="width:90%">
+                            <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Alertas</label>
                             </div>
                         </div>
                     </li>
-                    <li data-role="list-divider" id=""><span class="icon-icnoseccion" style="font-size:25px; margin:0px; float:left; color:  #45abc9; margin-right:7px;"></span> VEHÍCULOS <span style="font-family:black; text-shadow:none;">USADOS</span></li>
+                    <li data-role="list-divider" id="">VEHÍCULOS USADOS</li>
                     <li class="listasMenu" id="btnMenuUsadosConsultivo">
                         <div class="ui-grid-a">
-                            <div class="ui-block-a" style="width:10%">
-                                 <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #45abc9; margin-right:0px;"></span>
+                            <div class="ui-block-a" style="width:20%">
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
-                            <div class="ui-block-b" style="width:90%" id="">
+                            <div class="ui-block-b" style="width:80%" id="">
                                 <label class="txt_menu">Consultivo</label>
                             </div>
                         </div>
                     </li>
                     <li class="listasMenu" id="btnMenuUsadosEjecutivo">
                         <div class="ui-grid-a">
-                            <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #45abc9; margin-right:0px;"></span>
+                            <div class="ui-block-a" style="width:20%">
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
-                            <div class="ui-block-b" style="width:90%">
+                            <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Ejecutivo</label>
                             </div>
                         </div>
                     </li>
                     <li class="listasMenu" id="btnMenuUsadosAnalitico">
                         <div class="ui-grid-a">
-                            <div class="ui-block-a" style="width:10%">
-                               <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #45abc9; margin-right:0px;"></span>
+                            <div class="ui-block-a" style="width:20%">
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
-                            <div class="ui-block-b" style="width:90%">
+                            <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Analítico</label>
                             </div>
                         </div>
                     </li>
                     <li class="listasMenu">
                         <div class="ui-grid-a" id="btnMenuUsadosComparativa">
-                            <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #45abc9; margin-right:0px;"></span>
+                            <div class="ui-block-a" style="width:20%">
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
-                            <div class="ui-block-b" style="width:90%">
+                            <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Comparativa</label>
                             </div>
                         </div>
                     </li>
                     <li class="listasMenu" id="btnMenUsadosAlertas">
                         <div class="ui-grid-a">
-                            <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnoalerta" style="font-size:17px; margin:0px; float:left; color: #ff0000; margin-right:0px;"></span>
+                            <div class="ui-block-a" style="width:20%">
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
-                            <div class="ui-block-b" style="width:90%">
+                            <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Alertas</label>
                             </div>
                         </div>
                     </li>
-                    <li data-role="list-divider" id=""><span class="icon-icnoseccion" style="font-size:25px; margin:0px; float:left; color:  #c28c00; margin-right:7px;"></span> SERVICIO <span style="font-family:black; text-shadow:none;">POSVENTA</span></li>
+                    <li data-role="list-divider" id="">VEHÍCULOS posventa</li>
                     <li class="listasMenu" id="btnMenuposventaConsultivo">
                         <div class="ui-grid-a">
-                            <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #c28c00; margin-right:0px;"></span>
+                            <div class="ui-block-a" style="width:20%">
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
-                            <div class="ui-block-b" style="width:90%" id="">
+                            <div class="ui-block-b" style="width:80%" id="">
                                 <label class="txt_menu">Consultivo</label>
                             </div>
                         </div>
                     </li>
                     <li class="listasMenu" id="btnMenuposventaEjecutivo">
                         <div class="ui-grid-a">
-                            <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #c28c00; margin-right:0px;"></span>
+                            <div class="ui-block-a" style="width:20%">
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
-                            <div class="ui-block-b" style="width:90%">
+                            <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Ejecutivo</label>
                             </div>
                         </div>
                     </li>
                     <li class="listasMenu" id="btnMenuposventaAnalitico">
                         <div class="ui-grid-a">
-                            <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #c28c00; margin-right:0px;"></span>
+                            <div class="ui-block-a" style="width:20%">
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
-                            <div class="ui-block-b" style="width:90%">
+                            <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Analítico</label>
                             </div>
                         </div>
                     </li>
                     <li class="listasMenu">
                         <div class="ui-grid-a" id="btnMenuposventaComparativa">
-                            <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #c28c00; margin-right:0px;"></span>
+                            <div class="ui-block-a" style="width:20%">
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
-                            <div class="ui-block-b" style="width:90%">
+                            <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Comparativa</label>
                             </div>
                         </div>
                     </li>
                     <li class="listasMenu" id="btnMenuposventaAlertas">
                         <div class="ui-grid-a">
-                            <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnoalerta" style="font-size:17px; margin:0px; float:left; color: #ff0000; margin-right:0px;"></span>
+                            <div class="ui-block-a" style="width:20%">
+                                <span class="icon-icno_tipo_analisis" style="width:100px;"></span>
                             </div>
-                            <div class="ui-block-b" style="width:90%">
+                            <div class="ui-block-b" style="width:80%">
                                 <label class="txt_menu">Alertas</label>
                             </div>
                         </div>
@@ -272,33 +272,33 @@
             </div>
         </div>
         <!-- HEADER DE TODA LA SECCION --->
-        <div class="cabecera, cabecera_estilo" id="page_header" data-position="fixed" data-tap-toggle="false">
-            <div class="ui-grid-b" style="margin-right:15px;margin-left:15px; padding-top: 7px; padding-bottom:7px;">
+        <div class="cabecera" id="page_header" data-position="fixed" data-tap-toggle="false">
+            <div class="ui-grid-b" style="margin-right:15px;margin-left:15px">
                 <center>
-                    <div class="ui-block-a btn_menu_izq" style="width: 15%; text-align: left">
+                    <div class="ui-block-a btn_menu_izq" style="width: 25%; text-align: left">
                         <div id="divHeaderButtons">
                             <div class="ui-grid-a" id="btnMenuUsadosComparativa">
                                 <div class="ui-block-a"> <a data-role="button" data-theme="c" id="btnHeaderMenu"><span
                       class="icon-icnomenu"
-                      style="font-size:25px; margin:0px; float:left;"></span>
-                    <span class="txt_menu_btnes">MENÚ</span> </a> </div>
+                      style="font-size:22px; margin:0px; float:left;"></span>
+                    <span class="txt_menu_superior">MENÚ</span> </a> </div>
                                 <div class="ui-block-b">
                                     <a data-role="button" data-theme="c" id="btnHeaderInicio">
-                                        <span class="icon-icnoinicio" style="font-size:25px; margin:0px; float:left;"></span>
-                                        <span class="txt_menu_btnes"> INICIO</span> </a>
+                                        <span class="icon-icnoinicio" style="font-size:22px; margin:0px; float:left;"></span>
+                                        <span class="txt_menu_superior"> INICIO</span> </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="ui-block-b" id="tituloSeccion" style="width: 70%; text-align: center; font-family:black; padding-top:20px; color:#fff; font-size: 17px; text-shadow:none;">
+                    <div class="ui-block-b" id="tituloSeccion" style="width: 50%; text-align: center; font-family:black; padding-top:20px;">
                     </div>
-                    <div class="ui-block-c btn_menu_dere" style="width: 15%; text-align: right">
-                        <a data-role="button" data-theme="c" id="btnHeaderParametros"> 
-                            <span class="txt_menu_btnes_derecha"> PARÁMETROS</span><span class="icon-icnoparametros" style="font-size:25px; margin:0px; float:left;"></span> </a>
+                    <div class="ui-block-c btn_menu_dere" style="width: 25%; text-align: right">
+                        <a data-role="button" data-theme="c" id="btnHeaderParametros"> <span class="icon-icnoparametros" style="font-size:22px; margin:0px; float:left;"></span>
+                            <span class="txt_menu_superior">PARÁMETROS</span> </a>
                     </div>
                 </center>
             </div>
-            <ul data-role="listview" style="margin:0px" class="ruta">
+            <ul data-role="listview" style="margin:5px">
                 <li data-role="list-divider" id="tituloSeccion2">Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class="icon-icno_tipo_analisis"></span>Consultivo diario
                 </li>
             </ul>
@@ -307,110 +307,89 @@
         <div data-role="content" style="overflow-y:hidden; overflow-x:hidden">
             <!-- Menu principal  -->
             <div id="page_main" class="k-content">
-              <div class="ui-grid-b" style="margin-right:100px;margin-left:100px">
-                <div class="ui-block-a">
-                  <div data-role="listview" style="margin:15px">
-                    <div style="text-align:center; background-color:#fff; border:none; text-shadow:none; color:#66CC00; line-height:1.2em; padding-top:40px;" data-role="list-divider" id="div"><span style="font-family:light;">VEHÍCULOS</span><br>
-                      <span style="font-family:black;"> NUEVOS</span><br>
-                      <img class="img_departamentos" src="css/imagenes/veh_nuevos.png" alt="logo"> </div>
-                  
-                 
-				 <!-- Botones vehiculos nuevos  -->
-				 
-				  <a data-role="button" data-theme="b" class="btn_ancho" id="btnMainNuevosConsultivo">
-				  <span class="icon-icnotipoanalisis" style="font-size:25px; margin:0px; float:left; color:#66cc00; margin-right: 15px;"></span>
-                  <span class="txt_btnes"> Consultivo</span></a>
-				  
-				  <a data-role="button" data-theme="b" class="btn_ancho" id="btnMainNuevosEjecutivo">
-				  <span class="icon-icnotipoanalisis" style="font-size:25px; margin:0px; float:left; color:#66cc00; margin-right: 15px;"></span>
-                  <span class="txt_btnes"> Ejecutivo</span></a>
-				  
-				  <a data-role="button" data-theme="b" class="btn_ancho" id="btnMainNuevosComparativa">
-				  <span class="icon-icnotipoanalisis" style="font-size:25px; margin:0px; float:left; color:#66cc00; margin-right: 15px;"></span>
-                  <span class="txt_btnes"> Analítico</span></a>
-				  
-		 		  <a data-role="button" data-theme="b" class="btn_ancho" id="btnMainNuevosAnalitico">
-				  <span class="icon-icnotipoanalisis" style="font-size:25px; margin:0px; float:left; color:#66cc00; margin-right: 15px;"></span>
-                  <span class="txt_btnes"> Comparativa</span></a>
-				  
-				  <a data-role="button" data-theme="b" class="btn_alertas" id="btnMenuAlertasNuevos">
-				  <span class="icon-icnoalerta" style="font-size:35px; margin:0px; float:left; color:#ff0000; margin-right: 15px;"></span>
-                  <span class="txt_alertas"> ALERTAS</span></a>
-				  
-				</div>
-				  
-				  
-                 
+                <div class="ui-grid-b" style="margin-right:15px;margin-left:15px">
+
+                    <div class="ui-block-a">
+                        <ul data-role="listview" style="margin:5px">
+                            <li style="text-align:center; background-color:#fff; border:none; text-shadow:none; color:#66CC00; line-height:1.2em; padding-top:20px;" data-role="list-divider" id=""><span style="font-family:light;">VEHÍCULOS</span>
+                            </li>
+                        </ul>
+                        <a data-role="button" data-theme="b" id="btnMainNuevosConsultivo"><span
+                  class="icon-icnoalerta"
+                  style="font-size:25px; margin:0px; float:left; color:#ff0000;"></span><span
+                  class="txt_alertas_inicio">
+                  Consultivo</span> </a>
+                        <a data-role="button" data-theme="b" id="btnMainNuevosEjecutivo"><span
+                  class="icon-icnoalerta"
+                  style="font-size:25px; margin:0px; float:left; color:#ff0000;"></span><span
+                  class="txt_alertas_inicio">
+                  Ejecutivo</span> </a>
+                        <a data-role="button" data-theme="b" id="btnMainNuevosAnalitico"><span
+                  class="icon-icnoalerta"
+                  style="font-size:25px; margin:0px; float:left; color:#ff0000;"></span><span
+                  class="txt_alertas_inicio">
+                  Analítico</span> </a>
+                        <a data-role="button" data-theme="b" id="btnMainNuevosComparativa"><span
+                  class="icon-icnoalerta"
+                  style="font-size:25px; margin:0px; float:left; color:#ff0000;"></span><span
+                  class="txt_alertas_inicio">
+                  Comparativa</span> </a>
+                    </div>
+                    <div class="ui-block-b">
+                        <ul data-role="listview" style="margin:5px">
+                            <li style="text-align:center; background-color:#fff; border:none; text-shadow:none; color:#66CC00; line-height:1.2em; padding-top:20px;" data-role="list-divider" id=""><span style="font-family:light;">VEHÍCULOS</span>
+                            </li>
+                        </ul>
+                        <a data-role="button" data-theme="b" id="btnMainUsadosConsultivo"><span
+                  class="icon-icnoalerta"
+                  style="font-size:25px; margin:0px; float:left; color:#ff0000;"></span><span
+                  class="txt_alertas_inicio">
+                  Consultivo</span> </a>
+                        <a data-role="button" data-theme="b" id="btnMainUsadosEjecutivo"><span
+                  class="icon-icnoalerta"
+                  style="font-size:25px; margin:0px; float:left; color:#ff0000;"></span><span
+                  class="txt_alertas_inicio">
+                  Ejecutivo</span> </a>
+                        <a data-role="button" data-theme="b" id="btnMainUsadosAnalitico"><span
+                  class="icon-icnoalerta"
+                  style="font-size:25px; margin:0px; float:left; color:#ff0000;"></span><span
+                  class="txt_alertas_inicio">
+                  Analítico</span> </a>
+                        <a data-role="button" data-theme="b" id="btnMainUsadosComparativa"><span
+                  class="icon-icnoalerta"
+                  style="font-size:25px; margin:0px; float:left; color:#ff0000;"></span><span
+                  class="txt_alertas_inicio">
+                  Comparativa</span> </a>
+                    </div>
+                    <div class="ui-block-c">
+                        <ul data-role="listview" style="margin:5px">
+                            <li style="text-align:center; background-color:#fff; border:none; text-shadow:none; color:#66CC00; line-height:1.2em; padding-top:20px;" data-role="list-divider" id=""><span style="font-family:light;">VEHÍCULOS</span>
+                            </li>
+                        </ul>
+                        <a data-role="button" data-theme="b" id="btnMainposventaConsultivo"><span
+                  class="icon-icnoalerta"
+                  style="font-size:25px; margin:0px; float:left; color:#ff0000;"></span><span
+                  class="txt_alertas_inicio">
+                  Consultivo</span> </a>
+                        <a data-role="button" data-theme="b" id="btnMainposventaEjecutivo"><span
+                  class="icon-icnoalerta"
+                  style="font-size:25px; margin:0px; float:left; color:#ff0000;"></span><span
+                  class="txt_alertas_inicio">
+                  Ejecutivo</span> </a>
+                        <a data-role="button" data-theme="b" id="btnMainposventaAnalitico"><span
+                  class="icon-icnoalerta"
+                  style="font-size:25px; margin:0px; float:left; color:#ff0000;"></span><span
+                  class="txt_alertas_inicio">
+                  Analítico</span> </a>
+                        <a data-role="button" data-theme="b" id="btnMainposventaComparativa"><span
+                  class="icon-icnoalerta"
+                  style="font-size:25px; margin:0px; float:left; color:#ff0000;"></span><span
+                  class="txt_alertas_inicio">
+                  Comparativa</span> </a>
+                    </div>
                 </div>
-                <div class="ui-block-b">
-                  <div data-role="listview" style="margin:15px">
-                    <div style="text-align:center; background-color:#fff; border:none; text-shadow:none; color:#45abc9; line-height:1.2em; padding-top:40px;" data-role="list-divider" id="div"><span style="font-family:light;">VEHÍCULOS</span><br>
-                      <span style="font-family:black;"> USADOS</span><br>
-                      <img class="img_departamentos" src="css/imagenes/veh_usados.png" alt="logo"> </div>
-                 
-                 
-				 <!-- Botones vehiculos usados  -->
-				 
-				  <a data-role="button" data-theme="b" class="btn_ancho" id="btnMainUsadosConsultivo">
-				  <span class="icon-icnotipoanalisis" style="font-size:25px; margin:0px; float:left; color:#45abc9; margin-right: 15px;"></span>
-                  <span class="txt_btnes"> Consultivo</span></a>
-				  
-				  <a data-role="button" data-theme="b" class="btn_ancho" id="btnMainUsadosEjecutivo">
-				  <span class="icon-icnotipoanalisis" style="font-size:25px; margin:0px; float:left; color:#45abc9; margin-right: 15px;"></span>
-                  <span class="txt_btnes"> Ejecutivo</span></a>
-				  
-				  <a data-role="button" data-theme="b" class="btn_ancho" id="btnMainUsadosComparativa">
-				  <span class="icon-icnotipoanalisis" style="font-size:25px; margin:0px; float:left; color:#45abc9; margin-right: 15px;"></span>
-                  <span class="txt_btnes"> Analítico</span></a>
-				  
-		 		  <a data-role="button" data-theme="b" class="btn_ancho" id="btnMainUsadosAnalitico">
-				  <span class="icon-icnotipoanalisis" style="font-size:25px; margin:0px; float:left; color:#45abc9; margin-right: 15px;"></span>
-                  <span class="txt_btnes"> Comparativa</span></a>
-				  
-				  <a data-role="button" data-theme="b" class="btn_alertas" id="btnMenuAlertasUsados">
-				  <span class="icon-icnoalerta" style="font-size:35px; margin:0px; float:left; color:#ff0000; margin-right: 15px;"></span>
-                  <span class="txt_alertas"> ALERTAS</span></a>
-                  
-				   </div>
-				   
-				  
-                </div>
-                <div class="ui-block-c">
-                  <div data-role="listview" style="margin:15px">
-                    <div style="text-align:center; background-color:#fff; border:none; text-shadow:none; color:#c28c00; line-height:1.2em; padding-top:40px;" data-role="list-divider" id="div"><span style="font-family:light;">SERVICIO</span><br>
-                      <span style="font-family:black;"> POSVENTA</span><br>
-                      <img class="img_departamentos" src="css/imagenes/serv_posventa.png" alt="logo"> </div>
-                  
-                  
-				  <!-- Botones vehiculos usados  -->
-				 
-				  <a data-role="button" data-theme="b" class="btn_ancho" id="btnMainposventaConsultivo">
-				  <span class="icon-icnotipoanalisis" style="font-size:25px; margin:0px; float:left; color:#c28c00; margin-right: 15px;"></span>
-                  <span class="txt_btnes"> Consultivo</span></a>
-				  
-				  <a data-role="button" data-theme="b" class="btn_ancho" id="btnMainposventaEjecutivo">
-				  <span class="icon-icnotipoanalisis" style="font-size:25px; margin:0px; float:left; color:#c28c00; margin-right: 15px;"></span>
-                  <span class="txt_btnes"> Ejecutivo</span></a>
-				  
-				  <a data-role="button" data-theme="b" class="btn_ancho" id="btnMainposventaComparativa">
-				  <span class="icon-icnotipoanalisis" style="font-size:25px; margin:0px; float:left; color:#c28c00; margin-right: 15px;"></span>
-                  <span class="txt_btnes"> Analítico</span></a>
-				  
-		 		  <a data-role="button" data-theme="b" class="btn_ancho" id="btnMainposventaAnalitico">
-				  <span class="icon-icnotipoanalisis" style="font-size:25px; margin:0px; float:left; color:#c28c00; margin-right: 15px;"></span>
-                  <span class="txt_btnes"> Comparativa</span></a>
-				  
-				  <a data-role="button" data-theme="b" class="btn_alertas" id="btnMenuAlertasposventa">
-				  <span class="icon-icnoalerta" style="font-size:35px; margin:0px; float:left; color:#ff0000; margin-right: 15px;"></span>
-                  <span class="txt_alertas"> ALERTAS</span></a>
-				  
-				  </div>
-				  
-                 
-                </div>
-              </div>
-              <!--<div class="ui-grid-b" style="margin-right:15px;margin-left:15px">
-                  <div class="ui-block-a"> <a data-role="button" data-theme="b" id="btnMenuAlertasNuevos"><span
+                <div class="ui-grid-b" style="margin-right:15px;margin-left:15px">
+                    <div class="ui-block-a"> <a data-role="button" data-theme="b" id="btnMenuAlertasNuevos"><span
                   class="icon-icnoalerta"
                   style="font-size:25px; margin:0px; float:left; color:#ff0000;"></span><span
                   class="txt_alertas_inicio">
@@ -425,7 +404,7 @@
                   style="font-size:25px; margin:0px; float:left; color:#ff0000;"></span><span
                   class="txt_alertas_inicio">
                   ALERTAS</span> </a> </div>
-                </div>-->
+                </div>
             </div>
         </div>
         <div id="page_parametros" class="k-content">
