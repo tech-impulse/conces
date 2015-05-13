@@ -60,7 +60,7 @@ $(document).on('pageshow', '#app', function () {
 
 
 $(document).on('pageinit', '#loginModule', function () {
-
+    showPage('mainLogin');
     if (isAndroidDevice()) {
         var element = '<script type="text/javascript" src="cordova.js"></script>';
         $('head').append(element);
@@ -87,7 +87,7 @@ $(document).on('pageinit', '#loginModule', function () {
 
 
 
-    showPage('mainLogin');
+
 
 
 });
@@ -145,96 +145,154 @@ $(document).on('pageinit', '#app', function () {
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ Informe");
     });
 
+    /* VEHICULOS NUEVOS */
     $("#btnMenuNuevosConsultivo").unbind('click').bind('click', function () {
         showPage('consultivoNuevos');
-        $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHICULOS NUEVOS </span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Consultivo diario");
     });
 
+    $("#btnMenuNuevosEjecutivo").unbind('click').bind('click', function () {
+        showPage('nuevosEjecutivo');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; float:left; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHÍCULOS NUEVOS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Ejecutivo");
+    });
+
+    $("#btnMenuNuevosAnalitico").unbind('click').bind('click', function () {
+        showPage('nuevosAnalitico');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; float:left; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHICULOS NUEVOS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Analítico");
+    });
+
+    $("#btnMenuNuevosComparativa").unbind('click').bind('click', function () {
+        showPage('consultivoNuevos');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; float:left; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHICULOS NUEVOS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Comparativa");
+    });
+    /* MENÚ LATERAL */
+    /* VEHICULOS USADOS */
     $("#btnMenuUsadosConsultivo").unbind('click').bind('click', function () {
         showPage('consultivoUsados');
-        $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #45abc9; margin-right:7px;"></span><span class=""> VEHICULOS USADOS </span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Consultivo diario");
     });
 
+    $("#btnMenuUsadosEjecutivo").unbind('click').bind('click', function () {
+        showPage('usadosEjecutivo');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #45abc9; margin-right:7px;"></span><span class=""> VEHÍCULOS USADOS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo");
+    });
+
+    $("#btnMenuUsadosAnalitico").unbind('click').bind('click', function () {
+        showPage('usadosAnalitico');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #45abc9; margin-right:7px;"></span><span class=""> VEHÍCULOS USADOS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico");
+    });
+
+    $("#btnMenuUsadosComparativa").unbind('click').bind('click', function () {
+        showPage('consultivoNuevos');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #45abc9; margin-right:7px;"></span><span class=""> VEHÍCULOS USADOS</span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Comparativa");
+    });
+
+    /* VEHICULOS posventa */
     $("#btnMenuposventaConsultivo").unbind('click').bind('click', function () {
         showPage('consultivoPosventa');
-        $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ <span class='icon-icnotipoanalisis'></span> Consultivo diario");
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #c28c00; margin-right:7px;"></span><span class=""> SERVICIO POSVENTA </span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Consultivo diario");
+    });
+
+    $("#btnMenuposventaEjecutivo").unbind('click').bind('click', function () {
+        showPage('posventaEjecutivo');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #c28c00; margin-right:7px;"></span><span class=""> SERVICIO POSVENTA </span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Ejecutivo");
+    });
+
+    $("#btnMenuposventaAnalitico").unbind('click').bind('click', function () {
+        showPage('posventaAnalitico');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #c28c00; margin-right:7px;"></span><span class=""> SERVICIO POSVENTA </span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Analítico");
+    });
+
+    $("#btnMenuposventaComparativa").unbind('click').bind('click', function () {
+        showPage('consultivoNuevos');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #c28c00; margin-right:7px;"></span><span class=""> SERVICIO POSVENTA </span>');
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Comparativa");
     });
 
     /* VEHICULOS NUEVOS */
     $("#btnMainNuevosConsultivo").unbind('click').bind('click', function () {
         showPage('consultivoNuevos');
-        $("#tituloSeccion").html('<span class=""> VEHICULOS NUEVOS </span>');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHICULOS NUEVOS </span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Consultivo diario");
     });
 
     $("#btnMainNuevosEjecutivo").unbind('click').bind('click', function () {
         showPage('nuevosEjecutivo');
-        $("#tituloSeccion").html('<span class=""> VEHÍCULOS NUEVOS</span>');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; float:left; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHÍCULOS NUEVOS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Ejecutivo");
     });
 
     $("#btnMainNuevosAnalitico").unbind('click').bind('click', function () {
         showPage('nuevosAnalitico');
-        $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; float:left; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHICULOS NUEVOS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Analítico");
     });
 
     $("#btnMainNuevosComparativa").unbind('click').bind('click', function () {
         showPage('consultivoNuevos');
-        $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; float:left; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHICULOS NUEVOS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Comparativa");
     });
 
+    /* MENU PRINCIPAL */
     /* VEHICULOS USADOS */
     $("#btnMainUsadosConsultivo").unbind('click').bind('click', function () {
         showPage('consultivoUsados');
-        $("#tituloSeccion").html('<span class=""> VEHICULOS USADOS </span>');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #45abc9; margin-right:7px;"></span><span class=""> VEHICULOS USADOS </span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Consultivo diario");
     });
 
     $("#btnMainUsadosEjecutivo").unbind('click').bind('click', function () {
         showPage('usadosEjecutivo');
-        $("#tituloSeccion").html('<span class=""> VEHÍCULOS USADOS</span>');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #45abc9; margin-right:7px;"></span><span class=""> VEHÍCULOS USADOS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo");
     });
 
     $("#btnMainUsadosAnalitico").unbind('click').bind('click', function () {
         showPage('usadosAnalitico');
-        $("#tituloSeccion").html('<span class=""> VEHÍCULOS USADOS</span>');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #45abc9; margin-right:7px;"></span><span class=""> VEHÍCULOS USADOS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico");
     });
 
     $("#btnMainUsadosComparativa").unbind('click').bind('click', function () {
         showPage('consultivoNuevos');
-        $("#tituloSeccion").html('<span class=""> VEHÍCULOS USADOS</span>');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #45abc9; margin-right:7px;"></span><span class=""> VEHÍCULOS USADOS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Comparativa");
     });
 
     /* VEHICULOS posventa */
     $("#btnMainposventaConsultivo").unbind('click').bind('click', function () {
         showPage('consultivoPosventa');
-        $("#tituloSeccion").html('<span class=""> SERVICIO POSVENTA </span>');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #c28c00; margin-right:7px;"></span><span class=""> SERVICIO POSVENTA </span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Consultivo diario");
     });
 
     $("#btnMainposventaEjecutivo").unbind('click').bind('click', function () {
         showPage('posventaEjecutivo');
-        $("#tituloSeccion").html('<span class=""> SERVICIO POSVENTA </span>');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #c28c00; margin-right:7px;"></span><span class=""> SERVICIO POSVENTA </span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Ejecutivo");
     });
 
     $("#btnMainposventaAnalitico").unbind('click').bind('click', function () {
         showPage('posventaAnalitico');
-        $("#tituloSeccion").html('<span class=""> SERVICIO POSVENTA </span>');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #c28c00; margin-right:7px;"></span><span class=""> SERVICIO POSVENTA </span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Analítico");
     });
 
     $("#btnMainposventaComparativa").unbind('click').bind('click', function () {
         showPage('consultivoNuevos');
-        $("#tituloSeccion").html('<span class=""> SERVICIO POSVENTA </span>');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #c28c00; margin-right:7px;"></span><span class=""> SERVICIO POSVENTA </span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Comparativa");
     });
     //$("#navpanel").panel("close");
@@ -253,6 +311,7 @@ function showPage(pagina) {
         $("#divHeaderButtons").show();
     }
     $("#page_" + pagina).show();
+   // $("#navpanel").panel("close");
 }
 
 
