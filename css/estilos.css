@@ -27,6 +27,7 @@ button,
 	line-height: 1.3;
 	font-family: regular; /*{global-font-family}*/
 	letter-spacing:0.03em;
+	background-color:#ffffff;
 }
 legend,
 .ui-input-text input,

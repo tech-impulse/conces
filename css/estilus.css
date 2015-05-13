@@ -10,165 +10,6 @@ ocre: #c28c00;
 
 */
 
-/* FONTS */
-/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-h1 {
-	font-family: sans-serif;
-	font-size: 17px;
-}
-
-h2 {
-	font-family: sans-serif;
-	font-size: 16px;
-}
-
-h3 {
-	font-family: sans-serif;
-	font-size: 16px;
-}
-
-h4 {font-family: black;
-	font-size: 14px;
-}
-
-/* LOGOS */
-/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-body {
-	background-color:#fff;
-}
-
-.img_logo_toyota {
-	width:400px;
-	padding-bottom: 1em;
-	margin: 0 auto;
-}
-
-.img_management {
-	width:200px;
-	padding-top: 1em;
-	margin: 0 auto;
-}
-
-/* LOGIN */
-/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-.txt_field_login {
-	width:30%;
-	margin: 0 auto;
-}
-
-.txt_field_password {
-	width:30%;
-	margin: 0 auto;
-	padding-bottom: 0em;
-}
-
-.recordar_us {
-	width:30%;
-	margin: 0 auto;
-	padding-bottom: 2em;
-}
-
-.btn_login {
-	width:15%;
-	margin: 0 auto;
-	padding-bottom: 1em;
-}
-
-/* RESABLECER CONTRASEÑA */
-/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-.txt_restablecer_titulo {
-	margin: 0 auto;
-	font-family: black;
-	font-size: 14px;
-	text-align:center;
-	padding-top: 2em;
-	background-color: #ffffff;
-	color: #333;
-}
-
-.btn_restablecer {
-	width:15%;
-	margin: 0 auto;
-	padding-bottom: 1em;
-	margin-top:10px;
-}
-
-.txt_field_restablecer {
-	width:30%;
-	margin: 0 auto;
-	padding-top: 1em;
-	padding-bottom: 2em;
-}
-
-.img_management_restablece {
-	width:200px;
-	padding-top: 10em;
-	margin: 0 auto;
-}
-
-.div_txt_centrado {
-	width:35%;
-	margin: 0 auto;
-	font-family: light;
-	text-align: center;
-	padding-top: 1em;
-}
-
-/* PANTALLA INICIAL MENU PRINCIPAL */
-/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-.img_departamentos {
-	width:100px;
-	margin: 0 auto;
-}
-
-.btn_ancho {
-	width:40%;
-	margin: 0 auto;
-	padding-bottom: 1em;
-	margin-top:10px;
-}
-
-.btn_alertas {
-	width:40%;
-	margin: 0 auto;
-	padding-bottom: 1em;
-	margin-top:25px;
-}
-
-.txt_btnes {
-	font-size:14px; 
-	margin:0px; 
-	float:left;
-	line-height:1.8em;
-}
-
-.txt_alertas {
-	font-size:14px; 
-	margin:0px; 
-	float:left;
-	line-height:2.7em;
-}
-
-.ruta {
-	font-family: light;
-}
-
-@charset "utf-8";
-
-
-/* COLORS */
-/* 
-
-verde: #66cc00;
-azul: #45abc9;
-ocre: #c28c00;
-
-*/
 
 /* FONTS */
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -199,8 +40,10 @@ body {
 	background-color:#fff;
 }
 
+/*para no dejar espacio al top de las páginas padding:0*/
 .ui-content {
 	background:#FFF;
+	padding:0em;
 }
 
 /* LOGOS */
@@ -214,7 +57,7 @@ body {
 
 .img_management {
 	width:200px;
-	padding-top: 1em;
+	padding-top: 6em;
 	margin: 0 auto;
 }
 
@@ -273,7 +116,7 @@ body {
 
 .img_management_restablece {
 	width:200px;
-	padding-top: 10em;
+	padding-top: 6em;
 	margin: 0 auto;
 }
 
@@ -294,14 +137,14 @@ body {
 }
 
 .btn_ancho {
-	width:60%;
+	width:50%;
 	margin: 0 auto;
 	padding-bottom: 1em;
 	margin-top:10px;
 }
 
 .btn_alertas {
-	width:40%;
+	width:50%;
 	margin: 0 auto;
 	padding-bottom: 1em;
 	margin-top:25px;
@@ -323,6 +166,7 @@ body {
 
 .ruta {
 	font-family: light;
+	text-shadow:none;
 }
 
 /* CABECERA */
@@ -351,9 +195,10 @@ body {
 /* MENU LATERAL */
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-.pastilla {
+/*.pastilla {
 	background-color: #CCC;
-}
+	margin: 0px;
+}*/
 
 .lista_menu {
 	font-family: light;
@@ -365,3 +210,101 @@ body {
 	font-family: light;
 	padding-left: 5px;
 }
+
+.ui-panel-inner {
+	padding: 0px;
+}
+
+/* ALERTAS */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.alertas_titulo_light {
+	color:#333;
+	text-shadow:none; 
+	font-family:light;
+	line-height:3.3em;
+	font-size: 16px;
+}
+
+.alertas_titulo_black {
+	color:#333;
+	text-shadow:none; 
+	font-family:black;
+	line-height:3.3em;
+	font-size: 16px;
+}
+
+.btn_drivers {
+	width:20%;
+	position:relative;
+	float: right;
+	margin: 5em;
+}
+
+.intro {
+	padding-left: 60px;
+	font-family: light;
+}
+
+
+/* PANTALLAS GENERAL */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.titulo_grafica {
+	text-shadow:none; 
+	font-family:light;
+	line-height:1.8em;
+	padding-left: 20px;
+	font-size: 16px;
+}
+
+.partilla_titulo_grafica {
+	clear:both;
+	margin-top: 20px;
+	z-index:300;
+}
+
+.linea {
+	display:block;
+	width: 90%;
+	margin: 0 auto;
+	height:1px;
+	color: #999;
+}
+
+.select_mes {
+	width:12em;
+	display:block;
+	float: right;
+	margin:15px 20px 0px 0;
+	z-index: 1;
+}
+
+
+/* PARAMETROS */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.fondo_parametros {
+	background-color: #fff;
+}
+
+.btn_parametros {
+	width:10%;
+	margin:10px 0 20px 0;
+}
+
+.select_ {
+	font-family: black;
+	text-shadow: 0px;
+	line-height:3.2em;
+}
+
+.option {
+	font-family: light;
+	line-height:3.2em;
+}
+
+
+/* BOTONES SUBMENUS*/
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+

@@ -229,19 +229,19 @@ $(document).on('pageinit', '#app', function () {
 
     $("#btnMainNuevosEjecutivo").unbind('click').bind('click', function () {
         showPage('nuevosEjecutivo');
-        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; float:left; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHÍCULOS NUEVOS</span>');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHÍCULOS NUEVOS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Ejecutivo");
     });
 
     $("#btnMainNuevosAnalitico").unbind('click').bind('click', function () {
         showPage('nuevosAnalitico');
-        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; float:left; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHICULOS NUEVOS</span>');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHICULOS NUEVOS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Analítico");
     });
 
     $("#btnMainNuevosComparativa").unbind('click').bind('click', function () {
         showPage('consultivoNuevos');
-        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; float:left; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHICULOS NUEVOS</span>');
+        $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHICULOS NUEVOS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Comparativa");
     });
 
