@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>CONCESIONARIOS</title>
-    <meta charset="utf-8" content=
-    "user-scalable=no, initial-scale=1, minimum-scale=0.5, width=device-width, height=device-height"
-    name="viewport">
+    <meta charset="utf-8" content="user-scalable=no, initial-scale=1, minimum-scale=0.5, width=device-width, height=device-height" name="viewport">
     <link href="lib/jquery.mobile-1.4.5.min.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
     <link href="css/estilos.css" rel="stylesheet">
@@ -19,11 +18,14 @@
     <script src="js/usados.js"></script>
     <script src="js/posventa.js"></script>
     <style>
-#app #navpanel.ui-panel {
-    width: 20em;
-    }
+        #app #navpanel.ui-panel {
+            width: 20em;
+        }
     </style>
 </head>
+
+
+
 
 <body class="body" style="background-color:#fff;">
     <!-- seccion de login  -->
@@ -33,118 +35,96 @@
 
         <div data-role="content">
             <div class="ui-grid-a">
-                <div class="ui-block-a" style=
-                "width:35%; background-image: url(css/imagenes/fondoTest.png);">
+                <div class="ui-block-a" style="width:35%; background-image: url(css/imagenes/fondoTest.png);">
                 </div>
 
                 <div class="ui-block-b" style="width:65%">
                     <div class="k-content" id="page_mainLogin">
                         <div style="text-align: center">
-                        <!--<span class="icon-icno_tipo_analisis" style="width:100px;"></span> --><img alt="logo"
-                        class="Logo, img_logo_toyota" src=
-                        "css/imagenes/logo_toyota.png"></div>
+                            <!--<span class="icon-icno_tipo_analisis" style="width:100px;"></span> --><img alt="logo" class="Logo, img_logo_toyota" src="css/imagenes/logo_toyota.png">
+                        </div>
 
                         <div class="txt_field_login">
-                            <input class="txt_textfield_in" id=
-                            "inputLoginUsername" placeholder="Usuario" type=
-                            "text">
+                            <input class="txt_textfield_in" id="inputLoginUsername" placeholder="Usuario" type="text">
                         </div>
 
                         <div class="txt_field_password">
-                            <input class="txt_textfield_in" id=
-                            "inputLoginPassword" placeholder="Contraseña" type=
-                            "password">
+                            <input class="txt_textfield_in" id="inputLoginPassword" placeholder="Contraseña" type="password">
                         </div>
 
                         <form class="recordar_us">
-                            <label id="lbmainLoginRecordar" style=
-                            "background-color:#fff; border:0px; color:#333; font-size: 13px!important">
-                            <input id="mainLoginRecordar" name="checkbox-0"
-                            type="checkbox"> Recordar Usuario</label>
-                        </form><br>
+                            <label id="lbmainLoginRecordar" style="background-color:#fff; border:0px; color:#333; font-size: 13px!important">
+                                <input id="mainLoginRecordar" name="checkbox-0" type="checkbox"> Recordar Usuario</label>
+                        </form>
+                        <br>
 
                         <div class="btn_login">
-                            <a data-role="button" data-theme="a" id=
-                            "btnLogIn">Entrar</a>
+                            <a data-role="button" data-theme="a" id="btnLogIn">Entrar</a>
                         </div>
 
-                        <div class="olvidarcontrasena" style=
-                        "text-align: center; font-size: 13px;">
-                            <a data-theme="a" id=
-                            "loginForgotPassword">Recuperar Contraseña</a>
+                        <div class="olvidarcontrasena" style="text-align: center; font-size: 13px;">
+                            <a data-theme="a" id="loginForgotPassword">Recuperar Contraseña</a>
                         </div>
 
-                        <div style="text-align: center"><br>
-                        <img alt="logo" class="Logo, img_management" src=
-                        "css/imagenes/logo_management.png"></div>
-                    </div><!-- Pagina de reestablecer contraseña -->
+                        <div style="text-align: center">
+                            <br>
+                            <img alt="logo" class="Logo, img_management" src="css/imagenes/logo_management.png">
+                        </div>
+                    </div>
+                    <!-- Pagina de reestablecer contraseña -->
 
                     <div class="k-content" id="page_resetPassword">
                         <div style="text-align: center">
-                        <!--<span class="icon-icno_tipo_analisis" style="width:100px;"></span> --><img alt="logo"
-                        class="Logo, img_logo_toyota" src=
-                        "css/imagenes/logo_toyota.png"></div>
+                            <!--<span class="icon-icno_tipo_analisis" style="width:100px;"></span> --><img alt="logo" class="Logo, img_logo_toyota" src="css/imagenes/logo_toyota.png">
+                        </div>
 
-                        <div class="cabecera, txt_restablecer_titulo"
-                        data-role="">
+                        <div class="cabecera, txt_restablecer_titulo" data-role="">
                             <div id="tituloResetPassword">
                                 Reestablecer contraseña
                             </div>
                         </div>
 
                         <div class="div_txt_centrado" id="textResetPassword">
-                            Introduce tu nombre de usuario y te enviaremos las
-                            instrucciones para reestablecer tu contraseña al
-                            correo que nos facilitaste al crear tu cuenta.
+                            Introduce tu nombre de usuario y te enviaremos las instrucciones para reestablecer tu contraseña al correo que nos facilitaste al crear tu cuenta.
                         </div>
 
                         <div class="txt_field_restablecer">
-                            <input class="txt_textfield_in" id=
-                            "inputUserResetPassword" onclick="this.value='';"
-                            type="text" value="Correo electrónico"> 
+                            <input class="txt_textfield_in" id="inputUserResetPassword" onclick="this.value='';" type="text" value="Correo electrónico">
                         </div>
 
                         <div>
-                            <a class="btn_restablecer" data-role="button"
-                            data-theme="a" id="btnOkResetPassword">Enviar</a>
+                            <a class="btn_restablecer" data-role="button" data-theme="a" id="btnOkResetPassword">Enviar</a>
                         </div>
 
                         <div>
-                            <a class="btn_restablecer" data-role="button"
-                            data-theme="a" id=
-                            "btnCancelResetPassword">Cancelar</a>
+                            <a class="btn_restablecer" data-role="button" data-theme="a" id="btnCancelResetPassword">Cancelar</a>
                         </div>
 
-                        <div style="text-align: center"><img alt="logo" class=
-                        "Logo, img_management_restablece" src=
-                        "css/imagenes/logo_management.png"></div>
-                    </div><!-- Finalizar reset contraseña -->
+                        <div style="text-align: center"><img alt="logo" class="Logo, img_management_restablece" src="css/imagenes/logo_management.png">
+                        </div>
+                    </div>
+                    <!-- Finalizar reset contraseña -->
 
                     <div class="k-content" id="page_resetPasswordFinish">
                         <div style="text-align: center"></div>
 
                         <div class="txt_centrals" id="textResetPasswordFinish">
-                            ¡Enlace de restablecimiento de contraseña
-                            enviado!<br>
-                            Se te ha enviado a tu correo electronico un enlace
-                            para reestablecer tu contraseña.<br>
-                            Revisa tu correo y sigue las instrucciones.
+                            ¡Enlace de restablecimiento de contraseña enviado!
+                            <br> Se te ha enviado a tu correo electronico un enlace para reestablecer tu contraseña.
+                            <br> Revisa tu correo y sigue las instrucciones.
                         </div>
 
                         <div>
-                            <a data-role="button" data-theme="a" id=
-                            "btnResetPasswordFinish">Volver a la pagina de
+                            <a data-role="button" data-theme="a" id="btnResetPasswordFinish">Volver a la pagina de
                             login</a>
                         </div>
 
                         <div style="text-align: center"></div>
-                    </div><!-- Pop up de comunicación BOTON ACEPTAR -->
+                    </div>
+                    <!-- Pop up de comunicación BOTON ACEPTAR -->
 
-                    <div class="" data-overlay-theme="a" data-role="popup"
-                    data-theme="a" data-transition="slidefade" id="loginPopUp"
-                    style="width:21em;">
-                        <div class="cabecera" data-role="header" style=
-                        "text-align: center">
+                    <div class="" data-overlay-theme="a" data-role="popup" data-theme="a" data-transition="slidefade" id="loginPopUp" style="width:21em;">
+                        <div class="cabecera" data-role="header" style="text-align: center">
                             <div id="tituloPopUpLogin">
                                 <h2>Error</h2>
                             </div>
@@ -152,42 +132,36 @@
 
                         <div data-role="content">
                             <div>
-                                <label class="txt_centrals_popup" id=
-                                "lbPopUpLogin">Texto Generico</label>
+                                <label class="txt_centrals_popup" id="lbPopUpLogin">Texto Generico</label>
                             </div>
                         </div>
 
                         <div>
-                            <a data-role="button" data-theme="a" id=
-                            "btnPopUpLogin">Aceptar</a>
+                            <a data-role="button" data-theme="a" id="btnPopUpLogin">Aceptar</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div><!-- DENTRO DE APP UNA VEZ LOGADO  -->
+    </div>
+    <!-- DENTRO DE APP UNA VEZ LOGADO  -->
 
-    <div data-role="page" data-title="APP" id="app" style=
-    "overflow-y:hidden; background-color:#f1eff7; layer-background-color:#f1eff7;">
-    <!-- Menu lateral desplazable -->
+    <div data-role="page" data-title="APP" id="app" style="overflow-y:hidden; background-color:#f1eff7; layer-background-color:#f1eff7;">
+        <!-- Menu lateral desplazable -->
 
-        <div data-display="overlay" data-position="left" data-role="panel"
-        data-theme="a" id="navpanel">
+        <div data-display="overlay" data-position="left" data-role="panel" data-theme="a" id="navpanel">
             <div data-corners="false" data-role="controlgroup" data-theme="a">
                 <ul class="lista_menu" data-role="listview">
-                    <li data-role="list-divider" id=""><span class=
-                    "icon-icnoseccion" style=
-                    "font-size:25px; margin:0px; float:left; color: #66cc00; margin-right:7px;">
+                    <li data-role="list-divider" id=""><span class="icon-icnoseccion" style="font-size:25px; margin:0px; float:left; color: #66cc00; margin-right:7px;">
                     </span> <span style="text-shadow:none;">VEHÍCULOS</span>
-                    <span style=
-                    "font-family:black; text-shadow:none;">NUEVOS</span></li>
+                        <span style="font-family:black; text-shadow:none;">NUEVOS</span>
+                    </li>
 
                     <li class="listasMenu" id="btnMenuNuevosConsultivo">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnotipoanalisis" style=
-                                "font-size:17px; margin:0px; float:left; color: #66cc00; margin-right:0px;">
-                                </span> 
+                                <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #66cc00; margin-right:0px;">
+                                </span>
                                 <!--  <img class="icn_menu" src="js/images/icno_micuenta.png" alt="logo cuenta"> -->
                             </div>
 
@@ -200,8 +174,7 @@
                     <li class="listasMenu" id="btnMenuNuevosEjecutivo">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnotipoanalisis" style=
-                                "font-size:17px; margin:0px; float:left; color: #66cc00; margin-right:0px;">
+                                <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #66cc00; margin-right:0px;">
                                 </span>
                             </div>
 
@@ -214,8 +187,7 @@
                     <li class="listasMenu" id="btnMenuNuevosAnalitico">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnotipoanalisis" style=
-                                "font-size:17px; margin:0px; float:left; color: #66cc00; margin-right:0px;">
+                                <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #66cc00; margin-right:0px;">
                                 </span>
                             </div>
 
@@ -228,8 +200,7 @@
                     <li class="listasMenu">
                         <div class="ui-grid-a" id="btnMenuNuevosComparativa">
                             <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnotipoanalisis" style=
-                                "font-size:17px; margin:0px; float:left; color: #66cc00; margin-right:0px;">
+                                <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #66cc00; margin-right:0px;">
                                 </span>
                             </div>
 
@@ -242,8 +213,7 @@
                     <li class="listasMenu" id="btnMenuNuevosAlertas">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnoalerta" style=
-                                "font-size:17px; margin:0px; float:left; color: #ff0000; margin-right:0px;">
+                                <span class="icon-icnoalerta" style="font-size:17px; margin:0px; float:left; color: #ff0000; margin-right:0px;">
                                 </span>
                             </div>
 
@@ -253,18 +223,15 @@
                         </div>
                     </li>
 
-                    <li data-role="list-divider" id=""><span class=
-                    "icon-icnoseccion" style=
-                    "font-size:25px; margin:0px; float:left; color: #45abc9; margin-right:7px;">
+                    <li data-role="list-divider" id=""><span class="icon-icnoseccion" style="font-size:25px; margin:0px; float:left; color: #45abc9; margin-right:7px;">
                     </span> <span style="text-shadow:none;">VEHÍCULOS</span>
-                    <span style=
-                    "font-family:black; text-shadow:none;">USADOS</span></li>
+                        <span style="font-family:black; text-shadow:none;">USADOS</span>
+                    </li>
 
                     <li class="listasMenu" id="btnMenuUsadosConsultivo">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnotipoanalisis" style=
-                                "font-size:17px; margin:0px; float:left; color: #45abc9; margin-right:0px;">
+                                <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #45abc9; margin-right:0px;">
                                 </span>
                             </div>
 
@@ -277,8 +244,7 @@
                     <li class="listasMenu" id="btnMenuUsadosEjecutivo">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnotipoanalisis" style=
-                                "font-size:17px; margin:0px; float:left; color: #45abc9; margin-right:0px;">
+                                <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #45abc9; margin-right:0px;">
                                 </span>
                             </div>
 
@@ -291,8 +257,7 @@
                     <li class="listasMenu" id="btnMenuUsadosAnalitico">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnotipoanalisis" style=
-                                "font-size:17px; margin:0px; float:left; color: #45abc9; margin-right:0px;">
+                                <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #45abc9; margin-right:0px;">
                                 </span>
                             </div>
 
@@ -305,8 +270,7 @@
                     <li class="listasMenu">
                         <div class="ui-grid-a" id="btnMenuUsadosComparativa">
                             <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnotipoanalisis" style=
-                                "font-size:17px; margin:0px; float:left; color: #45abc9; margin-right:0px;">
+                                <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #45abc9; margin-right:0px;">
                                 </span>
                             </div>
 
@@ -319,8 +283,7 @@
                     <li class="listasMenu" id="btnMenuUsadosAlertas">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnoalerta" style=
-                                "font-size:17px; margin:0px; float:left; color: #ff0000; margin-right:0px;">
+                                <span class="icon-icnoalerta" style="font-size:17px; margin:0px; float:left; color: #ff0000; margin-right:0px;">
                                 </span>
                             </div>
 
@@ -330,18 +293,15 @@
                         </div>
                     </li>
 
-                    <li data-role="list-divider" id=""><span class=
-                    "icon-icnoseccion" style=
-                    "font-size:25px; margin:0px; float:left; color: #c28c00; margin-right:7px;">
+                    <li data-role="list-divider" id=""><span class="icon-icnoseccion" style="font-size:25px; margin:0px; float:left; color: #c28c00; margin-right:7px;">
                     </span> <span style="text-shadow:none;">SERVICIO</span>
-                    <span style=
-                    "font-family:black; text-shadow:none;">POSVENTA</span></li>
+                        <span style="font-family:black; text-shadow:none;">POSVENTA</span>
+                    </li>
 
                     <li class="listasMenu" id="btnMenuposventaConsultivo">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnotipoanalisis" style=
-                                "font-size:17px; margin:0px; float:left; color: #c28c00; margin-right:0px;">
+                                <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #c28c00; margin-right:0px;">
                                 </span>
                             </div>
 
@@ -354,8 +314,7 @@
                     <li class="listasMenu" id="btnMenuposventaEjecutivo">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnotipoanalisis" style=
-                                "font-size:17px; margin:0px; float:left; color: #c28c00; margin-right:0px;">
+                                <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #c28c00; margin-right:0px;">
                                 </span>
                             </div>
 
@@ -368,8 +327,7 @@
                     <li class="listasMenu" id="btnMenuposventaAnalitico">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnotipoanalisis" style=
-                                "font-size:17px; margin:0px; float:left; color: #c28c00; margin-right:0px;">
+                                <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #c28c00; margin-right:0px;">
                                 </span>
                             </div>
 
@@ -382,8 +340,7 @@
                     <li class="listasMenu">
                         <div class="ui-grid-a" id="btnMenuposventaComparativa">
                             <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnotipoanalisis" style=
-                                "font-size:17px; margin:0px; float:left; color: #c28c00; margin-right:0px;">
+                                <span class="icon-icnotipoanalisis" style="font-size:17px; margin:0px; float:left; color: #c28c00; margin-right:0px;">
                                 </span>
                             </div>
 
@@ -396,8 +353,7 @@
                     <li class="listasMenu" id="btnMenuPosventaAlertas">
                         <div class="ui-grid-a">
                             <div class="ui-block-a" style="width:10%">
-                                <span class="icon-icnoalerta" style=
-                                "font-size:17px; margin:0px; float:left; color: #ff0000; margin-right:0px;">
+                                <span class="icon-icnoalerta" style="font-size:17px; margin:0px; float:left; color: #ff0000; margin-right:0px;">
                                 </span>
                             </div>
 
@@ -408,27 +364,23 @@
                     </li>
                 </ul>
             </div>
-        </div><!-- HEADER DE TODA LA SECCION =-->
+        </div>
+        <!-- HEADER DE TODA LA SECCION =-->
 
-        <div class="cabecera, cabecera_estilo" data-position="fixed"
-        data-tap-toggle="false" id="page_header">
-            <div class="ui-grid-b" style=
-            "margin-right:15px;margin-left:15px; padding-top: 7px; padding-bottom:7px;">
-            <div class="ui-block-a btn_menu_izq" style=
-            "width: 25%; text-align: left">
+        <div class="cabecera, cabecera_estilo" data-position="fixed" data-tap-toggle="false" id="page_header">
+            <div class="ui-grid-b" style="margin-right:15px;margin-left:15px; padding-top: 7px; padding-bottom:7px;">
+                <div class="ui-block-a btn_menu_izq" style="width: 25%; text-align: left">
                     <div id="divHeaderButtons">
                         <div class="ui-grid-a" id="btnMenuUsadosComparativa">
                             <div class="ui-block-a">
-                                <a data-role="button" data-theme="c" id=
-                                "btnHeaderMenu"><span class="icon-icnomenu"
+                                <a data-role="button" data-theme="c" id="btnHeaderMenu"><span class="icon-icnomenu"
                                 style=
                                 "font-size:25px; margin:0px; float:left;"></span>
                                 <span class="txt_menu_btnes">MENÚ</span></a>
                             </div>
 
                             <div class="ui-block-b">
-                                <a data-role="button" data-theme="c" id=
-                                "btnHeaderInicio"><span class="icon-icnoinicio"
+                                <a data-role="button" data-theme="c" id="btnHeaderInicio"><span class="icon-icnoinicio"
                                 style=
                                 "font-size:25px; margin:0px; float:left;"></span>
                                 <span class="txt_menu_btnes">INICIO</span></a>
@@ -437,70 +389,57 @@
                     </div>
                 </div>
 
-                <div class="ui-block-b" id="tituloSeccion" style=
-                "width: 50%; text-align: center; font-family:black; padding-top:20px; color:#fff; font-size: 17px; text-shadow:none;">
+                <div class="ui-block-b" id="tituloSeccion" style="width: 50%; text-align: center; font-family:black; padding-top:20px; color:#fff; font-size: 17px; text-shadow:none;">
                 </div>
 
-                <div class="ui-block-c btn_menu_dere" style=
-                "width: 25%; text-align: right">
-                    <a data-role="button" data-theme="c" id=
-                    "btnHeaderParametros"><span class=
+                <div class="ui-block-c btn_menu_dere" style="width: 25%; text-align: right">
+                    <a data-role="button" data-theme="c" id="btnHeaderParametros"><span class=
                     "txt_menu_btnes_derecha">PARÁMETROS</span><span class=
                     "icon-icnoparametros" style=
                     "font-size:25px; margin:0px; float:left;"></span></a>
-                </div><br>
+                </div>
+                <br>
             </div>
 
             <ul class="ruta" data-role="listview" style="margin:0px">
-                <li data-role="list-divider" id="tituloSeccion2">Concesión/
-                Instalación/ Departamento/ Nivel de análisis o alerta/
-                <span class="icon-icno_tipo_analisis"></span>Consultivo
-                diario</li>
+                <li data-role="list-divider" id="tituloSeccion2">Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/
+                    <span class="icon-icno_tipo_analisis"></span>Consultivo diario
+                </li>
             </ul>
-        </div><!-- Menu inicial -->
+        </div>
+        <!-- Menu inicial -->
 
         <div data-role="content" style="overflow-y:hidden; overflow-x:hidden">
             <!-- Menu principal  -->
 
             <div class="k-content" id="page_main">
-                <div class="ui-grid-b" style=
-                "margin-right:50px;margin-left:50px">
+                <div class="ui-grid-b" style="margin-right:50px;margin-left:50px">
                     <div class="ui-block-a">
-                        <div data-role="listview" style=
-                        "margin:15px 0 15px 0;">
-                            <div data-role="list-divider" id="div" style=
-                            "text-align:center; background-color:#fff; border:none; text-shadow:none; color:#66CC00; line-height:1.2em; padding-top:40px; font-size:16px;">
-                            <span style=
-                            "font-family:light;">VEHÍCULOS</span><br>
-                            <span style="font-family:black;">NUEVOS</span><br>
-                            <img alt="logo" class="img_departamentos" src=
-                            "css/imagenes/veh_nuevos.png"></div>
-                            <!-- Botones vehiculos nuevos  --><a class=
-                            "btn_ancho" data-role="button" data-theme="b" id=
-                            "btnMainNuevosConsultivo"><span class=
+                        <div data-role="listview" style="margin:15px 0 15px 0;">
+                            <div data-role="list-divider" id="div" style="text-align:center; background-color:#fff; border:none; text-shadow:none; color:#66CC00; line-height:1.2em; padding-top:40px; font-size:16px;">
+                                <span style="font-family:light;">VEHÍCULOS</span>
+                                <br>
+                                <span style="font-family:black;">NUEVOS</span>
+                                <br>
+                                <img alt="logo" class="img_departamentos" src="css/imagenes/veh_nuevos.png">
+                            </div>
+                            <!-- Botones vehiculos nuevos  --><a class="btn_ancho" data-role="button" data-theme="b" id="btnMainNuevosConsultivo"><span class=
                             "icon-icnotipoanalisis" style=
                             "font-size:25px; margin:0px; float:left; color:#66cc00; margin-right: 15px;"></span>
                             <span class="txt_btnes">Consultivo</span></a>
-                            <a class="btn_ancho" data-role="button" data-theme=
-                            "b" id="btnMainNuevosEjecutivo"><span class=
+                            <a class="btn_ancho" data-role="button" data-theme="b" id="btnMainNuevosEjecutivo"><span class=
                             "icon-icnotipoanalisis" style=
                             "font-size:25px; margin:0px; float:left; color:#66cc00; margin-right: 15px;">
                             </span> <span class=
-                            "txt_btnes">Ejecutivo</span></a> <a class=
-                            "btn_ancho" data-role="button" data-theme="b" id=
-                            "btnMainNuevosComparativa"><span class=
+                            "txt_btnes">Ejecutivo</span></a> <a class="btn_ancho" data-role="button" data-theme="b" id="btnMainNuevosAnalitico"><span class=
                             "icon-icnotipoanalisis" style=
                             "font-size:25px; margin:0px; float:left; color:#66cc00; margin-right: 15px;">
                             </span> <span class=
-                            "txt_btnes">Analítico</span></a> <a class=
-                            "btn_ancho" data-role="button" data-theme="b" id=
-                            "btnMainNuevosAnalitico"><span class=
+                            "txt_btnes">Analítico</span></a> <a class="btn_ancho" data-role="button" data-theme="b" id="btnMainNuevosComparativa"><span class=
                             "icon-icnotipoanalisis" style=
                             "font-size:25px; margin:0px; float:left; color:#66cc00; margin-right: 15px;">
                             </span> <span class=
-                            "txt_btnes">Comparativa</span></a> <a class=
-                            "btn_alertas" data-role="button" data-theme="b" id=
-                            "btnMainAlertasNuevos"><span class=
+                            "txt_btnes">Comparativa</span></a> <a class="btn_alertas" data-role="button" data-theme="b" id="btnMainAlertasNuevos"><span class=
                             "icon-icnoalerta" style=
                             "font-size:35px; margin:0px; float:left; color:#ff0000; margin-right: 15px;">
                             </span> <span class=
@@ -509,41 +448,31 @@
                     </div>
 
                     <div class="ui-block-b">
-                        <div data-role="listview" style=
-                        "margin:15px 0 15px 0px;">
-                            <div data-role="list-divider" id="div" style=
-                            "text-align:center; background-color:#fff; border:none; text-shadow:none; color:#45abc9; line-height:1.2em; padding-top:40px; font-size:16px;">
-                            <span style=
-                            "font-family:light;">VEHÍCULOS</span><br>
-                            <span style="font-family:black;">USADOS</span><br>
-                            <img alt="logo" class="img_departamentos" src=
-                            "css/imagenes/veh_usados.png"></div>
-                            <!-- Botones vehiculos usados  --><a class=
-                            "btn_ancho" data-role="button" data-theme="b" id=
-                            "btnMainUsadosConsultivo"><span class=
+                        <div data-role="listview" style="margin:15px 0 15px 0px;">
+                            <div data-role="list-divider" id="div" style="text-align:center; background-color:#fff; border:none; text-shadow:none; color:#45abc9; line-height:1.2em; padding-top:40px; font-size:16px;">
+                                <span style="font-family:light;">VEHÍCULOS</span>
+                                <br>
+                                <span style="font-family:black;">USADOS</span>
+                                <br>
+                                <img alt="logo" class="img_departamentos" src="css/imagenes/veh_usados.png">
+                            </div>
+                            <!-- Botones vehiculos usados  --><a class="btn_ancho" data-role="button" data-theme="b" id="btnMainUsadosConsultivo"><span class=
                             "icon-icnotipoanalisis" style=
                             "font-size:25px; margin:0px; float:left; color:#45abc9; margin-right: 15px;"></span>
                             <span class="txt_btnes">Consultivo</span></a>
-                            <a class="btn_ancho" data-role="button" data-theme=
-                            "b" id="btnMainUsadosEjecutivo"><span class=
+                            <a class="btn_ancho" data-role="button" data-theme="b" id="btnMainUsadosEjecutivo"><span class=
                             "icon-icnotipoanalisis" style=
                             "font-size:25px; margin:0px; float:left; color:#45abc9; margin-right: 15px;">
                             </span> <span class=
-                            "txt_btnes">Ejecutivo</span></a> <a class=
-                            "btn_ancho" data-role="button" data-theme="b" id=
-                            "btnMainUsadosComparativa"><span class=
+                            "txt_btnes">Ejecutivo</span></a> <a class="btn_ancho" data-role="button" data-theme="b" id="btnMainUsadosAnalitico"><span class=
                             "icon-icnotipoanalisis" style=
                             "font-size:25px; margin:0px; float:left; color:#45abc9; margin-right: 15px;">
                             </span> <span class=
-                            "txt_btnes">Analítico</span></a> <a class=
-                            "btn_ancho" data-role="button" data-theme="b" id=
-                            "btnMainUsadosAnalitico"><span class=
+                            "txt_btnes">Analítico</span></a> <a class="btn_ancho" data-role="button" data-theme="b" id="btnMainUsadosComparativa"><span class=
                             "icon-icnotipoanalisis" style=
                             "font-size:25px; margin:0px; float:left; color:#45abc9; margin-right: 15px;">
                             </span> <span class=
-                            "txt_btnes">Comparativa</span></a> <a class=
-                            "btn_alertas" data-role="button" data-theme="b" id=
-                            "btnMainAlertasUsados"><span class=
+                            "txt_btnes">Comparativa</span></a> <a class="btn_alertas" data-role="button" data-theme="b" id="btnMainAlertasUsados"><span class=
                             "icon-icnoalerta" style=
                             "font-size:35px; margin:0px; float:left; color:#ff0000; margin-right: 15px;">
                             </span> <span class=
@@ -552,46 +481,42 @@
                     </div>
 
                     <div class="ui-block-c">
-                        <div data-role="listview" style=
-                        "margin:15px 0 15px 0;">
-                            <div data-role="list-divider" id="div" style=
-                            "text-align:center; background-color:#fff; border:none; text-shadow:none; color:#c28c00; line-height:1.2em; padding-top:40px; font-size:16px;">
-                            <span style=
-                            "font-family:light;">SERVICIO</span><br>
-                            <span style=
-                            "font-family:black;">POSVENTA</span><br>
-                            <img alt="logo" class="img_departamentos" src=
-                            "css/imagenes/serv_posventa.png"></div>
-                            <!-- Botones vehiculos usados  --><a class=
-                            "btn_ancho" data-role="button" data-theme="b" id=
-                            "btnMainposventaConsultivo"><span class=
+                        <div data-role="listview" style="margin:15px 0 15px 0;">
+                            <div data-role="list-divider" id="div" style="text-align:center; background-color:#fff; border:none; text-shadow:none; color:#c28c00; line-height:1.2em; padding-top:40px; font-size:16px;">
+                                <span style="font-family:light;">SERVICIO</span>
+                                <br>
+                                <span style="font-family:black;">POSVENTA</span>
+                                <br>
+                                <img alt="logo" class="img_departamentos" src="css/imagenes/serv_posventa.png">
+                            </div>
+                            <!-- Botones vehiculos usados  --><a class="btn_ancho" data-role="button" data-theme="b" id="btnMainposventaConsultivo"><span class=
                             "icon-icnotipoanalisis" style=
                             "font-size:25px; margin:0px; float:left; color:#c28c00; margin-right: 15px;"></span>
                             <span class="txt_btnes">Consultivo</span></a>
-                            <a class="btn_ancho" data-role="button" data-theme=
-                            "b" id="btnMainposventaEjecutivo"><span class=
+                            <a class="btn_ancho" data-role="button" data-theme="b" id="btnMainposventaEjecutivo"><span class=
                             "icon-icnotipoanalisis" style=
                             "font-size:25px; margin:0px; float:left; color:#c28c00; margin-right: 15px;">
                             </span> <span class=
-                            "txt_btnes">Ejecutivo</span></a> <a class=
-                            "btn_ancho" data-role="button" data-theme="b" id=
-                            "btnMainposventaComparativa"><span class=
+                            "txt_btnes">Ejecutivo</span>
+                            </a>
+                            <a class="btn_ancho" data-role="button" data-theme="b" id="btnMainposventaAnalitico"><span class=
                             "icon-icnotipoanalisis" style=
                             "font-size:25px; margin:0px; float:left; color:#c28c00; margin-right: 15px;">
                             </span> <span class=
-                            "txt_btnes">Analítico</span></a> <a class=
-                            "btn_ancho" data-role="button" data-theme="b" id=
-                            "btnMainposventaAnalitico"><span class=
+                            "txt_btnes">Analítico</span>
+                            </a>
+                            <a class="btn_ancho" data-role="button" data-theme="b" id="btnMainposventaComparativa"><span class=
                             "icon-icnotipoanalisis" style=
                             "font-size:25px; margin:0px; float:left; color:#c28c00; margin-right: 15px;">
                             </span> <span class=
-                            "txt_btnes">Comparativa</span></a> <a class=
-                            "btn_alertas" data-role="button" data-theme="b" id=
-                            "btnMainAlertasposventa"><span class=
+                            "txt_btnes">Comparativa</span>
+                            </a>
+                            <a class="btn_alertas" data-role="button" data-theme="b" id="btnMainAlertasposventa"><span class=
                             "icon-icnoalerta" style=
                             "font-size:35px; margin:0px; float:left; color:#ff0000; margin-right: 15px;">
                             </span> <span class=
-                            "txt_alertas">ALERTAS</span></a>
+                            "txt_alertas">ALERTAS</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -616,25 +541,14 @@
         </div>
 
         <div class="k-content, fondo_parametros" id="page_parametros">
-            <div class="ui-grid-b" style=
-            "padding-right:15px;padding-left:15px; background-color:#fff;">
+            <div class="ui-grid-b" style="padding-right:15px;padding-left:15px; background-color:#fff;">
                 <ul data-role="listview" style="margin:40px 15px 15px 15px;">
-                    <li class=
-                    "ui-field-contain ui-body ui-br ui-li ui-li-static ui-btn-up-c"
-                    data-role="fieldcontain" style=
-                    "background-color:#f0f0f0; width:50%; margin:0 auto; border-radius:1em;">
-                    <label class="select ui-select select_" for=
-                    "select-choice-1">Marca:</label>
+                    <li class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-btn-up-c" data-role="fieldcontain" style="background-color:#f0f0f0; width:50%; margin:0 auto; border-radius:1em;">
+                        <label class="select ui-select select_" for="select-choice-1">Marca:</label>
 
                         <div class="ui-select">
-                            <div class=
-                            "ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c"
-                            data-corners="true" data-icon="arrow-d"
-                            data-iconpos="right" data-iconshadow="true"
-                            data-shadow="true" data-theme="c" data-wrapperels=
-                            "span" style="background-color:transparent;">
-                                <span class=
-                                "ui-btn-inner ui-btn-corner-all"><select id=
+                            <div class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c" data-corners="true" data-icon="arrow-d" data-iconpos="right" data-iconshadow="true" data-shadow="true" data-theme="c" data-wrapperels="span" style="background-color:transparent;">
+                                <span class="ui-btn-inner ui-btn-corner-all"><select id=
                                 "select-choice-1" name="select-choice-1">
                                     <option value="standard">
                                         Opcion 1
@@ -652,34 +566,22 @@
                                         Opcion 4
                                     </option>
                                 </select></span>
-                            </div><span class=
-                            "ui-btn-inner ui-btn-corner-all"></span>
+                            </div><span class="ui-btn-inner ui-btn-corner-all"></span>
                         </div>
                     </li>
 
-                    <li style="list-style: none"><span class=
-                    "ui-btn-inner ui-btn-corner-all"><br></span></li>
+                    <li style="list-style: none"><span class="ui-btn-inner ui-btn-corner-all"><br></span>
+                    </li>
 
-                    <li class=
-                    "ui-field-contain ui-body ui-br ui-li ui-li-static ui-btn-up-c"
-                    data-role="fieldcontain" style=
-                    "background-color:#f0f0f0; width:50%; margin:0 auto; border-radius:1em;">
-                    <span class=
-                        "ui-btn-inner ui-btn-corner-all"><label class="select ui-select select_"
+                    <li class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-btn-up-c" data-role="fieldcontain" style="background-color:#f0f0f0; width:50%; margin:0 auto; border-radius:1em;">
+                        <span class="ui-btn-inner ui-btn-corner-all"><label class="select ui-select select_"
                         for="select-choice-1">Zona:</label></span>
 
                         <div class="ui-select">
-                            <span class=
-                            "ui-btn-inner ui-btn-corner-all"></span>
+                            <span class="ui-btn-inner ui-btn-corner-all"></span>
 
-                            <div class=
-                            "ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c"
-                            data-corners="true" data-icon="arrow-d"
-                            data-iconpos="right" data-iconshadow="true"
-                            data-shadow="true" data-theme="c" data-wrapperels=
-                            "span" style="background-color:transparent;">
-                                <span class=
-                                "ui-btn-inner ui-btn-corner-all"><span class=
+                            <div class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c" data-corners="true" data-icon="arrow-d" data-iconpos="right" data-iconshadow="true" data-shadow="true" data-theme="c" data-wrapperels="span" style="background-color:transparent;">
+                                <span class="ui-btn-inner ui-btn-corner-all"><span class=
                                 "ui-btn-inner ui-btn-corner-all"><select id=
                                 "select-choice-1" name="select-choice-1">
                                     <option value="standard">
@@ -698,34 +600,22 @@
                                         Opcion 4
                                     </option>
                                 </select></span></span>
-                            </div><span class=
-                            "ui-btn-inner ui-btn-corner-all"></span>
+                            </div><span class="ui-btn-inner ui-btn-corner-all"></span>
                         </div>
                     </li>
 
-                    <li style="list-style: none"><span class=
-                    "ui-btn-inner ui-btn-corner-all"><br></span></li>
+                    <li style="list-style: none"><span class="ui-btn-inner ui-btn-corner-all"><br></span>
+                    </li>
 
-                    <li class=
-                    "ui-field-contain ui-body ui-br ui-li ui-li-static ui-btn-up-c"
-                    data-role="fieldcontain" style=
-                    "background-color:#f0f0f0; width:50%; margin:0 auto; border-radius:1em;">
-                    <span class=
-                        "ui-btn-inner ui-btn-corner-all"><label class="select ui-select select_"
+                    <li class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-btn-up-c" data-role="fieldcontain" style="background-color:#f0f0f0; width:50%; margin:0 auto; border-radius:1em;">
+                        <span class="ui-btn-inner ui-btn-corner-all"><label class="select ui-select select_"
                         for="select-choice-1">Concesión:</label></span>
 
                         <div class="ui-select">
-                            <span class=
-                            "ui-btn-inner ui-btn-corner-all"></span>
+                            <span class="ui-btn-inner ui-btn-corner-all"></span>
 
-                            <div class=
-                            "ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c"
-                            data-corners="true" data-icon="arrow-d"
-                            data-iconpos="right" data-iconshadow="true"
-                            data-shadow="true" data-theme="c" data-wrapperels=
-                            "span" style="background-color:transparent;">
-                                <span class=
-                                "ui-btn-inner ui-btn-corner-all"><span class=
+                            <div class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c" data-corners="true" data-icon="arrow-d" data-iconpos="right" data-iconshadow="true" data-shadow="true" data-theme="c" data-wrapperels="span" style="background-color:transparent;">
+                                <span class="ui-btn-inner ui-btn-corner-all"><span class=
                                 "ui-btn-inner ui-btn-corner-all"><select id=
                                 "select-choice-1" name="select-choice-1">
                                     <option value="standard">
@@ -744,14 +634,14 @@
                                         Opcion 4
                                     </option>
                                 </select></span></span>
-                            </div><span class=
-                            "ui-btn-inner ui-btn-corner-all"></span>
+                            </div><span class="ui-btn-inner ui-btn-corner-all"></span>
                         </div>
                     </li>
                 </ul>
             </div><span class="ui-btn-inner ui-btn-corner-all"><br>
             <a class="btn_parametros" data-role="button" data-theme="a" id=
-            "">Buscar</a></span><br>
+            "">Buscar</a></span>
+            <br>
             <span class="ui-btn-inner ui-btn-corner-all"></span>
         </div>
 
@@ -761,8 +651,8 @@
             <div data-role="header">
                 <span class="ui-btn-inner ui-btn-corner-all"><label class=
                 "titulo_grafica" id="titulo_1-1">Título grafica</label></span>
-            </div><span class="ui-btn-inner ui-btn-corner-all"><img src=
-            "css/maqueta/NUEVOS_consultivo.png" width="100%"></span>
+            </div>
+            <div id="div_nuevos_consultivo"></div>
         </div><span class="ui-btn-inner ui-btn-corner-all"></span>
 
         <div class="k-content" id="page_nuevosEjecutivo" style="display:none">
@@ -775,48 +665,68 @@
                     <span class="ui-btn-inner ui-btn-corner-all"><a data-role=
                     "button" data-theme="b" id=
                     "btnNuevosEjecutivo1-1"><span>Resumen
-                    Mensual</span></a></span>
+                    Mensual</span>
+                    </a>
+                    </span>
                 </div>
 
                 <div class="ui-block-b">
-                    <a data-role="button" data-theme="b" id=
-                    "btnNuevosEjecutivo1-2"><span>Entregas. Mix Canal.
-                    Vendedor</span></a>
+                    <div data-role="collapsible" data-theme="b">
+                        <h2 id="btnNuevosEjecutivo1-2">Entregas. Mix Canal.
+                    Vendedor</h2>
+                        <ul data-role="listview">
+                            <li>
+                                <a id="btnNuevosEjecutivo1-2-1">Mix</a>
+                            </li>
+                            <li>
+                                <a id="btnNuevosEjecutivo1-2-2">Canales</a>
+                            </li>
+                            <li>
+                                <a id="btnNuevosEjecutivo1-2-3">Vendedor</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
+                </center>
                 <div class="ui-block-c">
-                    <a data-role="button" data-theme="b" id=
-                    "btnNuevosEjecutivo1-3"><span>Atípicos</span></a>
+                    <a data-role="button" data-theme="b" id="btnNuevosEjecutivo1-3"><span>Atípicos</span></a>
                 </div>
 
                 <div class="ui-block-d">
-                    <a data-role="button" data-theme="b" id=
-                    "btnNuevosEjecutivo1-4"><span>Revolución. Entregas.
+                    <a data-role="button" data-theme="b" id="btnNuevosEjecutivo1-4"><span>Evolución. Entregas.
                     Pedidos</span></a>
                 </div>
             </div>
 
             <div class="ui-grid-c" style="margin-right:15px;margin-left:15px">
                 <div class="ui-block-a">
-                    <a data-role="button" data-theme="b" id=
-                    "btnNuevosEjecutivo2-1"><span>Cartera</span></a>
+                    <a data-role="button" data-theme="b" id="btnNuevosEjecutivo2-1"><span>Cartera</span></a>
                 </div>
 
                 <div class="ui-block-b">
-                    <a data-role="button" data-theme="b" id=
-                    "btnNuevosEjecutivo2-2"><span>Stock</span></a>
+                    <div data-role="collapsible" data-theme="b">
+                        <h2 id="btnNuevosEjecutivo2-2">Stock</h2>
+                        <ul data-role="listview">
+                            <li>
+                                <a id="btnNuevosEjecutivo2-2-1">Stock</a>
+                            </li>
+                            <li>
+                                <a id="btnNuevosEjecutivo2-2-2">Saldos</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
+
                 <div class="ui-block-c">
-                    <a data-role="button" data-theme="b" id=
-                    "btnNuevosEjecutivo2-3"><span>Calidad</span></a>
+                    <a data-role="button" data-theme="b" id="btnNuevosEjecutivo2-3"><span>Calidad</span></a>
                 </div>
 
                 <div class="ui-block-d"></div>
             </div>
 
-            <div class="select_mes" data-content-theme="b" data-role=
-            "collapsible" data-theme="b">
+            <div data-content-theme="b" data-role="collapsible" data-theme="b" style="width:12em">
                 <h2>Mes</h2>
 
                 <ul data-role="listview">
@@ -870,11 +780,19 @@
                 </ul>
             </div>
 
-            <div class="partilla_titulo_grafica">
-                <ul data-role="listview">
-                    <li class="titulo_grafica" data-role="list-divider" id=
-                    "titulo_2-1">Titulo grafica</li>
-                </ul>
+            <div id="div_nuevos_ejecutivo">
+                <center>
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <ul data-role="listview" style="margin:5px">
+                                <li data-role="list-divider">Junio</li>
+                            </ul><img src="css/maqueta/18/18_resumen_mensual_mes_1.jpg" height="100%"> </div>
+                        <div class="ui-block-b">
+                            <ul data-role="listview" style="margin:5px">
+                                <li data-role="list-divider">Acumulado</li>
+                            </ul><img src="css/maqueta/18/18_resumen_mensual_acumulado_2.jpg" height="100%"> </div>
+                    </div>
+                </center>
             </div>
         </div>
 
@@ -883,18 +801,15 @@
                 <div class="ui-block-a" style="width:43%">
                     <div class="ui-grid-b">
                         <div class="ui-block-a">
-                            <a data-role="button" data-theme="a" id=
-                            "btnNuevosAnalitico1-1"><span>B0</span></a>
+                            <a data-role="button" data-theme="a" id="btnNuevosAnalitico1-1"><span>B0</span></a>
                         </div>
 
                         <div class="ui-block-b">
-                            <a data-role="button" data-theme="a" id=
-                            "btnNuevosAnalitico1-2"><span>B1</span></a>
+                            <a data-role="button" data-theme="a" id="btnNuevosAnalitico1-2"><span>B1</span></a>
                         </div>
 
                         <div class="ui-block-c">
-                            <a data-role="button" data-theme="a" id=
-                            "btnNuevosAnalitico1-3"><span>B2</span></a>
+                            <a data-role="button" data-theme="a" id="btnNuevosAnalitico1-3"><span>B2</span></a>
                         </div>
                     </div>
                 </div>
@@ -902,23 +817,19 @@
                 <div class="ui-block-b" style="width:57%">
                     <div class="ui-grid-c">
                         <div class="ui-block-a">
-                            <a data-role="button" data-theme="a" id=
-                            "btnNuevosAnalitico1-4"><span>B3</span></a>
+                            <a data-role="button" data-theme="a" id="btnNuevosAnalitico1-4"><span>B3</span></a>
                         </div>
 
                         <div class="ui-block-b">
-                            <a data-role="button" data-theme="a" id=
-                            "btnNuevosAnalitico1-5"><span>B4</span></a>
+                            <a data-role="button" data-theme="a" id="btnNuevosAnalitico1-5"><span>B4</span></a>
                         </div>
 
                         <div class="ui-block-c">
-                            <a data-role="button" data-theme="a" id=
-                            "btnNuevosAnalitico1-6"><span>B5</span></a>
+                            <a data-role="button" data-theme="a" id="btnNuevosAnalitico1-6"><span>B5</span></a>
                         </div>
 
                         <div class="ui-block-d">
-                            <a data-role="button" data-theme="a" id=
-                            "btnNuevosAnalitico1-7"><span>B6</span></a>
+                            <a data-role="button" data-theme="a" id="btnNuevosAnalitico1-7"><span>B6</span></a>
                         </div>
                     </div>
                 </div>
@@ -926,45 +837,38 @@
 
             <div class="ui-grid-c" style="margin-right:15px;margin-left:15px">
                 <div class="ui-block-a">
-                    <a data-role="button" data-theme="a" id=
-                    "btnNuevosAnalitico2-1"><span>Vendedor 1</span></a>
+                    <a data-role="button" data-theme="a" id="btnNuevosAnalitico2-1"><span>Vendedor 1</span></a>
                 </div>
 
                 <div class="ui-block-b">
-                    <a data-role="button" data-theme="a" id=
-                    "btnNuevosAnalitico2-2"><span>Vendedor 2</span></a>
+                    <a data-role="button" data-theme="a" id="btnNuevosAnalitico2-2"><span>Vendedor 2</span></a>
                 </div>
 
                 <div class="ui-block-c">
-                    <a data-role="button" data-theme="a" id=
-                    "btnNuevosAnalitico2-3"><span>Vendedor 3</span></a>
+                    <a data-role="button" data-theme="a" id="btnNuevosAnalitico2-3"><span>Vendedor 3</span></a>
                 </div>
 
                 <div class="ui-block-d">
-                    <a data-role="button" data-theme="a" id=
-                    "btnNuevosAnalitico2-4"><span>Vendedor 4</span></a>
+                    <a data-role="button" data-theme="a" id="btnNuevosAnalitico2-4"><span>Vendedor 4</span></a>
                 </div>
             </div>
 
             <div class="ui-grid-b" style="margin-right:15px;margin-left:15px">
                 <div class="ui-block-a">
-                    <a data-role="button" data-theme="a" id=
-                    "btnNuevosAnalitico3-1"><span>Financiera 1</span></a>
+                    <a data-role="button" data-theme="a" id="btnNuevosAnalitico3-1"><span>Financiera 1</span></a>
                 </div>
 
                 <div class="ui-block-b">
-                    <a data-role="button" data-theme="a" id=
-                    "btnNuevosAnalitico3-2"><span>Renting 1</span></a>
+                    <a data-role="button" data-theme="a" id="btnNuevosAnalitico3-2"><span>Renting 1</span></a>
                 </div>
 
                 <div class="ui-block-c"></div>
             </div>
 
-            <div data-content-theme="b" data-role="collapsible" data-theme="b"
-            style="width:12em">
+            <div data-content-theme="b" data-role="collapsible" data-theme="b" style="width:12em">
                 <h2>Mes</h2>
 
-                <ul data-filter="true" data-role="listview">
+                <ul data-role="listview">
                     <li>
                         <a>Enero</a>
                     </li>
@@ -1016,73 +920,66 @@
             </div>
 
             <ul data-role="listview" style="margin:5px">
-                <li data-role="list-divider" id="titulo_2-2">Titulo
-                grafica</li>
+                <li data-role="list-divider" id="titulo_2-2">Titulo grafica
+                </li>
             </ul>
-        </div><!-- VEHICULOS USADOS -->
+            <div id="div_nuevos_analitico"></div>
+        </div>
+        <!-- VEHICULOS USADOS -->
 
         <div class="k-content" id="page_consultivoUsados">
-        <div data-role="header">
-            <label class="titulo_grafica" id="titulo_1-2">Titulo
-            grafica</label>
-        </div><img src="css/maqueta/USADOS_consultivo.png" width="100%"></div>
+            <div data-role="header">
+                <label class="titulo_grafica" id="titulo_1-2">Titulo grafica
+                </label>
+            </div><img src="css/maqueta/USADOS_consultivo.png" width="100%">
+        </div>
 
         <div class="k-content" id="page_usadosEjecutivo" style="display:none">
             <div class="ui-grid-c" style="margin-right:15px;margin-left:15px">
                 <div class="ui-block-a">
-                    <a data-role="button" data-theme="a" id=
-                    "btnUsadosEjecutivo1-1"><span>Resumen Mensual</span></a>
+                    <a data-role="button" data-theme="a" id="btnUsadosEjecutivo1-1"><span>Resumen Mensual</span></a>
                 </div>
 
                 <div class="ui-block-b">
-                    <a data-role="button" data-theme="a" id=
-                    "btnUsadosEjecutivo1-2"><span>Canales de entrega</span></a>
+                    <a data-role="button" data-theme="a" id="btnUsadosEjecutivo1-2"><span>Canales de entrega</span></a>
                 </div>
 
                 <div class="ui-block-c">
-                    <a data-role="button" data-theme="a" id=
-                    "btnUsadosEjecutivo1-3"><span>Evolución, Entregas, Pedidos,
+                    <a data-role="button" data-theme="a" id="btnUsadosEjecutivo1-3"><span>Evolución, Entregas, Pedidos,
                     Tráfico</span></a>
                 </div>
 
                 <div class="ui-block-d">
-                    <a data-role="button" data-theme="a" id=
-                    "btnUsadosEjecutivo1-4"><span>Cartera</span></a>
+                    <a data-role="button" data-theme="a" id="btnUsadosEjecutivo1-4"><span>Cartera</span></a>
                 </div>
             </div>
 
             <div class="ui-grid-c" style="margin-right:15px;margin-left:15px">
                 <div class="ui-block-a">
-                    <a data-role="button" data-theme="a" id=
-                    "btnUsadosEjecutivo2-1"><span>Stock</span></a>
+                    <a data-role="button" data-theme="a" id="btnUsadosEjecutivo2-1"><span>Stock</span></a>
                 </div>
 
                 <div class="ui-block-b">
-                    <a data-role="button" data-theme="a" id=
-                    "btnUsadosEjecutivo2-2"><span>Compras</span></a>
+                    <a data-role="button" data-theme="a" id="btnUsadosEjecutivo2-2"><span>Compras</span></a>
                 </div>
 
                 <div class="ui-block-c">
-                    <a data-role="button" data-theme="a" id=
-                    "btnUsadosEjecutivo2-3"><span>Relación vehiculos
+                    <a data-role="button" data-theme="a" id="btnUsadosEjecutivo2-3"><span>Relación vehiculos
                     nuevos</span></a>
                 </div>
 
                 <div class="ui-block-d">
-                    <a data-role="button" data-theme="a" id=
-                    "btnUsadosEjecutivo2-4"><span>Calidad</span></a>
+                    <a data-role="button" data-theme="a" id="btnUsadosEjecutivo2-4"><span>Calidad</span></a>
                 </div>
             </div>
 
             <div class="ui-grid-c" style="margin-right:15px;margin-left:15px">
                 <div class="ui-block-a">
-                    <a data-role="button" data-theme="a" id=
-                    "btnUsadosEjecutivo3-1"><span>Atípicos</span></a>
+                    <a data-role="button" data-theme="a" id="btnUsadosEjecutivo3-1"><span>Atípicos</span></a>
                 </div>
 
                 <div class="ui-block-b">
-                    <a data-role="button" data-theme="a" id=
-                    "btnUsadosEjecutivo3-2"><span>Aportación
+                    <a data-role="button" data-theme="a" id="btnUsadosEjecutivo3-2"><span>Aportación
                     posventa</span></a>
                 </div>
 
@@ -1091,11 +988,10 @@
                 <div class="ui-block-d"></div>
             </div>
 
-            <div data-content-theme="b" data-role="collapsible" data-theme="b"
-            style="width:12em">
+            <div data-content-theme="b" data-role="collapsible" data-theme="b" style="width:12em">
                 <h2>Mes</h2>
 
-                <ul data-filter="true" data-role="listview">
+                <ul data-role="listview">
                     <li>
                         <a>Enero</a>
                     </li>
@@ -1147,53 +1043,46 @@
             </div>
 
             <ul data-role="listview" style="margin:5px">
-                <li data-role="list-divider" id="titulo_2-2">Titulo
-                grafica</li>
+                <li data-role="list-divider" id="titulo_2-2">Titulo grafica
+                </li>
             </ul>
         </div>
 
         <div class="k-content" id="page_usadosAnalitico" style="display:none">
             <div class="ui-grid-b" style="margin-right:15px;margin-left:15px">
                 <div class="ui-block-a">
-                    <a data-role="button" data-theme="a" id=
-                    "btnUsadosAnalitico1-1"><span>Total</span></a>
+                    <a data-role="button" data-theme="a" id="btnUsadosAnalitico1-1"><span>Total</span></a>
                 </div>
 
                 <div class="ui-block-b">
-                    <a data-role="button" data-theme="a" id=
-                    "btnUsadosAnalitico1-2"><span>Exposición</span></a>
+                    <a data-role="button" data-theme="a" id="btnUsadosAnalitico1-2"><span>Exposición</span></a>
                 </div>
 
                 <div class="ui-block-c">
-                    <a data-role="button" data-theme="a" id=
-                    "btnUsadosAnalitico1-3"><span>Internet</span></a>
+                    <a data-role="button" data-theme="a" id="btnUsadosAnalitico1-3"><span>Internet</span></a>
                 </div>
             </div>
 
             <div class="ui-grid-b" style="margin-right:15px;margin-left:15px">
                 <div class="ui-block-a">
-                    <a data-role="button" data-theme="a" id=
-                    "btnUsadosAnalitico2-1"><span>Vendedor 1</span></a>
+                    <a data-role="button" data-theme="a" id="btnUsadosAnalitico2-1"><span>Vendedor 1</span></a>
                 </div>
 
                 <div class="ui-block-b">
-                    <a data-role="button" data-theme="a" id=
-                    "btnUsadosAnalitico2-2"><span>Vendedor 2</span></a>
+                    <a data-role="button" data-theme="a" id="btnUsadosAnalitico2-2"><span>Vendedor 2</span></a>
                 </div>
 
                 <div class="ui-block-c">
-                    <a data-role="button" data-theme="a" id=
-                    "btnUsadosAnalitico2-3"><span>Vendedor 3</span></a>
+                    <a data-role="button" data-theme="a" id="btnUsadosAnalitico2-3"><span>Vendedor 3</span></a>
                 </div>
             </div>
 
-            <div data-content-theme="b" data-role="collapsible" data-theme="b"
-            style="width:12em">
+            <div data-content-theme="b" data-role="collapsible" data-theme="b" style="width:12em">
                 <div class="linea"></div>
 
                 <h2>Mes</h2>
 
-                <ul data-filter="true" data-role="listview">
+                <ul data-role="listview">
                     <li>
                         <a>Enero</a>
                     </li>
@@ -1245,17 +1134,16 @@
             </div>
 
             <ul data-role="listview" style="margin:5px">
-                <li class="titulo_grafica" data-role="list-divider" id=
-                "titulo_2-2">Titulo grafica</li>
+                <li class="titulo_grafica" data-role="list-divider" id="titulo_2-2">Titulo grafica</li>
             </ul>
-        </div><!-- SERVICIO POSVENTA -->
+        </div>
+        <!-- SERVICIO POSVENTA -->
 
         <div class="k-content" id="page_consultivoPosventa">
             <div data-grid="a" data-role="navbar">
                 <ul>
                     <li>
-                        <a class="ui-btn-active" id=
-                        "btnConsultivoPosventa1">Pasos de Taller</a>
+                        <a class="ui-btn-active" id="btnConsultivoPosventa1">Pasos de Taller</a>
                     </li>
 
                     <li>
@@ -1264,66 +1152,77 @@
                 </ul>
             </div>
 
-            <div id="div_consultivoPosventa">
-                <img height="100%" src="css/maqueta/55_pasos_taller.jpg"><br>
+            <div id="div_consultivoPosventa" style="margin-top:5px">
+                <center>
+                    <img src="css/maqueta/55/55_pasos_taller.jpg" height="100%"><img src="css/maqueta/55/55_acumulado.jpg" height="100%"><img src="css/maqueta/55/55_media_dia.jpg" height="100%">
+                </center>
             </div>
         </div>
 
-        <div class="k-content" id="page_posventaEjecutivo" style=
-        "display:none">
+        <div class="k-content" id="page_posventaEjecutivo" style="display:none">
             <div class="ui-grid-c" style="margin-right:15px;margin-left:15px">
                 <div class="ui-block-a">
-                    <a data-role="button" data-theme="a" id=
-                    "btnPosventaEjecutivo1-1"><span>Facturación</span></a>
+                    <div data-role="collapsible" data-theme="b">
+
+                        <h2 id="btnPosventaEjecutivo1-1">Facturación</h2>
+
+                        <ul data-role="listview">
+                            <li>
+                                <a id="btnPosventaEjecutivo1-1-1">Total</a>
+                            </li>
+                            <li>
+                                <a id="btnPosventaEjecutivo1-1-2">Mecánica</a>
+                            </li>
+                            <li>
+                                <a id="btnPosventaEjecutivo1-1-3">Carrocería</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
                 </div>
 
+
+
                 <div class="ui-block-b">
-                    <a data-role="button" data-theme="a" id=
-                    "btnPosventaEjecutivo1-2"><span>Mecánica análisis
+                    <a data-role="button" data-theme="a" id="btnPosventaEjecutivo1-2"><span>Mecánica análisis
                     canales</span></a>
                 </div>
 
                 <div class="ui-block-c">
-                    <a data-role="button" data-theme="a" id=
-                    "btnPosventaEjecutivo1-3"><span>Carrocería analisis
+                    <a data-role="button" data-theme="a" id="btnPosventaEjecutivo1-3"><span>Carrocería analisis
                     canales</span></a>
                 </div>
 
                 <div class="ui-block-d">
-                    <a data-role="button" data-theme="a" id=
-                    "btnPosventaEjecutivo1-4"><span>Facturación
+                    <a data-role="button" data-theme="a" id="btnPosventaEjecutivo1-4"><span>Facturación
                     recambios</span></a>
                 </div>
             </div>
 
             <div class="ui-grid-c" style="margin-right:15px;margin-left:15px">
                 <div class="ui-block-a">
-                    <a data-role="button" data-theme="a" id=
-                    "btnPosventaEjecutivo2-1"><span>Ratios gestión</span></a>
+                    <a data-role="button" data-theme="a" id="btnPosventaEjecutivo2-1"><span>Ratios gestión</span></a>
                 </div>
 
                 <div class="ui-block-b">
-                    <a data-role="button" data-theme="a" id=
-                    "btnPosventaEjecutivo2-2"><span>Ratios gestión
+                    <a data-role="button" data-theme="a" id="btnPosventaEjecutivo2-2"><span>Ratios gestión
                     mecánica</span></a>
                 </div>
 
                 <div class="ui-block-c">
-                    <a data-role="button" data-theme="a" id=
-                    "btnPosventaEjecutivo2-3"><span>Ratios gestión
+                    <a data-role="button" data-theme="a" id="btnPosventaEjecutivo2-3"><span>Ratios gestión
                     Carrocería</span></a>
                 </div>
 
                 <div class="ui-block-d">
-                    <a data-role="button" data-theme="a" id=
-                    "btnPosventaEjecutivo2-4"><span>Calidad</span></a>
+                    <a data-role="button" data-theme="a" id="btnPosventaEjecutivo2-4"><span>Calidad</span></a>
                 </div>
             </div>
 
             <div data-role="collapsible" data-theme="b" style="width:12em;">
                 <h2>Mes</h2>
-
-                <ul data-filter="true" data-role="listview">
+                <ul data-role="listview">
                     <li>
                         <a>Enero</a>
                     </li>
@@ -1374,49 +1273,56 @@
                 </ul>
             </div>
 
-            <ul data-role="listview" style="margin:5px">
-                <li data-role="list-divider" id="titulo_2-3">Titulo
-                grafica</li>
-            </ul>
+
+            <div id="div_ejecutivoPosventa">
+                <center>
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <ul data-role="listview" style="margin:5px">
+                                <li data-role="list-divider">Total</li>
+                            </ul><img src="css/maqueta/56/56_mecanica_mes.jpg" height="100%">
+                        </div>
+                        <div class="ui-block-b">
+                            <ul data-role="listview" style="margin:5px">
+                                <li data-role="list-divider">Acumulado</li>
+                            </ul><img src="css/maqueta/56/56_total_mes.jpg" height="100%">
+                        </div>
+                    </div>
+                </center>
+            </div>
         </div>
 
-        <div class="k-content" id="page_posventaAnalitico" style=
-        "display:none">
+
+        <div class="k-content" id="page_posventaAnalitico" style="display:none">
             <div class="ui-grid-c" style="margin-right:15px;margin-left:15px">
                 <div class="ui-block-a">
-                    <a data-role="button" data-theme="a" id=
-                    "btnPosventaAnalitico1-1"><span>Gestión canales
+                    <a data-role="button" data-theme="a" id="btnPosventaAnalitico1-1"><span>Gestión canales
                     mecánica</span></a>
                 </div>
 
                 <div class="ui-block-b">
-                    <a data-role="button" data-theme="a" id=
-                    "btnPosventaAnalitico1-2"><span>Gestión canales
+                    <a data-role="button" data-theme="a" id="btnPosventaAnalitico1-2"><span>Gestión canales
                     carrocería</span></a>
                 </div>
 
                 <div class="ui-block-c">
-                    <a data-role="button" data-theme="a" id=
-                    "btnPosventaAnalitico1-3"><span>Evolución
+                    <a data-role="button" data-theme="a" id="btnPosventaAnalitico1-3"><span>Evolución
                     facturación</span></a>
                 </div>
 
                 <div class="ui-block-d">
-                    <a data-role="button" data-theme="a" id=
-                    "btnPosventaAnalitico1-4"><span>Evolución media, pasos
+                    <a data-role="button" data-theme="a" id="btnPosventaAnalitico1-4"><span>Evolución media, pasos
                     diarios</span></a>
                 </div>
             </div>
 
             <div class="ui-grid-c" style="margin-right:15px;margin-left:15px">
                 <div class="ui-block-a">
-                    <a data-role="button" data-theme="a" id=
-                    "btnPosventaAnalitico2-1"><span>Evolución horas</span></a>
+                    <a data-role="button" data-theme="a" id="btnPosventaAnalitico2-1"><span>Evolución horas</span></a>
                 </div>
 
                 <div class="ui-block-b">
-                    <a data-role="button" data-theme="a" id=
-                    "btnPosventaAnalitico2-2"><span>Evolución empleo</span></a>
+                    <a data-role="button" data-theme="a" id="btnPosventaAnalitico2-2"><span>Evolución empleo</span></a>
                 </div>
 
                 <div class="ui-block-c"></div>
@@ -1426,25 +1332,22 @@
 
             <div class="ui-grid-b" style="margin-right:15px;margin-left:15px">
                 <div class="ui-block-a">
-                    <a data-role="button" data-theme="a" id=
-                    "btnPosventaAnalitico3-1"><span>Asesor 1</span></a>
+                    <a data-role="button" data-theme="a" id="btnPosventaAnalitico3-1"><span>Asesor 1</span></a>
                 </div>
 
                 <div class="ui-block-b">
-                    <a data-role="button" data-theme="a" id=
-                    "btnPosventaAnalitico3-2"><span>Asesor 2</span></a>
+                    <a data-role="button" data-theme="a" id="btnPosventaAnalitico3-2"><span>Asesor 2</span></a>
                 </div>
 
                 <div class="ui-block-c">
-                    <a data-role="button" data-theme="a" id=
-                    "btnPosventaAnalitico3-3"><span>Asesor 3</span></a>
+                    <a data-role="button" data-theme="a" id="btnPosventaAnalitico3-3"><span>Asesor 3</span></a>
                 </div>
             </div>
 
             <div data-role="collapsible" data-theme="b" style="width:12em;">
                 <h2>Mes</h2>
 
-                <ul data-filter="true" data-role="listview">
+                <ul data-role="listview">
                     <li>
                         <a>Enero</a>
                     </li>
@@ -1494,107 +1397,104 @@
                     </li>
                 </ul>
             </div>
-
-            <ul data-role="listview" style="margin:5px">
-                <li data-role="list-divider" id="titulo_2-3">Titulo
-                grafica</li>
-            </ul>
+            <div id="div_analiticoPosventa">
+                <center>
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <ul data-role="listview" style="margin:5px">
+                                <li data-role="list-divider">Facturación mecánica</li>
+                            </ul><img src="css/maqueta/72/72_evolucion_facturacion_mecanica_1.jpg" height="100%">
+                        </div>
+                        <div class="ui-block-b">
+                            <ul data-role="listview" style="margin:5px">
+                                <li data-role="list-divider">Acumulado</li>
+                            </ul><img src="css/maqueta/72/72_evolucion_facturacion_mecanica_acumulado_2.jpg" height="100%">
+                        </div>
+                    </div>
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <ul data-role="listview" style="margin:5px">
+                                <li data-role="list-divider">Facturación carrocería</li>
+                            </ul><img src="css/maqueta/73/73_evolucion_facturacion_carroceria_1.jpg" height="100%">
+                        </div>
+                        <div class="ui-block-b">
+                            <ul data-role="listview" style="margin:5px">
+                                <li data-role="list-divider">Acumulado</li>
+                            </ul><img src="css/maqueta/73/73_evolucion_facturacion_carroceria_acumulado_2.jpg" height="100%">
+                        </div>
+                    </div>
+                </center>
+            </div>
         </div>
 
-        <div class="k-content" id="page_alertasNuevos" style=
-        "background-color:#fff;">
+        <div class="k-content" id="page_alertasNuevos" style="background-color:#fff;">
             <div class="ui-grid-b">
                 <ul data-role="listview">
-                    <li data-role="list-divider" style=
-                    "background-color:#f0f0f0;"><span class="icon-icnoseccion"
-                    style=
-                    "font-size:33px; margin:5px 0 5px 0; float:left; color: #66cc00; margin-right:10px;">
+                    <li data-role="list-divider" style="background-color:#f0f0f0;"><span class="icon-icnoseccion" style="font-size:33px; margin:5px 0 5px 0; float:left; color: #66cc00; margin-right:10px;">
                     </span> <span class="alertas_titulo_light">VEHÍCULOS</span>
-                    <span class="alertas_titulo_black">NUEVOS</span></li>
-
-                    <li class="ui-field-contain">
-                        <label class="intro" for="">Objetivo mensual V.N. No
-                        alcanzable por falta stock</label> <a data-role=
-                        "button" data-theme="a" style=
-                        "width:100px; float: right; margin:5px 15px 5px 0;">Drivers</a>
+                        <span class="alertas_titulo_black">NUEVOS</span>
                     </li>
 
                     <li class="ui-field-contain">
-                        <label class="intro" for="">Entregas acumuladas al 90%
-                        del objetivo</label> <a data-role="button" data-theme=
-                        "a" style=
-                        "width:100px; float: right; margin:5px 15px 5px 0;">Drivers</a>
+                        <label class="intro" for="">Objetivo mensual V.N. No alcanzable por falta stock</label> <a data-role="button" data-theme="a" style="width:100px; float: right; margin:5px 15px 5px 0;">Drivers</a>
                     </li>
 
                     <li class="ui-field-contain">
-                        <label class="intro" for="">Objetivo mensual V.N No
-                        alcanzable.</label> <a data-role="button" data-theme=
-                        "a" style=
-                        "width:100px; float: right; margin:5px 15px 5px 0;">Drivers</a>
+                        <label class="intro" for="">Entregas acumuladas al 90% del objetivo</label> <a data-role="button" data-theme="a" style="width:100px; float: right; margin:5px 15px 5px 0;">Drivers</a>
+                    </li>
+
+                    <li class="ui-field-contain">
+                        <label class="intro" for="">Objetivo mensual V.N No alcanzable.
+                        </label> <a data-role="button" data-theme="a" style="width:100px; float: right; margin:5px 15px 5px 0;">Drivers</a>
                     </li>
                 </ul>
             </div>
         </div>
 
-        <div class="k-content" id="page_alertasUsados" style=
-        "background-color:#fff;">
+        <div class="k-content" id="page_alertasUsados" style="background-color:#fff;">
             <div class="ui-grid-b">
                 <ul data-role="listview">
-                    <li data-role="list-divider" style=
-                    "background-color:#f0f0f0;"><span class="icon-icnoseccion"
-                    style=
-                    "font-size:33px; margin:5px 0 5px 0; float:left; color: #45abc9; margin-right:10px;">
+                    <li data-role="list-divider" style="background-color:#f0f0f0;"><span class="icon-icnoseccion" style="font-size:33px; margin:5px 0 5px 0; float:left; color: #45abc9; margin-right:10px;">
                     </span> <span class="alertas_titulo_light">VEHÍCULOS</span>
-                    <span class="alertas_titulo_black">USADOS</span></li>
+                        <span class="alertas_titulo_black">USADOS</span>
+                    </li>
 
                     <li class="ui-field-contain">
-                        <label class="intro" for="">Stock V.O. mayor de 120
-                        días.</label> <a data-role="button" data-theme="a"
-                        style=
-                        "width:100px; float: right; margin:5px 15px 5px 0;">Drivers</a>
+                        <label class="intro" for="">Stock V.O. mayor de 120 días.
+                        </label> <a data-role="button" data-theme="a" style="width:100px; float: right; margin:5px 15px 5px 0;">Drivers</a>
                     </li>
                 </ul>
             </div>
         </div>
 
-        <div class="k-content" id="page_alertasPosventa" style=
-        "background-color:#fff;">
+        <div class="k-content" id="page_alertasPosventa" style="background-color:#fff;">
             <div class="ui-grid-b">
                 <ul data-role="listview">
-                    <li data-role="list-divider" style=
-                    "background-color:#f0f0f0;"><span class="icon-icnoseccion"
-                    style=
-                    "font-size:33px; margin:5px 0 5px 0; float:left; color: #c28c00; margin-right:10px;">
+                    <li data-role="list-divider" style="background-color:#f0f0f0;"><span class="icon-icnoseccion" style="font-size:33px; margin:5px 0 5px 0; float:left; color: #c28c00; margin-right:10px;">
                     </span> <span class="alertas_titulo_light">SERVICIO</span>
-                    <span class="alertas_titulo_black">POSVENTA</span></li>
+                        <span class="alertas_titulo_black">POSVENTA</span>
+                    </li>
 
                     <li class="ui-field-contain">
-                        <label class="intro" for="label">Facturación al 80%
-                        obj.</label> <a data-role="button" data-theme="a"
-                        style="width:100px; float: right; margin:5px 15px 5px 0;">
+                        <label class="intro" for="label">Facturación al 80% obj.
+                        </label> <a data-role="button" data-theme="a" style="width:100px; float: right; margin:5px 15px 5px 0;">
                         Drivers</a>
                     </li>
 
                     <li class="ui-field-contain">
-                        <label class="intro" for="">Pasos de taller por debajo
-                        de objetivo en carrocería</label> <a data-role="button"
-                        data-theme="a" style=
-                        "width:100px; float: right; margin:5px 15px 5px 0;">Drivers</a>
+                        <label class="intro" for="">Pasos de taller por debajo de objetivo en carrocería</label> <a data-role="button" data-theme="a" style="width:100px; float: right; margin:5px 15px 5px 0;">Drivers</a>
                     </li>
                 </ul>
             </div>
         </div>
 
-        <div data-position-to="window" data-role="popup" data-transition="pop"
-        id="PopUpNotificacion">
+
+        <div data-position-to="window" data-role="popup" data-transition="pop" id="PopUpNotificacion">
             <p id="PopUpNotificacionTexto"></p>
         </div>
 
-        <div class="" data-dismissible="false" data-overlay-theme="a"
-        data-role="popup" data-theme="a" data-transition="slidefade" id=
-        "PopUpAccion" style="width:21em;">
-            <div class="cabecera" data-role="header" style=
-            "text-align: center">
+        <div class="" data-dismissible="false" data-overlay-theme="a" data-role="popup" data-theme="a" data-transition="slidefade" id="PopUpAccion" style="width:21em;">
+            <div class="cabecera" data-role="header" style="text-align: center">
                 <div id="tituloPopUpAccion">
                     <label id="lbPopUpAccionTitulo"></label>
 
@@ -1607,18 +1507,16 @@
                 <br>
 
                 <div>
-                    <label class="txt_centrals_popup" id="lbPopUpAccion">Aqui
-                    puedes configurar la programación de tu pantalla<br>
-                    <br>
-                    ¿Cuando deseas reproducirlo?</label>
+                    <label class="txt_centrals_popup" id="lbPopUpAccion">Aqui puedes configurar la programación de tu pantalla
+                        <label class="txt_centrals_popup" id="lbPopUpAccion">Aqui puedes configurar la programación de tu pantalla
+                            <br>
+                            <br> ¿Cuando deseas reproducirlo?</label>
                 </div>
             </div>
 
             <div class="footer">
-                <button class="btn_blue" data-icon="clock" data-iconpos="right"
-                id="btnPopUpAccionA">Seleccionar un horario</button>
-                <button class="btn_blue" data-icon="star" data-iconpos="right"
-                id="btnPopUpAccionB">Ahora!</button>
+                <button class="btn_blue" data-icon="clock" data-iconpos="right" id="btnPopUpAccionA">Seleccionar un horario</button>
+                <button class="btn_blue" data-icon="star" data-iconpos="right" id="btnPopUpAccionB">Ahora!</button>
             </div>
         </div>
     </div>
@@ -1634,4 +1532,5 @@
             -->
     </div>
 </body>
+
 </html>
