@@ -138,21 +138,21 @@ $(document).on('pageinit', '#app', function () {
     $("#btnMenuNuevosEjecutivo").unbind('click').bind('click', function () {
         showPage('nuevosEjecutivo');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHICULOS NUEVOS </span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Ejecutivo");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Ejecutivo<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         $("#navpanel").panel("close");
     });
 
     $("#btnMenuNuevosAnalitico").unbind('click').bind('click', function () {
         showPage('nuevosAnalitico');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHICULOS NUEVOS </span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Analítico");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Analítico<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         $("#navpanel").panel("close");
     });
 
     $("#btnMenuNuevosComparativa").unbind('click').bind('click', function () {
         showPage('consultivoNuevos');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHICULOS NUEVOS </span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Comparativa");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Comparativa<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         $("#navpanel").panel("close");
     });
 
@@ -174,21 +174,21 @@ $(document).on('pageinit', '#app', function () {
     $("#btnMenuUsadosEjecutivo").unbind('click').bind('click', function () {
         showPage('usadosEjecutivo');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #45abc9; margin-right:7px;"></span><span class=""> VEHÍCULOS USADOS</span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         $("#navpanel").panel("close");
     });
 
     $("#btnMenuUsadosAnalitico").unbind('click').bind('click', function () {
         showPage('usadosAnalitico');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #45abc9; margin-right:7px;"></span><span class=""> VEHÍCULOS USADOS</span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         $("#navpanel").panel("close");
     });
 
     $("#btnMenuUsadosComparativa").unbind('click').bind('click', function () {
         showPage('consultivoNuevos');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #45abc9; margin-right:7px;"></span><span class=""> VEHÍCULOS USADOS</span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Comparativa");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Comparativa<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         $("#navpanel").panel("close");
     });
 
@@ -210,21 +210,21 @@ $(document).on('pageinit', '#app', function () {
     $("#btnMenuposventaEjecutivo").unbind('click').bind('click', function () {
         showPage('posventaEjecutivo');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #c28c00; margin-right:7px;"></span><span class=""> SERVICIO POSVENTA </span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Ejecutivo");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Ejecutivo<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         $("#navpanel").panel("close");
     });
 
     $("#btnMenuposventaAnalitico").unbind('click').bind('click', function () {
         showPage('posventaAnalitico');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #c28c00; margin-right:7px;"></span><span class=""> SERVICIO POSVENTA </span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Analítico");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Analítico<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         $("#navpanel").panel("close");
     });
 
     $("#btnMenuposventaComparativa").unbind('click').bind('click', function () {
         showPage('consultivoNuevos');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #c28c00; margin-right:7px;"></span><span class=""> SERVICIO POSVENTA </span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Comparativa");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Comparativa<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         $("#navpanel").panel("close");
     });
 
@@ -245,19 +245,19 @@ $(document).on('pageinit', '#app', function () {
     $("#btnMainNuevosEjecutivo").unbind('click').bind('click', function () {
         showPage('nuevosEjecutivo');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHÍCULOS NUEVOS</span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Ejecutivo");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Ejecutivo<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
     });
 
     $("#btnMainNuevosAnalitico").unbind('click').bind('click', function () {
         showPage('nuevosAnalitico');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHICULOS NUEVOS</span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Analítico");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Analítico<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
     });
 
     $("#btnMainNuevosComparativa").unbind('click').bind('click', function () {
         showPage('consultivoNuevos');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHICULOS NUEVOS</span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Comparativa");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Comparativa<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
     });
 
     $("#btnMainAlertasNuevos").unbind('click').bind('click', function () {
@@ -276,21 +276,21 @@ $(document).on('pageinit', '#app', function () {
     $("#btnMainUsadosEjecutivo").unbind('click').bind('click', function () {
         showPage('usadosEjecutivo');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #45abc9; margin-right:7px;"></span><span class=""> VEHÍCULOS USADOS</span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
     });
 
     $("#btnMainUsadosAnalitico").unbind('click').bind('click', function () {
         showPage('usadosAnalitico');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #45abc9; margin-right:7px;"></span><span class=""> VEHÍCULOS USADOS</span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
     });
 
     $("#btnMainUsadosComparativa").unbind('click').bind('click', function () {
         showPage('consultivoNuevos');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #45abc9; margin-right:7px;"></span><span class=""> VEHÍCULOS USADOS</span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Comparativa");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Comparativa<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
     });
-    
+
     $("#btnMainAlertasUsados").unbind('click').bind('click', function () {
         showPage('alertasUsados');
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
@@ -308,22 +308,22 @@ $(document).on('pageinit', '#app', function () {
     $("#btnMainposventaEjecutivo").unbind('click').bind('click', function () {
         showPage('posventaEjecutivo');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #c28c00; margin-right:7px;"></span><span class=""> SERVICIO POSVENTA </span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Ejecutivo");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Ejecutivo<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
     });
 
     $("#btnMainposventaAnalitico").unbind('click').bind('click', function () {
         showPage('posventaAnalitico');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #c28c00; margin-right:7px;"></span><span class=""> SERVICIO POSVENTA </span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Analítico");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Analítico<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
     });
 
     $("#btnMainposventaComparativa").unbind('click').bind('click', function () {
         showPage('consultivoNuevos');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #c28c00; margin-right:7px;"></span><span class=""> SERVICIO POSVENTA </span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Comparativa");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Comparativa<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
     });
-    
-     $("#btnMainAlertasposventa").unbind('click').bind('click', function () {
+
+    $("#btnMainAlertasposventa").unbind('click').bind('click', function () {
         showPage('alertasPosventa');
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ Nivel de análisis o alerta/ Informe");
@@ -336,6 +336,12 @@ function showPage(pagina) {
     for (var i = 0; i < paginas.length; i++) {
         if (paginas[i] != pagina) {
             $("#page_" + paginas[i]).hide();
+            $("#head_nuevosEjecutivo").show();
+            $("#head_nuevosAnalitico").show();
+            $("#head_usadosEjecutivo").show();
+            $("#head_usadosAnalitico").show();
+            $("#head_posventaEjecutivo").show();
+            $("#head_posventaAnalitico").show();
         }
     }
     if (pagina == 'main') {
@@ -345,6 +351,26 @@ function showPage(pagina) {
     }
     $("#page_" + pagina).show();
     // $("#navpanel").panel("close");
+}
+
+function mostrarMenu(tipo) {
+    if (tipo == 0) {
+        $("#btnMostrar").html("<a style='float:right' onclick='mostrarMenu(1)' class='ui-btn ui-corner-all ui-icon-carat-d ui-btn-icon-notext'></a>");
+        $("#head_nuevosEjecutivo").hide();
+        $("#head_nuevosAnalitico").hide();
+        $("#head_usadosEjecutivo").hide();
+        $("#head_usadosAnalitico").hide();
+        $("#head_posventaEjecutivo").hide();
+        $("#head_posventaAnalitico").hide();
+    } else {
+        $("#btnMostrar").html("<a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a>");
+        $("#head_nuevosEjecutivo").show();
+        $("#head_nuevosAnalitico").show();
+        $("#head_usadosEjecutivo").show();
+        $("#head_usadosAnalitico").show();
+        $("#head_posventaEjecutivo").show();
+        $("#head_posventaAnalitico").show();
+    }
 }
 
 
