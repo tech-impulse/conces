@@ -2,7 +2,7 @@
 PROGRAMACION DE LOS EVENTOS DE BOTONES DE LA APLICACIÓN
 */
 
-var paginas = ["mainLogin", "resetPassword", "resetPasswordFinish", "main", "parametros", "nuevosEjecutivo", "alertasNuevos", "alertasUsados", "alertasPosventa", "consultivoNuevos", "consultivoUsados", "consultivoPosventa", "nuevosEjecutivo", "nuevosAnalitico", "posventaEjecutivo", "usadosEjecutivo", "usadosAnalitico", "posventaAnalitico"];
+var paginas = ["mainLogin", "resetPassword", "resetPasswordFinish", "main", "parametros", "nuevosEjecutivo", "alertasNuevos", "alertasUsados", "alertasPosventa", "consultivoNuevos", "consultivoUsados", "consultivoPosventa", "nuevosEjecutivo", "nuevosAnalitico", "posventaEjecutivo", "usadosEjecutivo", "usadosAnalitico", "posventaAnalitico", "comparativaUsados", "comparativaPosventa"];
 
 $(document).bind("mobileinit", function () {
 
@@ -186,7 +186,7 @@ $(document).on('pageinit', '#app', function () {
     });
 
     $("#btnMenuUsadosComparativa").unbind('click').bind('click', function () {
-        showPage('consultivoNuevos');
+        showPage('comparativaUsados');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #45abc9; margin-right:7px;"></span><span class=""> VEHÍCULOS USADOS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Comparativa<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         $("#navpanel").panel("close");
@@ -222,7 +222,7 @@ $(document).on('pageinit', '#app', function () {
     });
 
     $("#btnMenuposventaComparativa").unbind('click').bind('click', function () {
-        showPage('consultivoNuevos');
+        showPage('comparativaPosventa');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #c28c00; margin-right:7px;"></span><span class=""> SERVICIO POSVENTA </span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Comparativa<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         $("#navpanel").panel("close");
@@ -286,7 +286,7 @@ $(document).on('pageinit', '#app', function () {
     });
 
     $("#btnMainUsadosComparativa").unbind('click').bind('click', function () {
-        showPage('consultivoNuevos');
+        showPage('comparativaUsados');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #45abc9; margin-right:7px;"></span><span class=""> VEHÍCULOS USADOS</span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Comparativa<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
     });
@@ -318,7 +318,7 @@ $(document).on('pageinit', '#app', function () {
     });
 
     $("#btnMainposventaComparativa").unbind('click').bind('click', function () {
-        showPage('consultivoNuevos');
+        showPage('comparativaPosventa');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #c28c00; margin-right:7px;"></span><span class=""> SERVICIO POSVENTA </span>');
         $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Instalación/ Departamento/ <span class='icon-icnotipoanalisis' style='color:#c28c00'></span> Comparativa<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
     });
