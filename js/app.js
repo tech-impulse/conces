@@ -140,14 +140,14 @@ $(document).on('pageinit', '#app', function () {
     $("#btnMenuNuevosEjecutivo").unbind('click').bind('click', function () {
         showPage('nuevosEjecutivo');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHICULOS NUEVOS </span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Nuevos/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Ejecutivo<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        $("#btnNuevosEjecutivo1-1").click();
         $("#navpanel").panel("close");
     });
 
     $("#btnMenuNuevosAnalitico").unbind('click').bind('click', function () {
         showPage('nuevosAnalitico');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHICULOS NUEVOS </span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Nuevos/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Analítico<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        $("#btnNuevosAnalitico1-1").click();
         $("#navpanel").panel("close");
     });
 
@@ -161,7 +161,7 @@ $(document).on('pageinit', '#app', function () {
     $("#btnMenuNuevosAlertas").unbind('click').bind('click', function () {
         showPage('alertasNuevos');
         $("#tituloSeccion").html('<span class=""> ALERTAS</span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Nuevos/ Nivel de análisis o alerta/ Informe");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Nuevos/ Alertas");
         $("#navpanel").panel("close");
     });
     /* MENÚ LATERAL */
@@ -247,7 +247,7 @@ $(document).on('pageinit', '#app', function () {
     $("#btnMainNuevosEjecutivo").unbind('click').bind('click', function () {
         showPage('nuevosEjecutivo');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHÍCULOS NUEVOS</span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehículos Nuevos/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Ejecutivo<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        $("#btnNuevosEjecutivo1-1").click();
     });
 
     $("#btnMainNuevosAnalitico").unbind('click').bind('click', function () {
@@ -392,7 +392,7 @@ function botonSelccionado(tipo, boton) {
         document.getElementById(boton).style.background = "#66cc00";
     }
     if (tipo == 2) {
-        document.getElementById(boton).style.background = "#66cc00";
+        document.getElementById(boton).style.background = "#45abc9";
     }
     if (tipo == 3) {
         document.getElementById(boton).style.background = "#c28c00";
