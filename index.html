@@ -32,15 +32,14 @@
 
     <div data-role="page" data-title="Login" id="loginModule">
         <!-- Pagina de login -->
-
         <div data-role="content">
             <div class="ui-grid-a">
-                <div class="ui-block-a" style="width:35%; background-image: url(css/imagenes/fondoTest.png);">
+                <div class="ui-block-a img_lateral_login" style="max-width:40%; height:100%;"><img style="width:100%;" class="" src="css/imagenes/img_lateral_login.jpg" alt="logo">
                 </div>
-
-                <div class="ui-block-b" style="width:65%">
-                    <div class="k-content" id="page_mainLogin">
-                        <div style="text-align: center">
+                <div class="ui-block-b" style="width:60%">
+                    <div id="page_mainLogin" class="k-content">
+                        <div theme="a" style="text-align: center">
+                            <!--<span class="icon-icno_tipo_analisis" style="width:100px;"></span> -->
                             <!--<span class="icon-icno_tipo_analisis" style="width:100px;"></span> --><img alt="logo" class="Logo, img_logo_toyota" src="css/imagenes/logo_toyota.png">
                         </div>
 
@@ -664,16 +663,10 @@
             </div>
             <div id="div_nuevos_consultivo">
                 <center>
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a">
-                            <ul data-role="listview" style="margin:5px">
-                                <li data-role="list-divider">Junio</li>
-                            </ul> <img src="css/maqueta/14/14_consultivo.jpg" width="100%"> </div>
-                        <div class="ui-block-b">
-                            <ul data-role="listview" style="margin:5px">
-                                <li data-role="list-divider">Acumulado</li>
-                            </ul><img src="css/maqueta/14/14_acumulado.jpg" width="100%"> </div>
-                    </div>
+                    <center>
+                        <ul data-role="listview" style="margin:5px">
+                            <li data-role="list-divider">Junio</li>
+                        </ul> <img src="css/maqueta/14/14_consultivo.jpg" width="60%"> </center>
                 </center>
             </div>
         </div>
@@ -696,7 +689,7 @@
                         <div data-role="collapsible" data-theme="b">
                             <h2 id="btnNuevosEjecutivo1-2">Entregas. Mix Canal.
                     Vendedor</h2>
-                            <ul data-role="listview">
+                            <ul data-role="listview" id="btnNuevosEjecutivo1-2c">
                                 <li>
                                     <a id="btnNuevosEjecutivo1-2-1">Mix</a>
                                 </li>
@@ -723,7 +716,17 @@
 
                 <div class="ui-grid-c" style="margin-right:15px;margin-left:15px">
                     <div class="ui-block-a">
-                        <a data-role="button" data-theme="b" id="btnNuevosEjecutivo2-1"><span>Cartera</span></a>
+                        <div data-role="collapsible" data-theme="b">
+                            <h2 id="btnNuevosEjecutivo2-1">Cartera</h2>
+                            <ul data-role="listview">
+                                <li>
+                                    <a id="btnNuevosEjecutivo2-1-1">Mix, Evolución</a>
+                                </li>
+                                <li>
+                                    <a id="btnNuevosEjecutivo2-1-2">Canal, Vendedor</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="ui-block-b">
@@ -1110,14 +1113,22 @@
                         <div class="ui-block-a">
                             <ul data-role="listview" style="margin:5px">
                                 <li data-role="list-divider">Entregas</li>
-                            </ul><img src="css/maqueta/26/.jpg" width="100%"> </div>
+                            </ul><img src="css/maqueta/26/26_entregas.jpg" width="100%"> </div>
                         <div class="ui-block-b">
                             <ul data-role="listview" style="margin:5px">
                                 <li data-role="list-divider">Acumulado, Cartera/Cobertura</li>
-                            </ul><img src="css/maqueta/26/.jpg" width="100%"> </div>
+                            </ul><img src="css/maqueta/26/26_acumulado.jpg" width="100%"> </div>
                     </div>
                 </center>
             </div>
+        </div>
+
+        <!-- COMPARATIVA USADOS -->
+
+        <div class="k-content" id="page_comparativaNuevos" style="display:none">
+            <center>
+                <img src="css/maqueta/34/34_comparativa.jpg" width="55%">
+            </center>
         </div>
         <!-- VEHICULOS USADOS -->
 
@@ -1153,7 +1164,7 @@
             <div id="head_usadosEjecutivo">
                 <div class="ui-grid-c" style="margin-right:15px;margin-left:15px">
                     <div class="ui-block-a">
-                        <a data-role="button" data-theme="a" id="btnUsadosEjecutivo1-1"><span>Resumen Mensual</span></a>
+                        <a data-role="button" data-theme="b" id="btnUsadosEjecutivo1-1"><span>Resumen Mensual</span></a>
                     </div>
 
                     <div class="ui-block-b">
@@ -1161,7 +1172,7 @@
                             <h2 id="btnUsadosEjecutivo1-2">Canales entrega</h2>
                             <ul data-role="listview">
                                 <li>
-                                    <a id="btnUsadosEjecutivo1-2-1">Entregas</a>
+                                    <a id="btnUsadosEjecutivo1-2-1">Entregas por canal</a>
                                 </li>
                                 <li>
                                     <a id="btnUsadosEjecutivo1-2-2">Entregas por vendedor</a>
@@ -1219,22 +1230,22 @@
                     </div>
 
                     <div class="ui-block-b">
-                        <a data-role="button" data-theme="a" id="btnUsadosEjecutivo2-2"><span>Compras</span></a>
+                        <a data-role="button" data-theme="b" id="btnUsadosEjecutivo2-2"><span>Compras</span></a>
                     </div>
 
                     <div class="ui-block-c">
-                        <a data-role="button" data-theme="a" id="btnUsadosEjecutivo2-3"><span>Relación vehiculos
+                        <a data-role="button" data-theme="b" id="btnUsadosEjecutivo2-3"><span>Relación vehiculos
                     nuevos</span></a>
                     </div>
 
                     <div class="ui-block-d">
-                        <a data-role="button" data-theme="a" id="btnUsadosEjecutivo2-4"><span>Calidad</span></a>
+                        <a data-role="button" data-theme="b" id="btnUsadosEjecutivo2-4"><span>Calidad</span></a>
                     </div>
                 </div>
 
                 <div class="ui-grid-c" style="margin-right:15px;margin-left:15px">
                     <div class="ui-block-a">
-                        <a data-role="button" data-theme="a" id="btnUsadosEjecutivo3-1"><span>Atípicos</span></a>
+                        <a data-role="button" data-theme="b" id="btnUsadosEjecutivo3-1"><span>Atípicos</span></a>
                     </div>
 
                     <div class="ui-block-b">
@@ -1346,7 +1357,7 @@
                     </div>
 
                     <div class="ui-block-b">
-                        <a data-role="button" data-theme="a" id="btnUsadosAnalitico1-2"><span>Exposición</span></a>
+                        <a data-role="button" data-theme="b" id="btnUsadosAnalitico1-2"><span>Exposición</span></a>
                     </div>
 
                     <div class="ui-block-c">
@@ -1537,41 +1548,87 @@
                         </div>
                     </div>
 
-
-
                     <div class="ui-block-b">
-                        <a data-role="button" data-theme="a" id="btnPosventaEjecutivo1-2"><span>Mecánica análisis
-                    canales</span></a>
+                        <div data-role="collapsible" data-theme="b">
+
+                            <h2 id="btnPosventaEjecutivo1-2">Mecánica análisis
+                    canales</h2>
+
+                            <ul data-role="listview">
+                                <li>
+                                    <a id="btnPosventaEjecutivo1-2-1">Facturación</a>
+                                </li>
+                                <li>
+                                    <a id="btnPosventaEjecutivo1-2-2">Pasos de Taller</a>
+                                </li>
+                                <li>
+                                    <a id="btnPosventaEjecutivo1-2-3">Horas</a>
+                                </li>
+                                <li>
+                                    <a id="btnPosventaEjecutivo1-2-4">Facturación por paso</a>
+                                </li>
+                            </ul>
+
+                        </div>
                     </div>
 
                     <div class="ui-block-c">
-                        <a data-role="button" data-theme="a" id="btnPosventaEjecutivo1-3"><span>Carrocería analisis
-                    canales</span></a>
+                        <div data-role="collapsible" data-theme="b">
+
+                            <h2 id="btnPosventaEjecutivo1-3">Carrocería analisis
+                    canales</h2>
+
+                            <ul data-role="listview">
+                                <li>
+                                    <a id="btnPosventaEjecutivo1-3-1">Facturación</a>
+                                </li>
+                                <li>
+                                    <a id="btnPosventaEjecutivo1-3-2">Pasos de Taller</a>
+                                </li>
+                                <li>
+                                    <a id="btnPosventaEjecutivo1-3-3">Horas</a>
+                                </li>
+                                <li>
+                                    <a id="btnPosventaEjecutivo1-3-4">Facturación por paso</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="ui-block-d">
-                        <a data-role="button" data-theme="a" id="btnPosventaEjecutivo1-4"><span>Facturación
-                    recambios</span></a>
+                        <div data-role="collapsible" data-theme="b">
+
+                            <h2 id="btnPosventaEjecutivo1-4">Facturación
+                    recambio</h2>
+                            <ul data-role="listview">
+                                <li>
+                                    <a id="btnPosventaEjecutivo1-4-1">Facturación por canal</a>
+                                </li>
+                                <li>
+                                    <a id="btnPosventaEjecutivo1-4-2">Facturación externa</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
                 <div class="ui-grid-c" style="margin-right:15px;margin-left:15px">
                     <div class="ui-block-a">
-                        <a data-role="button" data-theme="a" id="btnPosventaEjecutivo2-1"><span>Ratios gestión</span></a>
+                        <a data-role="button" data-theme="b" id="btnPosventaEjecutivo2-1"><span>Ratios gestión</span></a>
                     </div>
 
                     <div class="ui-block-b">
-                        <a data-role="button" data-theme="a" id="btnPosventaEjecutivo2-2"><span>Ratios gestión
+                        <a data-role="button" data-theme="b" id="btnPosventaEjecutivo2-2"><span>Ratios gestión
                     mecánica</span></a>
                     </div>
 
                     <div class="ui-block-c">
-                        <a data-role="button" data-theme="a" id="btnPosventaEjecutivo2-3"><span>Ratios gestión
+                        <a data-role="button" data-theme="b" id="btnPosventaEjecutivo2-3"><span>Ratios gestión
                     Carrocería</span></a>
                     </div>
 
                     <div class="ui-block-d">
-                        <a data-role="button" data-theme="a" id="btnPosventaEjecutivo2-4"><span>Calidad</span></a>
+                        <a data-role="button" data-theme="b" id="btnPosventaEjecutivo2-4"><span>Calidad</span></a>
                     </div>
                 </div>
             </div>
@@ -1652,33 +1709,111 @@
             <div id="head_posventaAnalitico">
                 <div class="ui-grid-c" style="margin-right:15px;margin-left:15px">
                     <div class="ui-block-a">
-                        <a data-role="button" data-theme="a" id="btnPosventaAnalitico1-1"><span>Gestión canales
-                    mecánica</span></a>
+                        <div data-role="collapsible" data-theme="b">
+                            <h2 id="btnPosventaAnalitico1-1">Gestión canales
+                    mecánica</h2>
+                            <ul data-role="listview">
+                                <li>
+                                    <a id="btnPosventaAnalitico1-1-1">Cliente</a>
+                                </li>
+                                <li>
+                                    <a id="btnPosventaAnalitico1-1-2">Garantía</a>
+                                </li>
+                                <li>
+                                    <a id="btnPosventaAnalitico1-1-3">Internas</a>
+                                </li>
+                                <li>
+                                    <a id="btnPosventaAnalitico1-1-4">Renting 1</a>
+                                </li>
+                                <li>
+                                    <a id="btnPosventaAnalitico1-1-5">Renting 2</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-
                     <div class="ui-block-b">
-                        <a data-role="button" data-theme="a" id="btnPosventaAnalitico1-2"><span>Gestión canales
-                    carrocería</span></a>
+                        <div data-role="collapsible" data-theme="b">
+                            <h2 id="btnPosventaAnalitico1-2">Gestión canales
+                    carrocería</h2>
+                            <ul data-role="listview">
+                                <li>
+                                    <a id="btnPosventaAnalitico1-2-1">Cliente</a>
+                                </li>
+                                <li>
+                                    <a id="btnPosventaAnalitico1-2-2">Garantía</a>
+                                </li>
+                                <li>
+                                    <a id="btnPosventaAnalitico1-2-3">Internas</a>
+                                </li>
+                                <li>
+                                    <a id="btnPosventaAnalitico1-2-4">Renting 1</a>
+                                </li>
+                                <li>
+                                    <a id="btnPosventaAnalitico1-2-5">Renting 2</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="ui-block-c">
-                        <a data-role="button" data-theme="a" id="btnPosventaAnalitico1-3"><span>Evolución
-                    facturación</span></a>
+                        <div data-role="collapsible" data-theme="b">
+
+                            <h2 id="btnPosventaAnalitico1-3">Evolución
+                    facturación</h2>
+                            <ul data-role="listview">
+                                <li>
+                                    <a id="btnPosventaAnalitico1-3-1">Facturación mecánica</a>
+                                </li>
+                                <li>
+                                    <a id="btnPosventaAnalitico1-3-2">Facturación carrocería</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="ui-block-d">
-                        <a data-role="button" data-theme="a" id="btnPosventaAnalitico1-4"><span>Evolución media, pasos
-                    diarios</span></a>
+                        <div data-role="collapsible" data-theme="b">
+                            <h2 id="btnPosventaAnalitico1-4">Evolución media, pasos
+                    diarios</h2>
+                            <ul data-role="listview">
+                                <li>
+                                    <a id="btnPosventaAnalitico1-4-1">Mes, Acumulado / Evolución</a>
+                                </li>
+                                <li>
+                                    <a id="btnPosventaAnalitico1-4-2">Pesos</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
                 <div class="ui-grid-c" style="margin-right:15px;margin-left:15px">
                     <div class="ui-block-a">
-                        <a data-role="button" data-theme="a" id="btnPosventaAnalitico2-1"><span>Evolución horas</span></a>
+                        <div data-role="collapsible" data-theme="b">
+                            <h2 id="btnPosventaAnalitico2-1">Evolución horas</h2>
+                            <ul data-role="listview">
+                                <li>
+                                    <a id="btnPosventaAnalitico2-1-1">Evolución mecánica, Acumulado</a>
+                                </li>
+                                <li>
+                                    <a id="btnPosventaAnalitico2-1-2">Evolución carrocería, Acumulado</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="ui-block-b">
-                        <a data-role="button" data-theme="a" id="btnPosventaAnalitico2-2"><span>Evolución empleo</span></a>
+                        <div data-role="collapsible" data-theme="b">
+                            <h2 id="btnPosventaAnalitico2-2">Evolución empleo</h2>
+                            <ul data-role="listview">
+                                <li>
+                                    <a id="btnPosventaAnalitico2-2-1">Evolución mecánica, Acumulado</a>
+                                </li>
+                                <li>
+                                    <a id="btnPosventaAnalitico2-2-2">Evolución carrocería, Acumulado</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="ui-block-c"></div>
@@ -1688,15 +1823,15 @@
 
                 <div class="ui-grid-b" style="margin-right:15px;margin-left:15px">
                     <div class="ui-block-a">
-                        <a data-role="button" data-theme="a" id="btnPosventaAnalitico3-1"><span>Asesor 1</span></a>
+                        <a data-role="button" data-theme="b" id="btnPosventaAnalitico3-1"><span>Asesor 1</span></a>
                     </div>
 
                     <div class="ui-block-b">
-                        <a data-role="button" data-theme="a" id="btnPosventaAnalitico3-2"><span>Asesor 2</span></a>
+                        <a data-role="button" data-theme="b" id="btnPosventaAnalitico3-2"><span>Asesor 2</span></a>
                     </div>
 
                     <div class="ui-block-c">
-                        <a data-role="button" data-theme="a" id="btnPosventaAnalitico3-3"><span>Asesor 3</span></a>
+                        <a data-role="button" data-theme="b" id="btnPosventaAnalitico3-3"><span>Asesor 3</span></a>
                     </div>
                 </div>
             </div>
@@ -1786,22 +1921,22 @@
         <div class="k-content" id="page_comparativaPosventa" style="display:none">
             <center>
                 <div class="ui-grid-b">
-                        <div class="ui-block-a">
-                            <ul data-role="listview" style="margin:5px">
-                                <li data-role="list-divider">Mecánica</li>
-                            </ul><img src="css/maqueta/posventa_comparativa_mecanica.jpg" width="100%">
-                        </div>
-                        <div class="ui-block-b">
-                            <ul data-role="listview" style="margin:5px">
-                                <li data-role="list-divider">Carrocería</li>
-                            </ul><img src="css/maqueta/posventa_comparativa_carroceria.jpg" width="100%">
-                        </div>
-                    <div class="ui-block-c">
-                            <ul data-role="listview" style="margin:5px">
-                                <li data-role="list-divider">Total</li>
-                            </ul><img src="css/maqueta/posventa_comparativa_total.jpg" width="100%">
-                        </div>
+                    <div class="ui-block-a">
+                        <ul data-role="listview" style="margin:5px">
+                            <li data-role="list-divider">Mecánica</li>
+                        </ul><img src="css/maqueta/posventa_comparativa_mecanica.jpg" width="100%">
                     </div>
+                    <div class="ui-block-b">
+                        <ul data-role="listview" style="margin:5px">
+                            <li data-role="list-divider">Carrocería</li>
+                        </ul><img src="css/maqueta/posventa_comparativa_carroceria.jpg" width="100%">
+                    </div>
+                    <div class="ui-block-c">
+                        <ul data-role="listview" style="margin:5px">
+                            <li data-role="list-divider">Total</li>
+                        </ul><img src="css/maqueta/posventa_comparativa_total.jpg" width="100%">
+                    </div>
+                </div>
             </center>
         </div>
 
