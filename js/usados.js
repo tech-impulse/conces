@@ -21,7 +21,7 @@ $(document).on('pageinit', '#app', function () {
     $("#btnUsadosEjecutivo1-1").unbind('click').bind('click', function () {
         $("#div_ejecutivoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Junio</li> </ul> <img src="css/maqueta/56/56_mecanica_mes.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Acumulado</li> </ul><img src="css/maqueta/56/56_total_mes.jpg" width="100%"> </div></div> </center>');
         $("#div_ejecutivoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Resumen Mensual ");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Resumen Mensual <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         botonSelccionado(2, this.id);
 
     });
@@ -30,25 +30,25 @@ $(document).on('pageinit', '#app', function () {
     $("#btnUsadosEjecutivo1-2-1").unbind('click').bind('click', function () {
         $("#div_ejecutivoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Junio</li> </ul> <img src="css/maqueta/38/38_canales_entregas_por_canal_1.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Acumulado</li> </ul><img src="css/maqueta/38/38_canales_entregas_por_canal_1.jpg" width="100%"> </div></div> </center>');
         $("#div_ejecutivoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Canales entrega/ Entregas por canal ");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Canales entrega/ Entregas por canal <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         $("#btnUsadosEjecutivo1-2").click();
-        botonSelccionado(2, "btnUsadosEjecutivo1-2");
+        botonSelccionado(2, this.id);
     });
 
     $("#btnUsadosEjecutivo1-2-2").unbind('click').bind('click', function () {
         $("#div_ejecutivoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Junio</li> </ul> <img src="css/maqueta/38/.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Stock</li> </ul><img src="css/maqueta/38/.jpg" width="100%"> </div></div> </center>');
         $("#div_ejecutivoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Canales entrega/ Entregas por vendedor");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Canales entrega/ Entregas por vendedor <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         $("#btnUsadosEjecutivo1-2").click();
-        botonSelccionado(2, "btnUsadosEjecutivo1-2");
+        botonSelccionado(2, this.id);
     });
 
     $("#btnUsadosEjecutivo1-2-3").unbind('click').bind('click', function () {
         $("#div_ejecutivoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Junio</li> </ul> <img src="css/maqueta/39/39_entregas_por_canales_de_compra_1.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Stock</li> </ul><img src="css/maqueta/39/39_entregas_por_canales_de_compra_acumulado_2.jpg" width="100%"> </div></div> </center>');
         $("#div_ejecutivoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Canales entrega/ Entregas por canales");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Canales entrega/ Entregas por canales <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         $("#btnUsadosEjecutivo1-2").click();
-        botonSelccionado(2, "btnUsadosEjecutivo1-2");
+        botonSelccionado(2, this.id);
     });
 
     // EVOLUCIÓN. ENTREGAS
@@ -56,17 +56,17 @@ $(document).on('pageinit', '#app', function () {
     $("#btnUsadosEjecutivo1-3-1").unbind('click').bind('click', function () {
         $("#div_ejecutivoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Entregas por Canal</li> </ul> <img src="css/maqueta/40/40_entregas_por_canal_1.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Acumulado</li> </ul><img src="css/maqueta/40/.jpg" width="100%"> </div></div> </center>');
         $("#div_ejecutivoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Evolución, Entregas, Pedidos, Tráfico / Entregas por canal ");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Evolución, Entregas, Pedidos, Tráfico / Entregas por canal <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         $("#btnUsadosEjecutivo1-3").click();
-        botonSelccionado(2, "btnUsadosEjecutivo1-3");
+        botonSelccionado(2, this.id);
     });
 
     $("#btnUsadosEjecutivo1-3-2").unbind('click').bind('click', function () {
         $("#div_ejecutivoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Tráfico / Pedidos / Cierre</li> </ul> <img src="css/maqueta/40/40_trafico_pedidos_cierre_3.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Acumulado</li> </ul><img src="css/maqueta/40/.jpg" width="100%"> </div></div> </center>');
         $("#div_ejecutivoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo// Evolución, Entregas, Pedidos, Tráfico/ Tráfico/ Pedidos/ Cierre ");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo// Evolución, Entregas, Pedidos, Tráfico/ Tráfico/ Pedidos/ Cierre <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         $("#btnUsadosEjecutivo1-3").click();
-        botonSelccionado(2, "btnUsadosEjecutivo1-3");
+        botonSelccionado(2, this.id);
     });
 
     // CARTERA
@@ -74,16 +74,16 @@ $(document).on('pageinit', '#app', function () {
     $("#btnUsadosEjecutivo1-4-1").unbind('click').bind('click', function () {
         $("#div_ejecutivoUsado").html('<center><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Evolución Cartera</li> </ul> <img src="css/maqueta/41/41_evolucion_de_cartera_1.jpg" width="50%"> </center>');
         $("#div_ejecutivoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Cartera/ Evolución");
-        botonSelccionado(2, "btnUsadosEjecutivo1-3");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Cartera/ Evolución <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        botonSelccionado(2, this.id);
         $("#btnUsadosEjecutivo1-4").click();
     });
 
     $("#btnUsadosEjecutivo1-4-2").unbind('click').bind('click', function () {
         $("#div_ejecutivoUsado").html('<center><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Cartera por Vendedor</li> </ul> <img src="css/maqueta/41/41_cartera_vendido_por_2.jpg" width="50%"> </center>');
         $("#div_ejecutivoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Cartera/ Vendedor");
-        botonSelccionado(2, "btnUsadosEjecutivo1-3");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Cartera/ Vendedor <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        botonSelccionado(2, this.id);
         $("#btnUsadosEjecutivo1-4").click();
     });
 
@@ -92,16 +92,16 @@ $(document).on('pageinit', '#app', function () {
     $("#btnUsadosEjecutivo2-1-1").unbind('click').bind('click', function () {
         $("#div_ejecutivoUsado").html('<center><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Antigüedad Stock</li> </ul> <img src="css/maqueta/42/.jpg" width="50%"> <img src="css/maqueta/56/56_total_mes.jpg" width="50%"> </center>');
         $("#div_ejecutivoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Stock/ Antigüedad Stock");
-        botonSelccionado(2, "btnUsadosEjecutivo2-1");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Stock/ Antigüedad Stock <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        botonSelccionado(2, this.id);
         $("#btnUsadosEjecutivo2-1").click();
     });
 
     $("#btnUsadosEjecutivo2-1-2").unbind('click').bind('click', function () {
         $("#div_ejecutivoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Stock por Canal de Compra</li> </ul> <img src="css/maqueta/42/42_stock_por_canal_de_compra_2.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Cobertura</li> </ul><img src="css/maqueta/42/42_cobertura_3.jpg" width="100%"> </div></div> </center>');
         $("#div_ejecutivoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Stock/ Por canal de compra");
-        botonSelccionado(2, "btnUsadosEjecutivo2-1");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Stock/ Por canal de compra <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        botonSelccionado(2, this.id);
         $("#btnUsadosEjecutivo2-1").click();
     });
 
@@ -110,7 +110,7 @@ $(document).on('pageinit', '#app', function () {
     $("#btnUsadosEjecutivo2-2").unbind('click').bind('click', function () {
         $("#div_ejecutivoUsado").html('<center><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Canales de Compra</li> </ul> <img src="css/maqueta/43/.jpg" width="50%"><img src="css/maqueta/43/.jpg" width="100%"><img src="css/maqueta/43/.jpg" width="100%"> </center>');
         $("#div_ejecutivoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Compras");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Compras <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         botonSelccionado(2, this.id);
     });
 
@@ -119,7 +119,7 @@ $(document).on('pageinit', '#app', function () {
     $("#btnUsadosEjecutivo2-3").unbind('click').bind('click', function () {
         $("#div_ejecutivoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Tráfico / Tasaciones / Recompra</li> </ul> <img src="css/maqueta/44/44_Trafico_Tasaciones_Recompra_1.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Acumulado</li> </ul><div class="ui-grid-a"><div class="ui-block-a"><img src="css/maqueta/44/44_Trafico_Tasaciones_Recompra_3.jpg" width="100%"></div><div class="ui-block-b"><img src="css/maqueta/44/44_Trafico_Tasaciones_Recompra_acumulado_2.jpg" width="100%"></div> </div></div> </center>');
         $("#div_ejecutivoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Relación de vehiculos nuevos");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Relación de vehiculos nuevos <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         botonSelccionado(2, this.id);
     });
 
@@ -128,7 +128,7 @@ $(document).on('pageinit', '#app', function () {
     $("#btnUsadosEjecutivo2-4").unbind('click').bind('click', function () {
         $("#div_ejecutivoUsado").html('<center><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Calidad</li> </ul> <img src="css/maqueta/45/45_calidad.jpg" width="50%"></center>');
         $("#div_ejecutivoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Calidad");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Calidad <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         botonSelccionado(2, this.id);
     });
 
@@ -137,7 +137,7 @@ $(document).on('pageinit', '#app', function () {
     $("#btnUsadosEjecutivo3-1").unbind('click').bind('click', function () {
         $("#div_ejecutivoUsado").html('<center><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Atípicos</li> </ul> <img src="css/maqueta/46/46_atipicos.jpg" width="50%"></center>');
         $("#div_ejecutivoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Atípicos");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Atípicos <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         botonSelccionado(2, this.id);
     });
 
@@ -146,16 +146,16 @@ $(document).on('pageinit', '#app', function () {
     $("#btnUsadosEjecutivo3-2-1").unbind('click').bind('click', function () {
         $("#div_ejecutivoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Facturación</li> </ul> <img src="css/maqueta/47/47_facturacion_1.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Acumulado</li> </ul><img src="css/maqueta/47/47_aportacion_postventa_acumulado_2.jpg" width="100%"></div></div> </center>');
         $("#div_ejecutivoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Aportación posventa/ Facturación, Acumulado");
-        botonSelccionado(2, "btnUsadosEjecutivo3-2");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Aportación posventa/ Facturación, Acumulado <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        botonSelccionado(2, this.id);
         $("#btnUsadosEjecutivo3-2").click();
     });
 
     $("#btnUsadosEjecutivo3-2-2").unbind('click').bind('click', function () {
         $("#div_ejecutivoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Mecánica</li> </ul> <img src="css/maqueta/47/47_mecanica_3.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Carrocería</li> </ul><img src="css/maqueta/47/47_carroceria_4.jpg" width="100%"></div></div> </center>');
         $("#div_ejecutivoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Aportación posventa/ Mecánica, Carrocería");
-        botonSelccionado(2, "btnUsadosEjecutivo3-2");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Ejecutivo/ Aportación posventa/ Mecánica, Carrocería <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        botonSelccionado(2, this.id);
         $("#btnUsadosEjecutivo3-2").click();
     });
 
@@ -167,16 +167,16 @@ $(document).on('pageinit', '#app', function () {
     $("#btnUsadosAnalitico1-1-1").unbind('click').bind('click', function () {
         $("#div_analiticoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Tráfico Total / Origen</li> </ul> <img src="css/maqueta/56/56_mecanica_mes.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Acumulado</li> </ul><img src="css/maqueta/56/56_total_mes.jpg" width="100%"> </div></div> </center>');
         $("#div_analiticoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Total/ Tráfico total/ Orígen ");
-        botonSelccionado(2, "btnUsadosAnalitico1-1");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Total/ Tráfico total/ Orígen <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        botonSelccionado(2, this.id);
         $("#btnUsadosAnalitico1-1").click();
     });
 
     $("#btnUsadosAnalitico1-1-2").unbind('click').bind('click', function () {
         $("#div_analiticoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Evolución Tráfico Total</li> </ul> <img src="css/maqueta/56/56_mecanica_mes.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Acumulado</li> </ul><img src="css/maqueta/56/56_total_mes.jpg" width="100%"> </div></div> </center>');
         $("#div_analiticoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Total/ Evolución");
-        botonSelccionado(2, "btnUsadosAnalitico1-1");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Total/ Evolución <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        botonSelccionado(2, this.id);
         $("#btnUsadosAnalitico1-1").click();
     });
 
@@ -185,7 +185,7 @@ $(document).on('pageinit', '#app', function () {
     $("#btnUsadosAnalitico1-2").unbind('click').bind('click', function () {
         $("#div_analiticoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Evolución Tráfico Exposición</li> </ul> <img src="css/maqueta/56/56_mecanica_mes.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Acumulado</li> </ul><img src="css/maqueta/56/56_total_mes.jpg" width="100%"> </div></div> </center>');
         $("#div_analiticoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Exposición");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Exposición <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
         botonSelccionado(2, this.id);
 
     });
@@ -195,24 +195,24 @@ $(document).on('pageinit', '#app', function () {
     $("#btnUsadosAnalitico1-3-1").unbind('click').bind('click', function () {
         $("#div_analiticoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Evolución Tráfico Internet</li> </ul> <img src="css/maqueta/56/56_mecanica_mes.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Acumulado</li> </ul><img src="css/maqueta/56/56_total_mes.jpg" width="100%"> </div></div> </center>');
         $("#div_analiticoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Internet/ Evolución Tráfico Internet");
-        botonSelccionado(2, "btnUsadosAnalitico1-3");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Internet/ Evolución Tráfico Internet <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        botonSelccionado(2, this.id);
         $("#btnUsadosAnalitico1-3").click();
     });
 
     $("#btnUsadosAnalitico1-3-2").unbind('click').bind('click', function () {
         $("#div_analiticoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Llamadas / Tráfico / Pedidos</li> </ul> <img src="css/maqueta/56/56_mecanica_mes.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Acumulado</li> </ul><img src="css/maqueta/56/56_total_mes.jpg" width="100%"> </div></div> </center>');
         $("#div_analiticoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Internet/ Llamadas, Tráfico, Pedidos");
-        botonSelccionado(2, "btnUsadosAnalitico1-3");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Internet/ Llamadas, Tráfico, Pedidos <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        botonSelccionado(2, this.id);
         $("#btnUsadosAnalitico1-3").click();
     });
 
     $("#btnUsadosAnalitico1-3-3").unbind('click').bind('click', function () {
         $("#div_analiticoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Páginas Internet</li> </ul> <img src="css/maqueta/56/56_mecanica_mes.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Acumulado</li> </ul><img src="css/maqueta/56/56_total_mes.jpg" width="100%"> </div></div> </center>');
         $("#div_analiticoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Internet/ Páginas Internet");
-        botonSelccionado(2, "btnUsadosAnalitico1-3");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Internet/ Páginas Internet <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        botonSelccionado(2, this.id);
         $("#btnUsadosAnalitico1-3").click();
     });
 
@@ -221,16 +221,16 @@ $(document).on('pageinit', '#app', function () {
     $("#btnUsadosAnalitico2-1-1").unbind('click').bind('click', function () {
         $("#div_analiticoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Datos Comerciales</li> </ul> <img src="css/maqueta/56/56_mecanica_mes.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Acumulado</li> </ul><img src="css/maqueta/56/56_total_mes.jpg" width="100%"> </div></div> </center>');
         $("#div_analiticoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Vendedor 1/ Datos Comerciales ");
-        botonSelccionado(2, "btnUsadosAnalitico2-1");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Vendedor 1/ Datos Comerciales <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        botonSelccionado(2, this.id);
         $("#btnUsadosAnalitico2-1").click();
     });
 
     $("#btnUsadosAnalitico2-1-2").unbind('click').bind('click', function () {
         $("#div_analiticoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Atípicos</li> </ul> <img src="css/maqueta/56/56_mecanica_mes.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Cartera y Calidad</li> </ul><img src="css/maqueta/56/56_total_mes.jpg" width="100%"> </div></div> </center>');
         $("#div_analiticoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Vendedor 1/ Atípicos");
-        botonSelccionado(2, "btnUsadosAnalitico2-1");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Vendedor 1/ Atípicos <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        botonSelccionado(2, this.id);
         $("#btnUsadosAnalitico2-1").click();
     });
 
@@ -239,16 +239,16 @@ $(document).on('pageinit', '#app', function () {
     $("#btnUsadosAnalitico2-2-1").unbind('click').bind('click', function () {
         $("#div_analiticoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Datos Comerciales</li> </ul> <img src="css/maqueta/56/56_mecanica_mes.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Acumulado</li> </ul><img src="css/maqueta/56/56_total_mes.jpg" width="100%"> </div></div> </center>');
         $("#div_analiticoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Vendedor 2/ Datos Comerciales");
-        botonSelccionado(2, "btnUsadosAnalitico2-2");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Vendedor 2/ Datos Comerciales<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        botonSelccionado(2, this.id);
         $("#btnUsadosAnalitico2-2").click();
     });
 
     $("#btnUsadosAnalitico2-2-2").unbind('click').bind('click', function () {
         $("#div_analiticoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Atípicos</li> </ul> <img src="css/maqueta/56/56_mecanica_mes.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Cartera y Calidad</li> </ul><img src="css/maqueta/56/56_total_mes.jpg" width="100%"> </div></div> </center>');
         $("#div_analiticoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Vendedor 1/ Atípicos");
-        botonSelccionado(2, "btnUsadosAnalitico2-2");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Vendedor 1/ Atípicos <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        botonSelccionado(2, this.id);
         $("#btnUsadosAnalitico2-2").click();
     });
 
@@ -257,16 +257,16 @@ $(document).on('pageinit', '#app', function () {
     $("#btnUsadosAnalitico2-3-1").unbind('click').bind('click', function () {
         $("#div_analiticoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Datos Comerciales</li> </ul> <img src="css/maqueta/56/56_mecanica_mes.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Acumulado</li> </ul><img src="css/maqueta/56/56_total_mes.jpg" width="100%"> </div></div> </center>');
         $("#div_analiticoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Vendedor 2/ Datos Comerciales");
-        botonSelccionado(2, "btnUsadosAnalitico2-3");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Vendedor 2/ Datos Comerciales <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        botonSelccionado(2, this.id);
         $("#btnUsadosAnalitico2-3").click();
     });
 
     $("#btnUsadosAnalitico2-3-2").unbind('click').bind('click', function () {
         $("#div_analiticoUsado").html('<center><div class="ui-grid-a"><div class="ui-block-a"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Atípicos</li> </ul> <img src="css/maqueta/56/56_mecanica_mes.jpg" width="100%"> </div> <div class="ui-block-b"><ul data-role="listview" style="margin:5px"> <li data-role="list-divider">Cartera y Calidad</li> </ul><img src="css/maqueta/56/56_total_mes.jpg" width="100%"> </div></div> </center>');
         $("#div_analiticoUsado").trigger("create");
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Vendedor 1/ Atípicos");
-        botonSelccionado(2, "btnUsadosAnalitico2-3");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Analítico/ Vendedor 1/ Atípicos <span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        botonSelccionado(2, this.id);
         $("#btnUsadosAnalitico2-3").click();
     });
 

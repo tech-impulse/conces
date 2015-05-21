@@ -147,14 +147,14 @@ $(document).on('pageinit', '#app', function () {
     $("#btnMenuNuevosAnalitico").unbind('click').bind('click', function () {
         showPage('nuevosAnalitico');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHICULOS NUEVOS </span>');
-        $("#btnNuevosAnalitico1-1").click();
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Nuevos/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Analítico/ B0/ Entregas, Acumulado<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span");
         $("#navpanel").panel("close");
     });
 
     $("#btnMenuNuevosComparativa").unbind('click').bind('click', function () {
         showPage('comparativaNuevos');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHICULOS NUEVOS </span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Nuevos/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Comparativa<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Nuevos/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Comparativa");
         $("#navpanel").panel("close");
     });
 
@@ -190,7 +190,7 @@ $(document).on('pageinit', '#app', function () {
     $("#btnMenuUsadosComparativa").unbind('click').bind('click', function () {
         showPage('comparativaUsados');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #45abc9; margin-right:7px;"></span><span class=""> VEHÍCULOS USADOS</span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Comparativa<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Usados/ <span class='icon-icnotipoanalisis' style='color:#45abc9'></span> Comparativa");
         $("#navpanel").panel("close");
     });
 
@@ -253,7 +253,7 @@ $(document).on('pageinit', '#app', function () {
     $("#btnMainNuevosAnalitico").unbind('click').bind('click', function () {
         showPage('nuevosAnalitico');
         $("#tituloSeccion").html('<span class="icon-icnoseccion" style="font-size:25px; margin:0px; color:  #66cc00; margin-right:7px;"></span><span class=""> VEHICULOS NUEVOS</span>');
-        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehículos Nuevos/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Analítico<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span>");
+        $("#tituloSeccion2").html("<span class='icon-icnoruta'></span>  Concesión/ Vehiculos Nuevos/ <span class='icon-icnotipoanalisis' style='color:#66cc00'></span> Analítico/ B0/ Entregas, Acumulado<span id='btnMostrar'><a style='float:right' onclick='mostrarMenu(0)' class='ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext'></a></span");
     });
 
     $("#btnMainNuevosComparativa").unbind('click').bind('click', function () {
@@ -389,19 +389,25 @@ function isAndroidDevice() {
 function botonSelccionado(tipo, boton) {
     console.log(boton);
     if (tipo == 1) {
-        document.getElementById(boton).style.background = "#66cc00";
+        document.getElementById(boton).style.background = "#4C9900";
+        document.getElementById(boton).style.color = "#FFFFFF";
     }
     if (tipo == 2) {
-        document.getElementById(boton).style.background = "#45abc9";
+        document.getElementById(boton).style.background = "#3A8CA4";
+        document.getElementById(boton).style.color = "#FFFFFF";
     }
     if (tipo == 3) {
         document.getElementById(boton).style.background = "#c28c00";
+        document.getElementById(boton).style.color = "#FFFFFF";
     }
     if (botonAnterior == undefined) {
         botonAnterior = boton;
     } else {
         if (boton != botonAnterior) {
             document.getElementById(botonAnterior).style.background = "";
+            if (botonAnterior.length < 23) {
+                document.getElementById(botonAnterior).style.color = "#000000";
+            }
             botonAnterior = boton;
             console.log("boton anterior desmarcado");
             console.log(botonAnterior);
